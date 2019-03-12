@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Search</title>
+</head>
+<body>
+  <form method="POST" action="/submitWord">
+    <input name="dataWord" type="text">
+    <input type="submit" value="add word">
+  </form>
+
+  <form method="POST" action="/removeWord">
+    <ul>
+    <% for (let i = 0; i < words.length; i++) { %>
+      <li><input name="dataWord" value="<%= words[i] %>" type="submit"><%= words[i] %></li>
+    <% } %>
+    </ul>
+  </form>
+
+  <form method="POST" action="/submitGenre">
+    <!-- Disgusting -->
+    <% const allGenres = ["humor", "sprookjes"] %>
+    <% for (let i = 0; i < allGenres.length; i++) { %>
+      <% if (!genres.includes(allGenres[i])) { %>
+        <label for="<%= allGenres[i] %>"><%= allGenres[i] %></label>
+        <input type="submit" name="dataGenre" value="<%= allGenres[i] %>">
+      <% } %>
+    <% } %>
+  </form>
+
+  <form method="POST" action="/removeGenre">
+    <ul>
+    <% for (let i = 0; i < genres.length; i++) { %>
+      <li><input name="dataGenre" value="<%= genres[i] %>" type="submit"><%= genres[i] %></li>
+    <% } %>
+    </ul>
+  </form>
+
+</body>
+</html>
