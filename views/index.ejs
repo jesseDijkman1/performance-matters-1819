@@ -7,12 +7,15 @@
   <title>Search</title>
 </head>
 <body>
+
   <form method="POST" action="/submitWord">
+    <input name="wordsBundle" type="hidden" value="<%= words %>">
     <input name="dataWord" type="text">
     <input type="submit" value="add word">
   </form>
 
   <form method="POST" action="/removeWord">
+    <input name="wordsBundle" type="hidden" value="<%= words %>">
     <ul>
     <% for (let i = 0; i < words.length; i++) { %>
       <li><input name="dataWord" value="<%= words[i] %>" type="submit"><%= words[i] %></li>
@@ -20,24 +23,10 @@
     </ul>
   </form>
 
-  <form method="POST" action="/submitGenre">
-    <!-- Disgusting -->
-    <% const allGenres = ["humor", "sprookjes"] %>
-    <% for (let i = 0; i < allGenres.length; i++) { %>
-      <% if (!genres.includes(allGenres[i])) { %>
-        <label for="<%= allGenres[i] %>"><%= allGenres[i] %></label>
-        <input type="submit" name="dataGenre" value="<%= allGenres[i] %>">
-      <% } %>
-    <% } %>
+  <form method="POST" action="/getResults">
+    <input type="hidden" name="wordsBundle" value="<%= words %>">
+    <input type="submit">Ga zoeken</input>
   </form>
-
-  <form method="POST" action="/removeGenre">
-    <ul>
-    <% for (let i = 0; i < genres.length; i++) { %>
-      <li><input name="dataGenre" value="<%= genres[i] %>" type="submit"><%= genres[i] %></li>
-    <% } %>
-    </ul>
-  </form>
-
+  <script src="/js/test.js"></script>
 </body>
 </html>

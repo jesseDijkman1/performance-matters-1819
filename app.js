@@ -6,12 +6,11 @@ const bodyParser = require("body-parser");
 const request = require("request");
 const ejs = require("ejs");
 const parseString = require('xml2js').parseString;
-
+// const API = require("oba-wrapper/node");
 
 require('dotenv').config();
 
 const port = 2000;
-
 
 const app = express();
 
@@ -19,86 +18,74 @@ app.set('view engine', 'ejs');
 app.set('views', 'views');
 app.use(express.static("public"))
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({
-  extended: true
-}));
+app.use(bodyParser.urlencoded({extended: true}));
 
-let query;
-
-class Query {
-  constructor() {
-    this.words = [];
-    this.genres = [];
-  }
-
-  addWord(word) {
-    this.words.push(word);
-  }
-
-  removeWord(word) {
-    this.words.splice(this.words.indexOf(word), 1);
-  }
-
-  addGenre(genre) {
-    this.genres.push(genre);
-  }
-
-  removeGenre(genre) {
-    this.genres.splice(this.genres.indexOf(genre), 1);
-  }
-}
-
-// First probably have to put this somewhere else so you can search multiple times
-query = new Query();
-
-app.get("/", (req, res) => res.render("index.ejs", {words: query.words, genres: query.genres}));
-
-app.get("/search", (req, res) => {
-  res.send("Search page");
+app.get("/", (req, res) => {
+  res.render("index.ejs", {words: []});
 })
 
 app.get("/results", (req, res) => {
   res.send("Results page")
 })
 
-// Should be probably be in static js
 app.post("/submitWord", (req, res) => {
-  const word = req.body.dataWord;
+  const singleWord = req.body.dataWord;
+  let allWords = req.body.wordsBundle;
 
-  query.addWord(word);
+  if (!allWords) {
+    allWords = [];
+    if (singleWord) {
+      allWords.push(singleWord)
+    }
+  } else {
+    allWords += `,${singleWord}`;
+    allWords = allWords.split(",");
+  }
 
-  res.redirect("/")
-  // res.render("index.ejs", {words: query.words, genres: query.genres})
+
+  res.render("index.ejs", {words: allWords});
 })
 
 app.post("/removeWord", (req, res) => {
-  const word = req.body.dataWord;
-  console.log(word, req.body)
-  query.removeWord(word)
+  const clickedWord = req.body.dataWord;
+  let allWords = req.body.wordsBundle;
 
-  res.redirect("/")
-  // res.render("index.ejs", {words: query.words, genres: query.genres})
+  allWords = allWords.split(",");
+  allWords.splice(allWords.indexOf(clickedWord), 1);
+
+  res.render("index.ejs", {words: allWords});
 })
 
-// Should be probably be in static js. Because now the page is loading
-app.post("/submitGenre", (req, res) => {
-  const genre = req.body.dataGenre;
+app.post("/getResults", (req, res) => {
+  const queryBase = `https://zoeken.oba.nl/api/v1/search?authorization=${process.env.API_KEY}`;
+  const queryDefaults = "&pagesize=20&refine=true";
+  let page = "&page=1";
+  let query;
 
-  query.addGenre(genre);
-  res.redirect("/")
-  // res.render("index.ejs", {words: query.words, genres: query.genres})
+  let words = req.body.wordsBundle || "a";
+  // console.log("words", words, words.length)
+
+  if (words.length > 1) {
+    words = words.split(",");
+    words = `&q=${words.join("+")}`;
+  } else {
+    words = `&q=${words}`
+  }
+
+  query = queryBase + words + queryDefaults + page;
+
+  request(query, (error, response, body) => {
+    parseString(body, (err, result) => {
+      result.aquabrowser.meta[0].totalPages = Math.ceil(result.aquabrowser.meta[0].count / 20);
+
+      let data = {
+        meta: result.aquabrowser.meta[0],
+        results: result.aquabrowser.results[0].result
+      }
+      
+      res.render("list.ejs", {data: data});
+    });
+  });
 })
-
-app.post("/removeGenre", (req, res) => {
-  const genre = req.body.dataGenre;
-
-  query.removeGenre(genre)
-
-  res.redirect("/")
-  // res.render("index.ejs", {words: query.words, genres: query.genres})
-})
-
-
-
 
 app.listen(port, () => console.log(`Listening to port: ${port}!`))

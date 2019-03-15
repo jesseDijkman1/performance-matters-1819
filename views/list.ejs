@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>List</title>
+</head>
+<body>
+  <% data.results.forEach(d => { %>
+    <ul>
+      <li><%= d.id[0].$.nativeid %></li>
+      <li><%= d.titles[0]["short-title"][0]._ %></li>
+      <li><%= d.authors[0]["main-author"][0]._ %></li>
+    </ul>
+  <% }) %>
+
+</body>
+</html>
