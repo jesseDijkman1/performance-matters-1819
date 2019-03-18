@@ -6,6 +6,7 @@ const bodyParser = require("body-parser");
 const request = require("request");
 const ejs = require("ejs");
 const parseString = require('xml2js').parseString;
+const fs = require("fs");
 // const API = require("oba-wrapper/node");
 
 require('dotenv').config();
@@ -18,10 +19,14 @@ app.set('view engine', 'ejs');
 app.set('views', 'views');
 app.use(express.static("public"))
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
 
 app.get("/", (req, res) => {
-  res.render("index.ejs", {words: []});
+  res.render("index.ejs", {
+    words: []
+  });
 })
 
 app.get("/results", (req, res) => {
@@ -43,7 +48,9 @@ app.post("/submitWord", (req, res) => {
   }
 
 
-  res.render("index.ejs", {words: allWords});
+  res.render("index.ejs", {
+    words: allWords
+  });
 })
 
 app.post("/removeWord", (req, res) => {
@@ -53,7 +60,9 @@ app.post("/removeWord", (req, res) => {
   allWords = allWords.split(",");
   allWords.splice(allWords.indexOf(clickedWord), 1);
 
-  res.render("index.ejs", {words: allWords});
+  res.render("index.ejs", {
+    words: allWords
+  });
 })
 
 app.post("/getResults", (req, res) => {
@@ -82,8 +91,10 @@ app.post("/getResults", (req, res) => {
         meta: result.aquabrowser.meta[0],
         results: result.aquabrowser.results[0].result
       }
-      
-      res.render("list.ejs", {data: data});
+
+      res.render("list.ejs", {
+        data: data
+      });
     });
   });
 })
