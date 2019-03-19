@@ -12,6 +12,7 @@ require('dotenv').config();
 
 const port = 2000;
 
+
 const app = express();
 
 app.set('view engine', 'ejs');
@@ -22,16 +23,55 @@ app.use(bodyParser.urlencoded({
   extended: true
 }));
 
-app.get("/", (req, res) => {
+function checkQueryParams(qParams, validOptions) {
+  return new Promise((resolve, reject) => {
+    if (!qParams) {
+      resolve([]);
+    } else {
+      const pattern = /^([a-z]+\,?)+[a-z]+$/i;
+      const match = pattern.test(qParams);
+
+      if (match) {
+        if (validOptions) {
+          validOptions = new RegExp(`^${validOptions.join("$|^")}$`);
+
+          const incorrect = qParams.split(",").find(qp => !validOptions.test(qp))
+
+          if (!incorrect) {
+            resolve(qParams.split(","))
+          } else {
+            reject("one of the given params isn't correct or doesn't exist")
+          }
+        } else {
+          resolve(qParams.split(","))
+        }
+      } else {
+        reject("something is wrong with the query")
+      }
+    }
+  })
+}
+
+app.get("/", async (req, res) => {
+  const validGenres = ["humor", "sport", "stripverhaal"];
+  let allWords, allGenres;
+
+  try {
+    allWords = await checkQueryParams(req.query.words);
+    allGenres = await checkQueryParams(req.query.genres, validGenres);
+  } catch (err) {
+    // The given query isn't correct, do something
+    return console.log(err)
+  }
+
+
   res.render("index.ejs", {
-    words: [],
-    genres: []
+    words: allWords,
+    genres: allGenres
   });
 })
 
 function strArrayParser(strArray, str) {
-  console.log(`String array=${strArray || undefined}`, `Single string=${str||undefined}`)
-
   return new Promise((resolve, reject) => {
     if (!strArray && !str) {
       resolve([]);
@@ -48,49 +88,48 @@ function strArrayParser(strArray, str) {
   })
 }
 
+function strArrayRemover(strArray, str) {
+  console.log(`String array: ${strArray}.`, `String: ${str}.`)
+  return new Promise((resolve, reject) => {
+    if (!strArray && !str) {
+      resolve([]);
+    } else if (!str) {
+      resolve(strArray.split(","));
+    } else {
+      const x = strArray.replace(new RegExp(`\,{1}${str}|${str}\,{1}|${str}`), "");
+
+      (!x) ? resolve([]) : resolve(x.split(","));
+    }
+  });
+}
+
 app.post("/submitWord", async (req, res) => {
   const allWords = await strArrayParser(req.body.wordsBundle, req.body.dataWord);
   const allGenres = await strArrayParser(req.body.genresBundle, undefined);
 
-  res.render("index.ejs", {
-    words: allWords,
-    genres: allGenres
-  });
+  res.redirect(`/?words=${allWords.join(",")}&genres=${allGenres.join(",")}`)
 })
 
 app.post("/submitGenre", async (req, res) => {
   const allGenres = await strArrayParser(req.body.genresBundle, req.body.dataGenre);
   const allWords = await strArrayParser(req.body.wordsBundle, undefined);
 
-  res.render("index.ejs", {
-    words: allWords,
-    genres: allGenres
-  });
+  res.redirect(`/?words=${allWords.join(",")}&genres=${allGenres.join(",")}`)
 })
 
-// app.post("/submitGenre", async (req, res) => {
-//   const singleGenre = req.body.dataGenre;
-//   let all
-// })
+app.post("/removeWord", async (req, res) => {
+  const allWords = await strArrayRemover(req.body.wordsBundle, req.body.dataWord)
+  const allGenres = await strArrayRemover(req.body.genresBundle, undefined)
 
-// app.post("/removeWord", (req, res) => {
-//   const clickedWord = req.body.dataWord;
-//   let allWords = req.body.wordsBundle;
-//   let allGenres = req.body.genresBundle;
-//
-//   allWords = allWords.split(",");
-//   allWords.splice(allWords.indexOf(clickedWord), 1);
-//
-//   res.render("index.ejs", {
-//     words: allWords,
-//     genres:
-//   });
-// })
+  res.redirect(`/?words=${allWords.join(",")}&genres=${allGenres.join(",")}`)
+})
 
-// app.post("/submitGenre", (req, res) => {
-//   const singleGenre = req.body.dataGenre;
-//   let allGenres = req.body.genresBundle;
-// })
+app.post("/removeGenre", async (req, res) => {
+  const allGenres = await strArrayRemover(req.body.genresBundle, req.body.dataGenre);
+  const allWords = await strArrayRemover(req.body.wordsBundle, undefined);
+
+  res.redirect(`/?words=${allWords.join(",")}&genres=${allGenres.join(",")}`)
+})
 
 app.post("/results", (req, res) => renderList(res))
 app.get("/results", (req, res) => renderList(res))
