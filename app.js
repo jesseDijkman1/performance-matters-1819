@@ -12,7 +12,6 @@ require('dotenv').config();
 
 const port = 2000;
 
-
 const app = express();
 
 app.set('view engine', 'ejs');
@@ -52,25 +51,6 @@ function checkQueryParams(qParams, validOptions) {
   })
 }
 
-app.get("/", async (req, res) => {
-  const validGenres = ["humor", "sport", "stripverhaal"];
-  let allWords, allGenres;
-
-  try {
-    allWords = await checkQueryParams(req.query.words);
-    allGenres = await checkQueryParams(req.query.genres, validGenres);
-  } catch (err) {
-    // The given query isn't correct, do something
-    return console.log(err)
-  }
-
-
-  res.render("index.ejs", {
-    words: allWords,
-    genres: allGenres
-  });
-})
-
 function strArrayParser(strArray, str) {
   return new Promise((resolve, reject) => {
     if (!strArray && !str) {
@@ -89,7 +69,6 @@ function strArrayParser(strArray, str) {
 }
 
 function strArrayRemover(strArray, str) {
-  console.log(`String array: ${strArray}.`, `String: ${str}.`)
   return new Promise((resolve, reject) => {
     if (!strArray && !str) {
       resolve([]);
@@ -103,32 +82,73 @@ function strArrayRemover(strArray, str) {
   });
 }
 
+function makeQueryParams(params) {
+  let q = [];
+
+  params.forEach(p => {
+    let key = Object.keys(p);
+    let pData = p[key];
+
+    if (pData.length) {
+      q.push(`${key[0]}=${pData.join(",")}`);
+    }
+  })
+
+  if (!q.join("&")) {
+    return ""
+  } else {
+    return `?${q.join("&")}`
+  }
+}
+
+app.get("/", async (req, res) => {
+  const validGenres = ["humor", "sport", "stripverhaal"];
+  let allWords, allGenres;
+
+  try {
+    allWords = await checkQueryParams(req.query.words);
+    allGenres = await checkQueryParams(req.query.genres, validGenres);
+  } catch (err) {
+    // The given query isn't correct, do something
+    return console.log(err)
+  }
+
+  res.render("index.ejs", {
+    words: allWords,
+    genres: [allGenres, validGenres] // Pass in the valid genres so I don't have to write that array twice, once in here and once in the template
+  });
+})
+
 app.post("/submitWord", async (req, res) => {
   const allWords = await strArrayParser(req.body.wordsBundle, req.body.dataWord);
   const allGenres = await strArrayParser(req.body.genresBundle, undefined);
+  const queryParams = makeQueryParams([{words:allWords}, {genres:allGenres}]);
 
-  res.redirect(`/?words=${allWords.join(",")}&genres=${allGenres.join(",")}`)
+  res.redirect(`/${queryParams}`)
 })
 
 app.post("/submitGenre", async (req, res) => {
   const allGenres = await strArrayParser(req.body.genresBundle, req.body.dataGenre);
   const allWords = await strArrayParser(req.body.wordsBundle, undefined);
+  const queryParams = makeQueryParams([{words:allWords}, {genres:allGenres}]);
 
-  res.redirect(`/?words=${allWords.join(",")}&genres=${allGenres.join(",")}`)
+  res.redirect(`/${queryParams}`)
 })
 
 app.post("/removeWord", async (req, res) => {
   const allWords = await strArrayRemover(req.body.wordsBundle, req.body.dataWord)
   const allGenres = await strArrayRemover(req.body.genresBundle, undefined)
+  const queryParams = makeQueryParams([{words:allWords}, {genres:allGenres}]);
 
-  res.redirect(`/?words=${allWords.join(",")}&genres=${allGenres.join(",")}`)
+  res.redirect(`/${queryParams}`)
 })
 
 app.post("/removeGenre", async (req, res) => {
   const allGenres = await strArrayRemover(req.body.genresBundle, req.body.dataGenre);
   const allWords = await strArrayRemover(req.body.wordsBundle, undefined);
+  const queryParams = makeQueryParams([{words:allWords}, {genres:allGenres}]);
 
-  res.redirect(`/?words=${allWords.join(",")}&genres=${allGenres.join(",")}`)
+  res.redirect(`/${queryParams}`)
 })
 
 app.post("/results", (req, res) => renderList(res))

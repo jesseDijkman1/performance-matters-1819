@@ -10,14 +10,14 @@
 
   <form method="POST" action="/submitWord">
     <input name="wordsBundle" type="hidden" value="<%= words %>">
-    <input name="genresBundle" type="hidden" value="<%= genres %>">
+    <input name="genresBundle" type="hidden" value="<%= genres[0] %>">
     <input name="dataWord" type="text">
     <input type="submit" value="add word">
   </form>
 
   <form method="POST" action="/removeWord">
     <input name="wordsBundle" type="hidden" value="<%= words %>">
-    <input name="genresBundle" type="hidden" value="<%= genres %>">
+    <input name="genresBundle" type="hidden" value="<%= genres[0] %>">
 
     <ul>
     <% for (let i = 0; i < words.length; i++) { %>
@@ -26,30 +26,27 @@
     </ul>
   </form>
 
-  <% const allGenres = ["humor", "sport", "stripverhaal"] %>
   <form method="POST" action="/submitGenre">
     <input name="wordsBundle" type="hidden" value="<%= words %>">
-    <input name="genresBundle" type="hidden" value="<%= genres %>">
+    <input name="genresBundle" type="hidden" value="<%= genres[0] %>">
     <h1>Genres</h1>
-    <% allGenres.forEach(g => { %>
-      <% if (!genres.includes(g)) { %>
+    <% genres[1].forEach(g => { %>
+      <% if (!genres[0].includes(g)) { %>
       <input name="dataGenre" type="submit" value="<%= g %>">
       <% } %>
     <% }) %>
   </form>
 
-
   <form method="POST" action="/removeGenre">
     <input name="wordsBundle" type="hidden" value="<%= words %>">
-    <input name="genresBundle" type="hidden" value="<%= genres %>">
+    <input name="genresBundle" type="hidden" value="<%= genres[0] %>">
 
     <ul>
-    <% for (let i = 0; i < genres.length; i++) { %>
-      <li><input name="dataGenre" value="<%= genres[i] %>" type="submit"><%= genres[i] %></li>
+    <% for (let i = 0; i < genres[0].length; i++) { %>
+      <li><input name="dataGenre" value="<%= genres[0][i] %>" type="submit"><%= genres[0][i] %></li>
     <% } %>
     </ul>
   </form>
-
 
   <form method="POST" action="/results">
     <input type="hidden" name="wordsBundle" value="<%= words %>">
