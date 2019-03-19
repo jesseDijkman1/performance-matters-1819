@@ -24,42 +24,78 @@ app.use(bodyParser.urlencoded({
 
 app.get("/", (req, res) => {
   res.render("index.ejs", {
-    words: []
+    words: [],
+    genres: []
   });
 })
 
-app.post("/submitWord", (req, res) => {
-  const singleWord = req.body.dataWord;
-  let allWords = req.body.wordsBundle;
+function strArrayParser(strArray, str) {
+  console.log(`String array=${strArray || undefined}`, `Single string=${str||undefined}`)
 
-  if (!allWords) {
-    allWords = [];
-    if (singleWord) {
-      allWords.push(singleWord)
+  return new Promise((resolve, reject) => {
+    if (!strArray && !str) {
+      resolve([]);
+    } else if (!str) {      // There's a strArray, but no str
+      strArray = strArray.split(",");
+      resolve(strArray);
+    } else if (!strArray) { // There's a str but no strArray
+      resolve([str]);
+    } else {                // Both strArray and str exist
+      strArray += `,${str}`;
+      strArray = strArray.split(",");
+      resolve(strArray);
     }
-  } else {
-    allWords += `,${singleWord}`;
-    allWords = allWords.split(",");
-  }
+  })
+}
+
+app.post("/submitWord", async (req, res) => {
+  const allWords = await strArrayParser(req.body.wordsBundle, req.body.dataWord);
+  const allGenres = await strArrayParser(req.body.genresBundle, undefined);
 
   res.render("index.ejs", {
-    words: allWords
+    words: allWords,
+    genres: allGenres
   });
 })
 
-app.post("/removeWord", (req, res) => {
-  const clickedWord = req.body.dataWord;
-  let allWords = req.body.wordsBundle;
-
-  allWords = allWords.split(",");
-  allWords.splice(allWords.indexOf(clickedWord), 1);
+app.post("/submitGenre", async (req, res) => {
+  const allGenres = await strArrayParser(req.body.genresBundle, req.body.dataGenre);
+  const allWords = await strArrayParser(req.body.wordsBundle, undefined);
 
   res.render("index.ejs", {
-    words: allWords
+    words: allWords,
+    genres: allGenres
   });
 })
 
-app.post("/getResults", (req, res) => {
+// app.post("/submitGenre", async (req, res) => {
+//   const singleGenre = req.body.dataGenre;
+//   let all
+// })
+
+// app.post("/removeWord", (req, res) => {
+//   const clickedWord = req.body.dataWord;
+//   let allWords = req.body.wordsBundle;
+//   let allGenres = req.body.genresBundle;
+//
+//   allWords = allWords.split(",");
+//   allWords.splice(allWords.indexOf(clickedWord), 1);
+//
+//   res.render("index.ejs", {
+//     words: allWords,
+//     genres:
+//   });
+// })
+
+// app.post("/submitGenre", (req, res) => {
+//   const singleGenre = req.body.dataGenre;
+//   let allGenres = req.body.genresBundle;
+// })
+
+app.post("/results", (req, res) => renderList(res))
+app.get("/results", (req, res) => renderList(res))
+
+function renderList(res) {
   fs.readFile("public/data/temp.json", (err, data) => {
     let parsedData = JSON.parse(data);
 
@@ -72,6 +108,5 @@ app.post("/getResults", (req, res) => {
       }
     });
   })
-})
-
+}
 app.listen(port, () => console.log(`Listening to port: ${port}!`))
