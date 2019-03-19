@@ -1,10 +1,24 @@
 {
   "aquabrowser": {
-    "meta": {
-      "count": 116855,
-      "page": 1,
-      "totalPages": 5843
+    "$": {
+      "version": "1",
+      "time-taken": "312"
     },
+    "meta": [{
+      "count": "116850",
+      "page": ["1"],
+      "rctx": "AWNkYOZmYGcwTMlLKsworUorKEzPTk8rzCtKSU5MNc2sYmZk4MxNzMxjYGZgTmROZGSWzowvSk0uLkgtKkhMT2U1MmBiWOdyzfiaMdOyxYyMGlckGRkY2POTEhkYGBT1i@LzS@RzMgtLM1P0gWKcpcWpRQyseTmMAA==",
+      "totalPages": 5843
+    }],
+    "feedbacks": [{
+      "service": [{
+        "$": {
+          "name": "wikipedia-query",
+          "type": "jscallback",
+          "url": "https://nl.wikipedia.org/w/api.php?titles=a&action=query&prop=pageprops|info|extracts|links|pageimages&redirects&format=json&continue&inprop=url"
+        }
+      }]
+    }],
     "results": [{
       "result": [{
         "id": [{
@@ -27,7 +41,7 @@
             "search-type": "searcher"
           }
         }],
-        "detail-page": ["http://zoeken.oba.nl/detail/A-P-Grashuis/Leven-en-werken-van-A-W-Groote-ontwerper/Boek/?itemid=%7coba-catalogus%7c57086"],
+        "detail-page": "http://zoeken.oba.nl/detail/A-P-Grashuis/Leven-en-werken-van-A-W-Groote-ontwerper/Boek/?itemid=%7coba-catalogus%7c57086",
         "coverimages": [{
           "coverimage": [{
             "_": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=036944106&isbn=&lid=&aut=&ti=&size=70",
@@ -235,7 +249,7 @@
             "search-type": "searcher"
           }
         }],
-        "detail-page": ["http://zoeken.oba.nl/detail/A-A-Milne/Winnie-de-Poeh/Boek/?itemid=%7coba-catalogus%7c1180654"],
+        "detail-page": "http://zoeken.oba.nl/detail/A-A-Milne/Winnie-de-Poeh/Boek/?itemid=%7coba-catalogus%7c1180654",
         "coverimages": [{
           "coverimage": [{
             "_": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=410840696&isbn=9789000358960&lid=&aut=&ti=&size=70",
@@ -446,7 +460,7 @@
           "format": [{
             "$": {
               "text": "book",
-              "icon": "/assets/resources/img/mat/book.png?skin=oba&bld=20190314.232823",
+              "icon": "/assets/resources/img/mat/book.png?skin=oba&bld=20190318.232849",
               "translation": "Formaat"
             },
             "item": [{
@@ -545,7 +559,7 @@
             "search-type": "searcher"
           }
         }],
-        "detail-page": ["http://zoeken.oba.nl/detail/A-A-Milne/Het-huis-in-het-Poeh-hoekje/Boek/?itemid=%7coba-catalogus%7c656435"],
+        "detail-page": "http://zoeken.oba.nl/detail/A-A-Milne/Het-huis-in-het-Poeh-hoekje/Boek/?itemid=%7coba-catalogus%7c656435",
         "coverimages": [{
           "coverimage": [{
             "_": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=300603436&isbn=9789000037698&lid=&aut=&ti=&size=70",
@@ -731,7 +745,7 @@
           "format": [{
             "$": {
               "text": "book",
-              "icon": "/assets/resources/img/mat/book.png?skin=oba&bld=20190314.232823",
+              "icon": "/assets/resources/img/mat/book.png?skin=oba&bld=20190318.232849",
               "translation": "Formaat"
             },
             "item": [{
@@ -794,7 +808,7 @@
             "search-type": "searcher"
           }
         }],
-        "detail-page": ["http://zoeken.oba.nl/detail/A-A-Weijnen/Algemene-en-vergelijkende-dialectologie/Boek/?itemid=%7coba-catalogus%7c456303"],
+        "detail-page": "http://zoeken.oba.nl/detail/A-A-Weijnen/Algemene-en-vergelijkende-dialectologie/Boek/?itemid=%7coba-catalogus%7c456303",
         "coverimages": [{
           "coverimage": [{
             "_": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=782689930&isbn=9789030211044&lid=&aut=&ti=&size=70",
@@ -1024,7 +1038,7 @@
             "search-type": "searcher"
           }
         }],
-        "detail-page": ["http://zoeken.oba.nl/detail/A/Gods-lof-uit-een-kindermond-eene-ware/Boek/?itemid=%7coba-catalogus%7c152860"],
+        "detail-page": "http://zoeken.oba.nl/detail/A/Gods-lof-uit-een-kindermond-eene-ware/Boek/?itemid=%7coba-catalogus%7c152860",
         "coverimages": [{
           "coverimage": [{
             "_": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=190963328&isbn=&lid=&aut=&ti=&size=70",
@@ -1200,7 +1214,7 @@
             "search-type": "searcher"
           }
         }],
-        "detail-page": ["http://zoeken.oba.nl/detail/Wybrand-Scheffer/De-heerlijke-wereld-van-Winnie-de-Poeh/Boek/?itemid=%7coba-catalogus%7c883394"],
+        "detail-page": "http://zoeken.oba.nl/detail/Wybrand-Scheffer/De-heerlijke-wereld-van-Winnie-de-Poeh/Boek/?itemid=%7coba-catalogus%7c883394",
         "coverimages": [{
           "coverimage": [{
             "_": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=314680101&isbn=9789047506096&lid=&aut=&ti=&size=70",
@@ -1446,7 +1460,7 @@
             "search-type": "searcher"
           }
         }],
-        "detail-page": ["http://zoeken.oba.nl/detail/J-J-A-M-Sprangers/Kunst-voor-de-ziel-sporen-van-individuen-en/Boek/?itemid=%7coba-catalogus%7c284058"],
+        "detail-page": "http://zoeken.oba.nl/detail/J-J-A-M-Sprangers/Kunst-voor-de-ziel-sporen-van-individuen-en/Boek/?itemid=%7coba-catalogus%7c284058",
         "coverimages": [{
           "coverimage": [{
             "_": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=089482859&isbn=9789025724443&lid=&aut=&ti=&size=70",
@@ -1710,7 +1724,7 @@
             "search-type": "searcher"
           }
         }],
-        "detail-page": ["http://zoeken.oba.nl/detail/A-A-de-Vries/Mazzel-hoe-een-joodse-jongen-de-oorlog-door/Boek/?itemid=%7coba-catalogus%7c438281"],
+        "detail-page": "http://zoeken.oba.nl/detail/A-A-de-Vries/Mazzel-hoe-een-joodse-jongen-de-oorlog-door/Boek/?itemid=%7coba-catalogus%7c438281",
         "coverimages": [{
           "coverimage": [{
             "_": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=078335671&isbn=9789062222063&lid=&aut=&ti=&size=70",
@@ -1927,7 +1941,7 @@
             "search-type": "searcher"
           }
         }],
-        "detail-page": ["http://zoeken.oba.nl/detail/G-A-Bredero/G-A-Bredero%27s-Boertigh-amoreus-en/Boek/?itemid=%7coba-catalogus%7c261941"],
+        "detail-page": "http://zoeken.oba.nl/detail/G-A-Bredero/G-A-Bredero%27s-Boertigh-amoreus-en/Boek/?itemid=%7coba-catalogus%7c261941",
         "coverimages": [{
           "coverimage": [{
             "_": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=782104770&isbn=9789011910751&lid=&aut=&ti=&size=70",
@@ -2135,7 +2149,7 @@
           "format": [{
             "$": {
               "text": "book",
-              "icon": "/assets/resources/img/mat/book.png?skin=oba&bld=20190314.232823",
+              "icon": "/assets/resources/img/mat/book.png?skin=oba&bld=20190318.232849",
               "translation": "Formaat"
             },
             "item": [{
@@ -2180,7 +2194,7 @@
             "search-type": "searcher"
           }
         }],
-        "detail-page": ["http://zoeken.oba.nl/detail/A-A-Gromyko/Vrede-voor-deze-en-komende-generaties/Boek/?itemid=%7coba-catalogus%7c138795"],
+        "detail-page": "http://zoeken.oba.nl/detail/A-A-Gromyko/Vrede-voor-deze-en-komende-generaties/Boek/?itemid=%7coba-catalogus%7c138795",
         "coverimages": [{
           "coverimage": [{
             "_": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=843401303&isbn=9789062651795&lid=&aut=&ti=&size=70",
@@ -2437,7 +2451,7 @@
             "search-type": "searcher"
           }
         }],
-        "detail-page": ["http://zoeken.oba.nl/detail/J-B-Bedaux/Annus-quadriga-mundi-opstellen-over/Boek/?itemid=%7coba-catalogus%7c212467"],
+        "detail-page": "http://zoeken.oba.nl/detail/J-B-Bedaux/Annus-quadriga-mundi-opstellen-over/Boek/?itemid=%7coba-catalogus%7c212467",
         "coverimages": [{
           "coverimage": [{
             "_": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=057945748&isbn=9789060116609&lid=&aut=&ti=&size=70",
@@ -2681,7 +2695,7 @@
             "search-type": "searcher"
           }
         }],
-        "detail-page": ["http://zoeken.oba.nl/detail/S-A-Lapre/Het-Andjing-Nica-Bataljon-(KNIL)-in-Nederlands/Boek/?itemid=%7coba-catalogus%7c368626"],
+        "detail-page": "http://zoeken.oba.nl/detail/S-A-Lapre/Het-Andjing-Nica-Bataljon-(KNIL)-in-Nederlands/Boek/?itemid=%7coba-catalogus%7c368626",
         "coverimages": [{
           "coverimage": [{
             "_": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=044096305&isbn=9789094009229&lid=&aut=&ti=&size=70",
@@ -2925,7 +2939,7 @@
             "search-type": "searcher"
           }
         }],
-        "detail-page": ["http://zoeken.oba.nl/detail/H-A-Lorentz/Zwarte-mensen-witte-bergen-verhaal-van-een/Bladmuziek/?itemid=%7coba-catalogus%7c414820"],
+        "detail-page": "http://zoeken.oba.nl/detail/H-A-Lorentz/Zwarte-mensen-witte-bergen-verhaal-van-een/Bladmuziek/?itemid=%7coba-catalogus%7c414820",
         "coverimages": [{
           "coverimage": [{
             "_": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=272753440&isbn=9789045005089&lid=&aut=&ti=&size=70",
@@ -3183,7 +3197,7 @@
             "search-type": "searcher"
           }
         }],
-        "detail-page": ["http://zoeken.oba.nl/detail/A-F-Manning/Mensen-en-situaties-scenes-uit-het-katholiek/Boek/?itemid=%7coba-catalogus%7c440056"],
+        "detail-page": "http://zoeken.oba.nl/detail/A-F-Manning/Mensen-en-situaties-scenes-uit-het-katholiek/Boek/?itemid=%7coba-catalogus%7c440056",
         "coverimages": [{
           "coverimage": [{
             "_": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=061177741&isbn=9789051580358&lid=&aut=&ti=&size=70",
@@ -3436,7 +3450,7 @@
             "search-type": "searcher"
           }
         }],
-        "detail-page": ["http://zoeken.oba.nl/detail/A-A-Ivanov/Art-of-Kubachi/Boek/?itemid=%7coba-catalogus%7c239147"],
+        "detail-page": "http://zoeken.oba.nl/detail/A-A-Ivanov/Art-of-Kubachi/Boek/?itemid=%7coba-catalogus%7c239147",
         "coverimages": [{
           "coverimage": [{
             "_": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=113180071&isbn=&lid=&aut=&ti=&size=70",
@@ -3600,7 +3614,7 @@
             "search-type": "searcher"
           }
         }],
-        "detail-page": ["http://zoeken.oba.nl/detail/Charles-Dickens/David-Copperfield/Boek/?itemid=%7coba-catalogus%7c423690"],
+        "detail-page": "http://zoeken.oba.nl/detail/Charles-Dickens/David-Copperfield/Boek/?itemid=%7coba-catalogus%7c423690",
         "coverimages": [{
           "coverimage": [{
             "_": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=851763308&isbn=&lid=&aut=&ti=&size=70",
@@ -3786,7 +3800,7 @@
             "search-type": "searcher"
           }
         }],
-        "detail-page": ["http://zoeken.oba.nl/detail/Arjan-van-de-Pijpekamp/A-Eibink-(1893-1975)-J-A-Snellebrand-(1891/Boek/?itemid=%7coba-catalogus%7c559484"],
+        "detail-page": "http://zoeken.oba.nl/detail/Arjan-van-de-Pijpekamp/A-Eibink-(1893-1975)-J-A-Snellebrand-(1891/Boek/?itemid=%7coba-catalogus%7c559484",
         "coverimages": [{
           "coverimage": [{
             "_": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=243093128&isbn=9789076643168&lid=&aut=&ti=&size=70",
@@ -4065,7 +4079,7 @@
             "search-type": "searcher"
           }
         }],
-        "detail-page": ["http://zoeken.oba.nl/detail/G-A-Bredero/Groot-lied-boek-van-G-A-Brederode-naar-de/Boek/?itemid=%7coba-catalogus%7c262093"],
+        "detail-page": "http://zoeken.oba.nl/detail/G-A-Bredero/Groot-lied-boek-van-G-A-Brederode-naar-de/Boek/?itemid=%7coba-catalogus%7c262093",
         "coverimages": [{
           "coverimage": [{
             "_": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=831839384&isbn=&lid=&aut=&ti=&size=70",
@@ -4271,7 +4285,7 @@
             "search-type": "searcher"
           }
         }],
-        "detail-page": ["http://zoeken.oba.nl/detail/A-Vreeken/Mearten-van-den-visscher/Boek/?itemid=%7coba-catalogus%7c436002"],
+        "detail-page": "http://zoeken.oba.nl/detail/A-Vreeken/Mearten-van-den-visscher/Boek/?itemid=%7coba-catalogus%7c436002",
         "coverimages": [{
           "coverimage": [{
             "_": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=066433444&isbn=&lid=&aut=&ti=&size=70",
@@ -4436,7 +4450,7 @@
             "search-type": "searcher"
           }
         }],
-        "detail-page": ["http://zoeken.oba.nl/detail/G-A-Wumkes/Het-Friese-Reveil-in-portretten/Boek/?itemid=%7coba-catalogus%7c504866"],
+        "detail-page": "http://zoeken.oba.nl/detail/G-A-Wumkes/Het-Friese-Reveil-in-portretten/Boek/?itemid=%7coba-catalogus%7c504866",
         "coverimages": [{
           "coverimage": [{
             "_": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=115227997&isbn=9789061403562&lid=&aut=&ti=&size=70",
@@ -4672,6 +4686,319 @@
             "translation": "Informatie over dubbele items"
           }
         }]
+      }]
+    }],
+    "facets": [{
+      "facet": [{
+        "$": {
+          "id": "Activiteiten"
+        },
+        "value": [{
+          "$": {
+            "count": "8",
+            "id": "b_thisweek"
+          }
+        }, {
+          "$": {
+            "count": "9",
+            "id": "c_nextweek"
+          }
+        }, {
+          "$": {
+            "count": "18",
+            "id": "d_thismonth"
+          }
+        }, {
+          "$": {
+            "count": "40",
+            "id": "e_nextmonth"
+          }
+        }, {
+          "$": {
+            "count": "33",
+            "id": "f_next3month"
+          }
+        }, {
+          "$": {
+            "count": "98",
+            "id": "g_thisyear"
+          }
+        }]
+      }, {
+        "$": {
+          "id": "cursussen"
+        },
+        "value": [{
+          "$": {
+            "count": "26",
+            "id": "talen"
+          }
+        }, {
+          "$": {
+            "count": "3",
+            "id": "cultuur"
+          }
+        }, {
+          "$": {
+            "count": "2",
+            "id": "creatief"
+          }
+        }, {
+          "$": {
+            "count": "2",
+            "id": "maatschapppij"
+          }
+        }, {
+          "$": {
+            "count": "1",
+            "id": "dutch"
+          }
+        }]
+      }, {
+        "$": {
+          "id": "Type"
+        },
+        "value": [{
+          "$": {
+            "count": "12629",
+            "id": "sheetmusic"
+          }
+        }, {
+          "$": {
+            "count": "66817",
+            "id": "book"
+          }
+        }, {
+          "$": {
+            "count": "5935",
+            "id": "dvdvideo"
+          }
+        }, {
+          "$": {
+            "count": "7792",
+            "id": "movie"
+          }
+        }]
+      }, {
+        "$": {
+          "id": "Doelgroep"
+        },
+        "value": [{
+          "$": {
+            "count": "12462",
+            "id": "ageYouth"
+          }
+        }, {
+          "$": {
+            "count": "1326",
+            "id": "ageAdults"
+          }
+        }, {
+          "$": {
+            "count": "82",
+            "id": "ageYoungAdults"
+          }
+        }]
+      }, {
+        "$": {
+          "id": "Auteur"
+        },
+        "value": [{
+          "$": {
+            "count": "1176",
+            "id": "A. Jager"
+          }
+        }, {
+          "$": {
+            "count": "584",
+            "id": "A.T. Rooswinkel"
+          }
+        }, {
+          "$": {
+            "count": "541",
+            "id": "G.A. van Arkel"
+          }
+        }, {
+          "$": {
+            "count": "400",
+            "id": "A.L. van Gendt"
+          }
+        }, {
+          "$": {
+            "count": "358",
+            "id": "J.A. Overbeek"
+          }
+        }]
+      }, {
+        "$": {
+          "id": "Genre"
+        },
+        "value": [{
+          "$": {
+            "count": "1458",
+            "id": "detective"
+          }
+        }, {
+          "$": {
+            "count": "1191",
+            "id": "psychologisch-verhaal"
+          }
+        }, {
+          "$": {
+            "count": "1214",
+            "id": "sprookjes"
+          }
+        }, {
+          "$": {
+            "count": "1255",
+            "id": "thriller"
+          }
+        }]
+      }, {
+        "$": {
+          "id": "Topic"
+        },
+        "value": [{
+          "$": {
+            "count": "2798",
+            "id": "Geschiedenis"
+          }
+        }, {
+          "$": {
+            "count": "1615",
+            "id": "Nederland"
+          }
+        }, {
+          "$": {
+            "count": "1386",
+            "id": "Meespeelmuziek"
+          }
+        }, {
+          "$": {
+            "count": "1032",
+            "id": "Biografieën"
+          }
+        }, {
+          "$": {
+            "count": "950",
+            "id": "Vriendschap"
+          }
+        }]
+      }, {
+        "$": {
+          "id": "Language"
+        },
+        "value": [{
+          "$": {
+            "count": "52452",
+            "id": "dut"
+          }
+        }, {
+          "$": {
+            "count": "36521",
+            "id": "eng"
+          }
+        }, {
+          "$": {
+            "count": "3426",
+            "id": "fre"
+          }
+        }, {
+          "$": {
+            "count": "2496",
+            "id": "ger"
+          }
+        }, {
+          "$": {
+            "count": "1163",
+            "id": "ara"
+          }
+        }]
+      }, {
+        "$": {
+          "id": "pubYear"
+        },
+        "value": [{
+          "$": {
+            "count": "2949",
+            "id": "2012"
+          }
+        }, {
+          "$": {
+            "count": "2936",
+            "id": "2011"
+          }
+        }, {
+          "$": {
+            "count": "3118",
+            "id": "2010"
+          }
+        }, {
+          "$": {
+            "count": "3211",
+            "id": "2009"
+          }
+        }, {
+          "$": {
+            "count": "3087",
+            "id": "2008"
+          }
+        }]
+      }, {
+        "$": {
+          "id": "pubYearRange"
+        },
+        "value": [{
+          "$": {
+            "count": "22526",
+            "id": "1_2010"
+          }
+        }, {
+          "$": {
+            "count": "20560",
+            "id": "2_2000"
+          }
+        }, {
+          "$": {
+            "count": "12070",
+            "id": "3_1990"
+          }
+        }, {
+          "$": {
+            "count": "9133",
+            "id": "4_1980"
+          }
+        }, {
+          "$": {
+            "count": "6065",
+            "id": "5_1970"
+          }
+        }, {
+          "$": {
+            "count": "24976",
+            "id": "5_OlderThan50"
+          }
+        }]
+      }]
+    }],
+    "sort": [{
+      "option": [{
+        "$": {
+          "id": "relevance",
+          "active": "true"
+        }
+      }, {
+        "$": {
+          "id": "year"
+        }
+      }, {
+        "$": {
+          "id": "title"
+        }
+      }, {
+        "$": {
+          "id": "author"
+        }
       }]
     }]
   }

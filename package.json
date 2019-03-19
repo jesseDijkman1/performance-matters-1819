@@ -23,7 +23,6 @@
     "ejs": "^2.6.1",
     "express": "^4.16.4",
     "node-localstorage": "^1.3.1",
-    "oba-wrapper": "github:maanlamp/oba-wrapper",
     "request": "^2.88.0",
     "xml2js": "^0.4.19"
   }
