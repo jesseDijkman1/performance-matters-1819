@@ -7,12 +7,24 @@
   <title>Detail</title>
 </head>
 <body>
-  <img src=<%= coverimages[0].coverimage[1]._ %>>
+  <img src=<%= coverimages.coverimage[1]._ %>>
   <ul>
-    <li><%= titles[0]["short-title"][0]._ %></li>
-    <li><%= authors[0]["main-author"][0]._ %></li>
-    <li><%= formats[0].format[0]._ %></li>
+    <li><%= (!titles) ? "Geen titel" : titles["short-title"]._ %></li>
+    <li><%= (!authors) ? "Geen auteurs" : authors["main-author"]._ %></li>
+    <li><%= (!formats) ? "Geen formaten" : formats.format._ %></li>
+    <li><%= (!publication) ? "Geen publicatie datum" : publication.year._ %></li>
   </ul>
-  <p><%= summaries[0].summary[0]._ %></p>
+  <ul>
+    <% if (subjects) { %>
+      <% if (!subjects["topical-subject"].length) { %>
+        <li><%= subjects["topical-subject"]._ %></li>
+      <% } else { %>
+        <% subjects["topical-subject"].forEach(subj => { %>
+          <li><%= subj._ %></li>
+        <% }) %>
+      <% } %>
+    <% } %>
+  </ul>
+  <p><%= (!summaries) ? "Geen samenvatting" : summaries.summary._ %></p>
 </body>
 </html>

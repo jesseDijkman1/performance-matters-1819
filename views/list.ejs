@@ -13,9 +13,9 @@
   <% } %>
   <% results.forEach(d => { %>
     <ul>
-      <li><%= d.titles[0]["short-title"][0]._ %></li>
-      <li><%= d.authors[0]["main-author"][0]._ %></li>
-      <li><a class="detail-link" href="/detail/<%= d.id[0].$.nativeid %>">Lees meer <span class="hiddenAlt">over <%= d.titles[0]["short-title"][0]._ %></span></a></li>
+      <li><%= d.titles["short-title"]._ %></li>
+      <li><%= d.authors["main-author"]._ %></li>
+      <li><a class="detail-link" href="/detail/<%= d.id.$.nativeid %>">Lees meer <span class="hiddenAlt">over <%= d.titles["short-title"]._ %></span></a></li>
     </ul>
   <% }) %>
 </body>

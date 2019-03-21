@@ -109,7 +109,7 @@ app.get("/", (req, res) => {
 })
 
 app.get("/search", async (req, res) => {
-  const validGenres = ["humor", "sport", "stripverhaal"];
+  const validGenres = ["humor", "sport", "stripverhaal", "sprookjes", "school"];
   let allWords, allGenres;
 
   try {
@@ -132,7 +132,7 @@ app.post("/submitWord", async (req, res) => {
   const allGenres = await strArrayParser(req.body.genresBundle, undefined);
   const queryParams = makeQueryParams([{words:allWords}, {genres:allGenres}]);
 
-  res.redirect(`/${queryParams}`)
+  res.redirect(`/search${queryParams}`)
 })
 
 app.post("/submitGenre", async (req, res) => {
@@ -140,7 +140,7 @@ app.post("/submitGenre", async (req, res) => {
   const allWords = await strArrayParser(req.body.wordsBundle, undefined);
   const queryParams = makeQueryParams([{words:allWords}, {genres:allGenres}]);
 
-  res.redirect(`/${queryParams}`)
+  res.redirect(`/search${queryParams}`)
 })
 
 app.post("/removeWord", async (req, res) => {
@@ -148,7 +148,7 @@ app.post("/removeWord", async (req, res) => {
   const allGenres = await strArrayRemover(req.body.genresBundle, undefined)
   const queryParams = makeQueryParams([{words:allWords}, {genres:allGenres}]);
 
-  res.redirect(`/${queryParams}`)
+  res.redirect(`/search${queryParams}`)
 })
 
 app.post("/removeGenre", async (req, res) => {
@@ -156,22 +156,23 @@ app.post("/removeGenre", async (req, res) => {
   const allWords = await strArrayRemover(req.body.wordsBundle, undefined);
   const queryParams = makeQueryParams([{words:allWords}, {genres:allGenres}]);
 
-  res.redirect(`/${queryParams}`)
+  res.redirect(`/search${queryParams}`)
 })
 
 
 
 app.get("/results", (req, res) => {
-  fs.readFile("public/data/temp.json", (err, data) => {
-    let parsedData = JSON.parse(data);
+  fs.readFile("public/data/better.json", (err, data) => {
 
+    let parsedData = JSON.parse(data);
+    console.log(parsedData)
     // storage = parsedData.aquabrowser.results[0].result;
 
-    parsedData.aquabrowser.meta[0].totalPages = Math.ceil(parsedData.aquabrowser.meta[0].count / 20);
+    parsedData.aquabrowser.meta.totalPages = Math.ceil(parsedData.aquabrowser.meta.count / 20);
 
     res.render("list.ejs", {
-      meta: parsedData.aquabrowser.meta[0],
-      results: parsedData.aquabrowser.results[0].result,
+      meta: parsedData.aquabrowser.meta,
+      results: parsedData.aquabrowser.results.result,
       filters: req.query
     });
   })
@@ -182,7 +183,7 @@ function findObject(data, _id) {
     const idRx = /(?<=\|)\d+/;
 
     data.find(obj => {
-      const id = idRx.exec(obj.id[0]._)[0];
+      const id = idRx.exec(obj.id._)[0];
 
       if (id == _id) {
         resolve(obj)
@@ -191,34 +192,63 @@ function findObject(data, _id) {
   })
 }
 
+// function fillInTheBlanks(data) {
+//   const template = {
+//     id: undefined,
+//     coverimages: undefined,
+//     titles: undefined,
+//     authors: undefined,
+//     formats: undefined,
+//     summaries: undefined,
+//     description: undefined
+//   }
+//
+//   return new Promise((resolve, reject) => {
+//     console.log(data)
+//     for (let k in data) {
+//
+//       console.log(k, data[k].length)
+//     }
+//   })
+// }
+
 function fillInTheBlanks(data) {
-  const template = {
-    id: undefined,
-    coverimages: undefined,
-    titles: undefined,
-    authors: undefined,
-    formats: undefined,
-    summaries: undefined,
-    description: undefined
-  }
-
-  return new Promise((resolve, reject) => {
-    console.log(data)
-    for (let k in data) {
-
-      console.log(k, data[k].length)
+  let keyStorage = [];
+  data.forEach(d => {
+    for (let key in d) {
+      keyStorage.push(key)
     }
   })
+
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set
+// Unique keys used for every object in result
+const distinctKeys = [...new Set(keyStorage)];
+
+data.forEach(d => {
+  const objKeys = Object.keys(d);
+
+  distinctKeys.forEach(dk => {
+    if (!objKeys.includes(dk)) {
+      d[dk] = undefined;
+    }
+  })
+})
+
+return data
 }
 
 app.get("/detail/:id", (req, res) => {
 
-  fs.readFile("public/data/temp.json", (err, data) => {
+  fs.readFile("public/data/better.json", async (err, data) => {
     const id = req.params.id;
-    const parsedData = JSON.parse(data).aquabrowser.results[0].result;
-    const detailData = findObject(parsedData, id).then(fillInTheBlanks);
-    // console.log()
-    // res.render("detail.ejs", detailData)
+    const parsedData = JSON.parse(data).aquabrowser.results.result;
+    const completeData = fillInTheBlanks(parsedData);
+
+    const detailData = await findObject(completeData, id)
+    console.log(detailData)
+    res.render("detail.ejs", detailData)
+
+
   })
 
 
