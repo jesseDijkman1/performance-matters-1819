@@ -1,0 +1,5005 @@
+{
+  "aquabrowser": {
+    "$": {
+      "version": "1",
+      "time-taken": "312"
+    },
+    "meta": {
+      "count": "116850",
+      "page": "1",
+      "rctx": "AWNkYOZmYGcwTMlLKsworUorKEzPTk8rzCtKSU5MNc2sYmZk4MxNzMxjYGZgTmROZGSWzowvSk0uLkgtKkhMT2U1MmBiWOdyzfiaMdOyxYyMGlckGRkY2POTEhkYGBT1i@LzS@RzMgtLM1P0gWKcpcWpRQyseTmMAA==",
+      "totalPages": 5843
+    },
+    "feedbacks": {
+      "service": {
+        "$": {
+          "name": "wikipedia-query",
+          "type": "jscallback",
+          "url": "https://nl.wikipedia.org/w/api.php?titles=a&action=query&prop=pageprops|info|extracts|links|pageimages&redirects&format=json&continue&inprop=url"
+        }
+      }
+    },
+    "results": {
+      "result": [{
+        "id": {
+          "_": "|oba-catalogus|57086",
+          "$": {
+            "nativeid": "57086",
+            "ds": "library/v/OBA",
+            "translation": "ID",
+            "search-method": "id",
+            "search-term": "|oba-catalogus|57086",
+            "search-type": "precise"
+          }
+        },
+        "frabl": {
+          "_": "AACC1C6A3F360A0",
+          "$": {
+            "translation": "FRBR Nummer (FRABL)",
+            "search-method": "frabl",
+            "search-term": "AACC1C6A3F360A0",
+            "search-type": "searcher"
+          }
+        },
+        "detail-page": "http://zoeken.oba.nl/detail/A-P-Grashuis/Leven-en-werken-van-A-W-Groote-ontwerper/Boek/?itemid=%7coba-catalogus%7c57086",
+        "coverimages": {
+          "coverimage": [{
+            "_": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=036944106&isbn=&lid=&aut=&ti=&size=70",
+            "$": {
+              "translation": "Cover"
+            }
+          }, {
+            "_": "https://v19.nbc.bibliotheek.nl/thumbnail?uri=http://data.bibliotheek.nl/ggc/ppn/036944106&token=c1322402",
+            "$": {
+              "translation": "Cover"
+            }
+          }]
+        },
+        "titles": {
+          "title": {
+            "_": "Leven en werken van A.W. Groote : ontwerper van het Nederlands alfabetisch kortschrift : ter gelegenheid van zijn 80ste verjaardag, 30 december 1939 / [A.P. Grashuis ... et al. ; voorw. A. Smit]",
+            "$": {
+              "translation": "Titel",
+              "search-method": "title",
+              "search-term": "Leven en werken van A.W. Groote : ontwerper van het Nederlands alfabetisch kortschrift : ter gelegenheid van zijn 80ste verjaardag, 30 december 1939 / [A.P. Grashuis ... et al. ; voorw. A. Smit]",
+              "search-type": "fuzzy"
+            }
+          },
+          "short-title": {
+            "_": "Leven en werken van A.W. Groote : ontwerper van het Nederlands alfabetisch kortschrift : ter gelegenheid van zijn 80ste verjaardag, 30 december 1939",
+            "$": {
+              "translation": "Korte titel"
+            }
+          },
+          "subtitle": {
+            "_": "ontwerper van het Nederlands alfabetisch kortschrift : ter gelegenheid van zijn 80ste verjaardag, 30 december 1939",
+            "$": {
+              "translation": "Sub titel"
+            }
+          }
+        },
+        "authors": {
+          "main-author": {
+            "_": "A.P. Grashuis",
+            "$": {
+              "search-method": "author",
+              "search-term": "A.P. Grashuis",
+              "search-type": "searcher",
+              "translation": "Auteur (hoofd)",
+              "creatortype": "organization",
+              "main": "true"
+            }
+          },
+          "author": [{
+            "_": "A.W. Groote",
+            "$": {
+              "search-method": "author",
+              "search-term": "A.W. Groote",
+              "search-type": "searcher",
+              "translation": "Auteur",
+              "creatortype": "organization"
+            }
+          }, {
+            "_": "A. Smit",
+            "$": {
+              "search-method": "author",
+              "search-term": "A. Smit",
+              "search-type": "searcher",
+              "translation": "Auteur",
+              "creatortype": "organization"
+            }
+          }]
+        },
+        "formats": {
+          "format": {
+            "_": "book",
+            "$": {
+              "translation": "Formaat",
+              "search-method": "format",
+              "search-term": "book",
+              "search-type": "searcher"
+            }
+          }
+        },
+        "identifiers": {
+          "ppn-id": {
+            "_": "036944106",
+            "$": {
+              "search-method": "ppn",
+              "search-term": "036944106",
+              "search-type": "precise",
+              "translation": "PICA productienummer"
+            }
+          }
+        },
+        "publication": {
+          "year": {
+            "_": "1939",
+            "$": {
+              "translation": "Publicatiejaar",
+              "search-method": "year",
+              "search-term": "1939",
+              "search-type": "searcher"
+            }
+          },
+          "publishers": {
+            "publisher": {
+              "_": "Federatie voor stenografie \"Groote\"",
+              "$": {
+                "translation": "Uitgever",
+                "search-method": "publisher",
+                "search-term": "Federatie voor stenografie \"Groote\"",
+                "search-type": "searcher",
+                "year": "[1939]",
+                "place": "Amsterdam [etc.]"
+              }
+            }
+          }
+        },
+        "classification": {
+          "$": {
+            "translation": "Plaatsingssuggestie"
+          },
+          "siso-code": {
+            "_": "368.4",
+            "$": {
+              "translation": "SISO",
+              "search-method": "siso",
+              "search-term": "368.4",
+              "search-type": "precise"
+            }
+          }
+        },
+        "languages": {
+          "language": {
+            "_": "dut",
+            "$": {
+              "translation": "Taal",
+              "search-method": "language",
+              "search-term": "dut",
+              "search-type": "searcher"
+            }
+          }
+        },
+        "subjects": {
+          "topical-subject": [{
+            "_": "Biografieën",
+            "$": {
+              "translation": "Onderwerp",
+              "search-method": "subject",
+              "search-term": "Biografieën",
+              "search-type": "fuzzy"
+            }
+          }, {
+            "_": "Groote, A.W",
+            "$": {
+              "translation": "Onderwerp",
+              "search-method": "subject",
+              "search-term": "Groote, A.W",
+              "search-type": "fuzzy"
+            }
+          }]
+        },
+        "description": {
+          "physical-description": {
+            "_": "72, [96] p: ill ; 27 cm",
+            "$": {
+              "translation": "Kenmerken"
+            }
+          }
+        },
+        "notes": {
+          "note": {
+            "_": "Met bibliogr. van A.W. Groote",
+            "$": {
+              "translation": "Aantekening"
+            }
+          }
+        },
+        "undup-info": {
+          "$": {
+            "key": "|oba-catalogus|57086",
+            "cnt": "0",
+            "sort": "year",
+            "frabl": "AACC1C6A3F360A0",
+            "frabl-global-count": "1",
+            "frabl-key1": "leven en werken van a w groote ontwerper van het nederlands alfabetisch kortschrift ter gelegenheid van zijn 80ste verjaardag 30 december 1939",
+            "frabl-key2": "apgrashuis awgroote asmit",
+            "translation": "Informatie over dubbele items"
+          }
+        }
+      }, {
+        "id": {
+          "_": "|oba-catalogus|1180654",
+          "$": {
+            "nativeid": "1180654",
+            "ds": "library/v/OBA",
+            "translation": "ID",
+            "search-method": "id",
+            "search-term": "|oba-catalogus|1180654",
+            "search-type": "precise"
+          }
+        },
+        "frabl": {
+          "_": "1526D327E9F360A0",
+          "$": {
+            "translation": "FRBR Nummer (FRABL)",
+            "search-method": "frabl",
+            "search-term": "1526D327E9F360A0",
+            "search-type": "searcher"
+          }
+        },
+        "detail-page": "http://zoeken.oba.nl/detail/A-A-Milne/Winnie-de-Poeh/Boek/?itemid=%7coba-catalogus%7c1180654",
+        "coverimages": {
+          "coverimage": [{
+            "_": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=410840696&isbn=9789000358960&lid=&aut=&ti=&size=70",
+            "$": {
+              "translation": "Cover"
+            }
+          }, {
+            "_": "https://v19.nbc.bibliotheek.nl/thumbnail?uri=http://data.bibliotheek.nl/ggc/ppn/410840696&token=c1322402",
+            "$": {
+              "translation": "Cover"
+            }
+          }]
+        },
+        "titles": {
+          "title": {
+            "_": "Winnie de Poeh / A.A. Milne",
+            "$": {
+              "translation": "Titel",
+              "search-method": "title",
+              "search-term": "Winnie de Poeh / A.A. Milne",
+              "search-type": "fuzzy"
+            }
+          },
+          "short-title": {
+            "_": "Winnie de Poeh",
+            "$": {
+              "translation": "Korte titel"
+            }
+          }
+        },
+        "authors": {
+          "main-author": {
+            "_": "Milne, A.A.",
+            "$": {
+              "search-method": "author",
+              "search-term": "A.A. Milne",
+              "search-type": "searcher",
+              "translation": "Auteur (hoofd)",
+              "firstname": "A.A.",
+              "lastname": "Milne",
+              "type": "aut",
+              "localized-type": "Auteur",
+              "creatortype": "person",
+              "main": "true"
+            }
+          },
+          "author": [{
+            "_": "Mies Bouhuys",
+            "$": {
+              "search-method": "author",
+              "search-term": "Mies Bouhuys",
+              "search-type": "searcher",
+              "translation": "Auteur",
+              "type": "trl",
+              "localized-type": "Vertaler",
+              "creatortype": "organization"
+            }
+          }, {
+            "_": "E.H. Shepard",
+            "$": {
+              "search-method": "author",
+              "search-term": "E.H. Shepard",
+              "search-type": "searcher",
+              "translation": "Auteur",
+              "type": "ill",
+              "localized-type": "Illustrator",
+              "creatortype": "organization"
+            }
+          }]
+        },
+        "formats": {
+          "format": {
+            "_": "book",
+            "$": {
+              "translation": "Formaat",
+              "search-method": "format",
+              "search-term": "book",
+              "search-type": "searcher"
+            }
+          }
+        },
+        "identifiers": {
+          "isbn-id": {
+            "_": "=9789000358960",
+            "$": {
+              "search-method": "isbn",
+              "search-term": "=9789000358960",
+              "search-type": "searcher",
+              "translation": "ISBN"
+            }
+          },
+          "ppn-id": {
+            "_": "410840696",
+            "$": {
+              "search-method": "ppn",
+              "search-term": "410840696",
+              "search-type": "precise",
+              "translation": "PICA productienummer"
+            }
+          }
+        },
+        "publication": {
+          "year": {
+            "_": "2017",
+            "$": {
+              "translation": "Publicatiejaar",
+              "search-method": "year",
+              "search-term": "2017",
+              "search-type": "searcher"
+            }
+          },
+          "publishers": {
+            "publisher": {
+              "_": "Van Goor",
+              "$": {
+                "translation": "Uitgever",
+                "search-method": "publisher",
+                "search-term": "Van Goor",
+                "search-type": "searcher",
+                "year": "2017",
+                "place": "Houten"
+              }
+            }
+          },
+          "editions": {
+            "edition": {
+              "_": "Tweede druk",
+              "$": {
+                "translation": "Editie"
+              }
+            }
+          }
+        },
+        "languages": {
+          "language": {
+            "_": "dut",
+            "$": {
+              "translation": "Taal",
+              "search-method": "language",
+              "search-term": "dut",
+              "search-type": "searcher"
+            }
+          },
+          "original-language": {
+            "_": "eng",
+            "$": {
+              "translation": "Oorspr. taal uitgave"
+            }
+          }
+        },
+        "subjects": {
+          "topical-subject": {
+            "_": "Knuffels",
+            "$": {
+              "translation": "Onderwerp",
+              "search-method": "subject",
+              "search-term": "Knuffels",
+              "search-type": "fuzzy"
+            }
+          }
+        },
+        "description": {
+          "physical-description": {
+            "_": "147 pagina's: gekleurde illustraties ; 22 cm",
+            "$": {
+              "translation": "Kenmerken"
+            }
+          }
+        },
+        "summaries": {
+          "summary": {
+            "_": "Het domme, snoeplustige, maar o zo lieve speelgoedbeertje beleeft met al zijn vriendjes en hun beschermer Christoffer Robin allerlei avonturen in het Honderd-Bunders-Bos. Voorlezen vanaf ca. 6 jaar, zelf lezen vanaf ca. 8 jaar.",
+            "$": {
+              "translation": "Samenvatting"
+            }
+          }
+        },
+        "notes": {
+          "note": {
+            "_": "Vertaling van: Winnie-the-Pooh. - 1926",
+            "$": {
+              "translation": "Aantekening"
+            }
+          }
+        },
+        "target-audiences": {
+          "target-audience": {
+            "_": "ageYouth",
+            "$": {
+              "translation": "Doelgroep",
+              "search-method": "targetaudience",
+              "search-term": "ageYouth",
+              "search-type": "searcher"
+            }
+          }
+        },
+        "undup-info": {
+          "$": {
+            "key": "|oba-catalogus|1180654",
+            "cnt": "8",
+            "sort": "year",
+            "frabl": "1526D327E9F360A0",
+            "frabl-global-count": "8",
+            "frabl-key1": "winnie de poeh",
+            "frabl-key2": "aamilne",
+            "translation": "Informatie over dubbele items"
+          },
+          "format": {
+            "$": {
+              "text": "book",
+              "icon": "/assets/resources/img/mat/book.png?skin=oba&bld=20190318.232849",
+              "translation": "Formaat"
+            },
+            "item": [{
+              "$": {
+                "extid": "|oba-catalogus|1180654",
+                "frabl": "1526D327E9F360A0",
+                "language": "dut",
+                "year": "2017",
+                "publisher": "Van Goor",
+                "globalholdingscount": ""
+              }
+            }, {
+              "$": {
+                "extid": "|oba-catalogus|599776",
+                "frabl": "1526D327E9F360A0",
+                "language": "dut",
+                "year": "cop. 2006",
+                "publisher": "Van Goor",
+                "globalholdingscount": ""
+              }
+            }, {
+              "$": {
+                "extid": "|oba-catalogus|483091",
+                "frabl": "1526D327E9F360A0",
+                "language": "dut",
+                "year": "cop. 2001",
+                "publisher": "Van Goor",
+                "globalholdingscount": ""
+              }
+            }, {
+              "$": {
+                "extid": "|oba-catalogus|483116",
+                "frabl": "1526D327E9F360A0",
+                "language": "dut",
+                "year": "[1998]",
+                "publisher": "Van Goor",
+                "globalholdingscount": ""
+              }
+            }, {
+              "$": {
+                "extid": "|oba-catalogus|483149",
+                "frabl": "1526D327E9F360A0",
+                "language": "dut",
+                "year": "1987",
+                "publisher": "Van Goor",
+                "globalholdingscount": ""
+              }
+            }, {
+              "$": {
+                "extid": "|oba-catalogus|483143",
+                "frabl": "1526D327E9F360A0",
+                "language": "dut",
+                "year": "[1982]",
+                "publisher": "Van Goor Jeugdboeken",
+                "globalholdingscount": ""
+              }
+            }, {
+              "$": {
+                "extid": "|oba-catalogus|483122",
+                "frabl": "1526D327E9F360A0",
+                "language": "dut",
+                "year": "[1938]",
+                "publisher": "Batavia : G.B. Van Goor Zonen's Uitgeversmaatschappij",
+                "globalholdingscount": ""
+              }
+            }, {
+              "$": {
+                "extid": "|oba-catalogus|483124",
+                "frabl": "1526D327E9F360A0",
+                "language": "dut",
+                "year": "1929",
+                "publisher": "Nijgh & Van Ditmar",
+                "globalholdingscount": ""
+              }
+            }]
+          }
+        }
+      }, {
+        "id": {
+          "_": "|oba-catalogus|656435",
+          "$": {
+            "nativeid": "656435",
+            "ds": "library/v/OBA",
+            "translation": "ID",
+            "search-method": "id",
+            "search-term": "|oba-catalogus|656435",
+            "search-type": "precise"
+          }
+        },
+        "frabl": {
+          "_": "67DB98283DF360A0",
+          "$": {
+            "translation": "FRBR Nummer (FRABL)",
+            "search-method": "frabl",
+            "search-term": "67DB98283DF360A0",
+            "search-type": "searcher"
+          }
+        },
+        "detail-page": "http://zoeken.oba.nl/detail/A-A-Milne/Het-huis-in-het-Poeh-hoekje/Boek/?itemid=%7coba-catalogus%7c656435",
+        "coverimages": {
+          "coverimage": [{
+            "_": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=300603436&isbn=9789000037698&lid=&aut=&ti=&size=70",
+            "$": {
+              "translation": "Cover"
+            }
+          }, {
+            "_": "https://v19.nbc.bibliotheek.nl/thumbnail?uri=http://data.bibliotheek.nl/ggc/ppn/300603436&token=c1322402",
+            "$": {
+              "translation": "Cover"
+            }
+          }]
+        },
+        "titles": {
+          "title": {
+            "_": "Het huis in het Poeh-hoekje / A.A. Milne",
+            "$": {
+              "translation": "Titel",
+              "search-method": "title",
+              "search-term": "Het huis in het Poeh-hoekje / A.A. Milne",
+              "search-type": "fuzzy"
+            }
+          },
+          "short-title": {
+            "_": "Het huis in het Poeh-hoekje",
+            "$": {
+              "translation": "Korte titel"
+            }
+          }
+        },
+        "authors": {
+          "main-author": {
+            "_": "Milne, A.A.",
+            "$": {
+              "search-method": "author",
+              "search-term": "A.A. Milne",
+              "search-type": "searcher",
+              "translation": "Auteur (hoofd)",
+              "firstname": "A.A.",
+              "lastname": "Milne",
+              "creatortype": "person",
+              "main": "true"
+            }
+          },
+          "author": [{
+            "_": "Mies Bouhuys",
+            "$": {
+              "search-method": "author",
+              "search-term": "Mies Bouhuys",
+              "search-type": "searcher",
+              "translation": "Auteur",
+              "creatortype": "organization"
+            }
+          }, {
+            "_": "E.H. Shepard",
+            "$": {
+              "search-method": "author",
+              "search-term": "E.H. Shepard",
+              "search-type": "searcher",
+              "translation": "Auteur",
+              "creatortype": "organization"
+            }
+          }]
+        },
+        "formats": {
+          "format": {
+            "_": "book",
+            "$": {
+              "translation": "Formaat",
+              "search-method": "format",
+              "search-term": "book",
+              "search-type": "searcher"
+            }
+          }
+        },
+        "identifiers": {
+          "isbn-id": {
+            "_": "9789000037698",
+            "$": {
+              "search-method": "isbn",
+              "search-term": "9789000037698",
+              "search-type": "searcher",
+              "translation": "ISBN"
+            }
+          },
+          "ppn-id": {
+            "_": "300603436",
+            "$": {
+              "search-method": "ppn",
+              "search-term": "300603436",
+              "search-type": "precise",
+              "translation": "PICA productienummer"
+            }
+          }
+        },
+        "publication": {
+          "year": {
+            "_": "2007",
+            "$": {
+              "translation": "Publicatiejaar",
+              "search-method": "year",
+              "search-term": "2007",
+              "search-type": "searcher"
+            }
+          },
+          "publishers": {
+            "publisher": {
+              "_": "Van Goor",
+              "$": {
+                "translation": "Uitgever",
+                "search-method": "publisher",
+                "search-term": "Van Goor",
+                "search-type": "searcher",
+                "year": "2007",
+                "place": "Houten [etc.]"
+              }
+            }
+          }
+        },
+        "languages": {
+          "language": {
+            "_": "dut",
+            "$": {
+              "translation": "Taal",
+              "search-method": "language",
+              "search-term": "dut",
+              "search-type": "searcher"
+            }
+          },
+          "original-language": {
+            "_": "eng",
+            "$": {
+              "translation": "Oorspr. taal uitgave"
+            }
+          }
+        },
+        "description": {
+          "physical-description": {
+            "_": "178 p: ill ; 22 cm",
+            "$": {
+              "translation": "Kenmerken"
+            }
+          }
+        },
+        "summaries": {
+          "summary": {
+            "_": "De beer Winnie de Poeh en zijn vrienden uit het bos beleven samen met Christoffer Robin allerlei spannende avonturen. Voorlezen vanaf ca. 6 jaar.",
+            "$": {
+              "translation": "Samenvatting"
+            }
+          }
+        },
+        "notes": {
+          "note": {
+            "_": "Vert. van: The house at Pooh Corner. - London : Methuen Children's Books, 1928",
+            "$": {
+              "translation": "Aantekening"
+            }
+          }
+        },
+        "target-audiences": {
+          "target-audience": {
+            "_": "ageYouth",
+            "$": {
+              "translation": "Doelgroep",
+              "search-method": "targetaudience",
+              "search-term": "ageYouth",
+              "search-type": "searcher"
+            }
+          }
+        },
+        "undup-info": {
+          "$": {
+            "key": "|oba-catalogus|656435",
+            "cnt": "4",
+            "sort": "year",
+            "frabl": "67DB98283DF360A0",
+            "frabl-global-count": "5",
+            "frabl-key1": "het huis in het poeh hoekje",
+            "frabl-key2": "aamilne",
+            "translation": "Informatie over dubbele items"
+          },
+          "format": {
+            "$": {
+              "text": "book",
+              "icon": "/assets/resources/img/mat/book.png?skin=oba&bld=20190318.232849",
+              "translation": "Formaat"
+            },
+            "item": [{
+              "$": {
+                "extid": "|oba-catalogus|656435",
+                "frabl": "67DB98283DF360A0",
+                "language": "dut",
+                "year": "cop. 2007",
+                "publisher": "Van Goor",
+                "globalholdingscount": ""
+              }
+            }, {
+              "$": {
+                "extid": "|oba-catalogus|480914",
+                "frabl": "67DB98283DF360A0",
+                "language": "dut",
+                "year": "[1998]",
+                "publisher": "Van Goor",
+                "globalholdingscount": ""
+              }
+            }, {
+              "$": {
+                "extid": "|oba-catalogus|480904",
+                "frabl": "67DB98283DF360A0",
+                "language": "dut",
+                "year": "cop. 1986",
+                "publisher": "Van Goor Jeugdboeken",
+                "globalholdingscount": ""
+              }
+            }, {
+              "$": {
+                "extid": "|oba-catalogus|480923",
+                "frabl": "67DB98283DF360A0",
+                "language": "dut",
+                "year": "[1955]",
+                "publisher": "G.B. Van Goor",
+                "globalholdingscount": ""
+              }
+            }]
+          }
+        }
+      }, {
+        "id": {
+          "_": "|oba-catalogus|456303",
+          "$": {
+            "nativeid": "456303",
+            "ds": "library/v/OBA",
+            "translation": "ID",
+            "search-method": "id",
+            "search-term": "|oba-catalogus|456303",
+            "search-type": "precise"
+          }
+        },
+        "frabl": {
+          "_": "794C23E591F36031",
+          "$": {
+            "translation": "FRBR Nummer (FRABL)",
+            "search-method": "frabl",
+            "search-term": "794C23E591F36031",
+            "search-type": "searcher"
+          }
+        },
+        "detail-page": "http://zoeken.oba.nl/detail/A-A-Weijnen/Algemene-en-vergelijkende-dialectologie/Boek/?itemid=%7coba-catalogus%7c456303",
+        "coverimages": {
+          "coverimage": [{
+            "_": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=782689930&isbn=9789030211044&lid=&aut=&ti=&size=70",
+            "$": {
+              "translation": "Cover"
+            }
+          }, {
+            "_": "https://v19.nbc.bibliotheek.nl/thumbnail?uri=http://data.bibliotheek.nl/ggc/ppn/782689930&token=c1322402",
+            "$": {
+              "translation": "Cover"
+            }
+          }]
+        },
+        "titles": {
+          "title": {
+            "_": "Algemene en vergelijkende dialectologie = : General and comparative dialectology : een verzameling studies van A. Weijnen : met inleiding, bibliografie en summaries in English bij gelegenheid van zijn vijfenzestigste verjaardag / uitg. door A. Hagen en J. Kruijsen",
+            "$": {
+              "translation": "Titel",
+              "search-method": "title",
+              "search-term": "Algemene en vergelijkende dialectologie = : General and comparative dialectology : een verzameling studies van A. Weijnen : met inleiding, bibliografie en summaries in English bij gelegenheid van zijn vijfenzestigste verjaardag / uitg. door A. Hagen en J. Kruijsen",
+              "search-type": "fuzzy"
+            }
+          },
+          "short-title": {
+            "_": "Algemene en vergelijkende dialectologie = : General and comparative dialectology : een verzameling studies van A. Weijnen : met inleiding, bibliografie en summaries in English bij gelegenheid van zijn vijfenzestigste verjaardag",
+            "$": {
+              "translation": "Korte titel"
+            }
+          },
+          "subtitle": {
+            "_": "General and comparative dialectology : een verzameling studies van A. Weijnen : met inleiding, bibliografie en summaries in English bij gelegenheid van zijn vijfenzestigste verjaardag",
+            "$": {
+              "translation": "Sub titel"
+            }
+          },
+          "other-title": {
+            "_": "General and comparative dialectology",
+            "$": {
+              "translation": "Andere titel"
+            }
+          }
+        },
+        "authors": {
+          "main-author": {
+            "_": "Weijnen, A.A.",
+            "$": {
+              "search-method": "author",
+              "search-term": "A.A. Weijnen",
+              "search-type": "searcher",
+              "translation": "Auteur (hoofd)",
+              "firstname": "A.A.",
+              "lastname": "Weijnen",
+              "creatortype": "person",
+              "main": "true"
+            }
+          },
+          "author": [{
+            "_": "A. Hagen",
+            "$": {
+              "search-method": "author",
+              "search-term": "A. Hagen",
+              "search-type": "searcher",
+              "translation": "Auteur",
+              "creatortype": "organization"
+            }
+          }, {
+            "_": "Joep Kruijsen",
+            "$": {
+              "search-method": "author",
+              "search-term": "Joep Kruijsen",
+              "search-type": "searcher",
+              "translation": "Auteur",
+              "creatortype": "organization"
+            }
+          }]
+        },
+        "formats": {
+          "format": {
+            "_": "book",
+            "$": {
+              "translation": "Formaat",
+              "search-method": "format",
+              "search-term": "book",
+              "search-type": "searcher"
+            }
+          }
+        },
+        "identifiers": {
+          "isbn-id": {
+            "_": "9030211040 :",
+            "$": {
+              "search-method": "isbn",
+              "search-term": "9030211040 :",
+              "search-type": "searcher",
+              "translation": "ISBN"
+            }
+          },
+          "ppn-id": {
+            "_": "782689930",
+            "$": {
+              "search-method": "ppn",
+              "search-term": "782689930",
+              "search-type": "precise",
+              "translation": "PICA productienummer"
+            }
+          }
+        },
+        "publication": {
+          "year": {
+            "_": "1975",
+            "$": {
+              "translation": "Publicatiejaar",
+              "search-method": "year",
+              "search-term": "1975",
+              "search-type": "searcher"
+            }
+          },
+          "publishers": {
+            "publisher": {
+              "_": "Holland Universiteits Pers",
+              "$": {
+                "translation": "Uitgever",
+                "search-method": "publisher",
+                "search-term": "Holland Universiteits Pers",
+                "search-type": "searcher",
+                "year": "1975",
+                "place": "Amsterdam"
+              }
+            }
+          }
+        },
+        "classification": {
+          "$": {
+            "translation": "Plaatsingssuggestie"
+          },
+          "siso-code": {
+            "_": "* 847",
+            "$": {
+              "translation": "SISO",
+              "search-method": "siso",
+              "search-term": "* 847",
+              "search-type": "precise"
+            }
+          }
+        },
+        "languages": {
+          "language": {
+            "_": "mul",
+            "$": {
+              "translation": "Taal",
+              "search-method": "language",
+              "search-term": "mul",
+              "search-type": "searcher"
+            }
+          }
+        },
+        "subjects": {
+          "topical-subject": [{
+            "_": "Weijnen, A.A",
+            "$": {
+              "translation": "Onderwerp",
+              "search-method": "subject",
+              "search-term": "Weijnen, A.A",
+              "search-type": "fuzzy"
+            }
+          }, {
+            "_": "Dialecten",
+            "$": {
+              "translation": "Onderwerp",
+              "search-method": "subject",
+              "search-term": "Dialecten",
+              "search-type": "fuzzy"
+            }
+          }]
+        },
+        "description": {
+          "physical-description": {
+            "_": "XVII, 344 p: ill., krt., portr ; 23 cm",
+            "$": {
+              "translation": "Kenmerken"
+            }
+          }
+        },
+        "notes": {
+          "note": [{
+            "_": "Nederlandse, Duitse, Engelse en Franse teksten",
+            "$": {
+              "translation": "Aantekening"
+            }
+          }, {
+            "_": "Bibliografie van werken van A. Weijnen: p. 329-344. - Met bibliogr. verwijzingen. - Met samenvatting in het Engels",
+            "$": {
+              "translation": "Aantekening"
+            }
+          }]
+        },
+        "undup-info": {
+          "$": {
+            "key": "|oba-catalogus|456303",
+            "cnt": "0",
+            "sort": "year",
+            "frabl": "794C23E591F36031",
+            "frabl-global-count": "1",
+            "frabl-key1": "algemene en vergelijkende dialectologie general and comparative dialectology een verzameling studies van a weijnen met inleiding bibliografie en summaries in english bij gelegenheid van zijn vijfenzestigste verjaardag",
+            "frabl-key2": "aaweijnen",
+            "translation": "Informatie over dubbele items"
+          }
+        }
+      }, {
+        "id": {
+          "_": "|oba-catalogus|152860",
+          "$": {
+            "nativeid": "152860",
+            "ds": "library/v/OBA",
+            "translation": "ID",
+            "search-method": "id",
+            "search-term": "|oba-catalogus|152860",
+            "search-type": "precise"
+          }
+        },
+        "frabl": {
+          "_": "4CB9567D9DF360A0",
+          "$": {
+            "translation": "FRBR Nummer (FRABL)",
+            "search-method": "frabl",
+            "search-term": "4CB9567D9DF360A0",
+            "search-type": "searcher"
+          }
+        },
+        "detail-page": "http://zoeken.oba.nl/detail/A/Gods-lof-uit-een-kindermond-eene-ware/Boek/?itemid=%7coba-catalogus%7c152860",
+        "coverimages": {
+          "coverimage": [{
+            "_": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=190963328&isbn=&lid=&aut=&ti=&size=70",
+            "$": {
+              "translation": "Cover"
+            }
+          }, {
+            "_": "https://v19.nbc.bibliotheek.nl/thumbnail?uri=http://data.bibliotheek.nl/ggc/ppn/190963328&token=c1322402",
+            "$": {
+              "translation": "Cover"
+            }
+          }]
+        },
+        "titles": {
+          "title": {
+            "_": "Gods lof uit een kindermond : eene ware geschiedenis / verteld door A",
+            "$": {
+              "translation": "Titel",
+              "search-method": "title",
+              "search-term": "Gods lof uit een kindermond : eene ware geschiedenis / verteld door A",
+              "search-type": "fuzzy"
+            }
+          },
+          "short-title": {
+            "_": "Gods lof uit een kindermond : eene ware geschiedenis",
+            "$": {
+              "translation": "Korte titel"
+            }
+          },
+          "subtitle": {
+            "_": "eene ware geschiedenis",
+            "$": {
+              "translation": "Sub titel"
+            }
+          }
+        },
+        "authors": {
+          "main-author": {
+            "_": "A",
+            "$": {
+              "search-method": "author",
+              "search-term": "A",
+              "search-type": "searcher",
+              "translation": "Auteur (hoofd)",
+              "lastname": "A",
+              "creatortype": "person",
+              "main": "true"
+            }
+          }
+        },
+        "formats": {
+          "format": {
+            "_": "book",
+            "$": {
+              "translation": "Formaat",
+              "search-method": "format",
+              "search-term": "book",
+              "search-type": "searcher"
+            }
+          }
+        },
+        "identifiers": {
+          "ppn-id": {
+            "_": "190963328",
+            "$": {
+              "search-method": "ppn",
+              "search-term": "190963328",
+              "search-type": "precise",
+              "translation": "PICA productienummer"
+            }
+          }
+        },
+        "publication": {
+          "year": {
+            "_": "1908",
+            "$": {
+              "translation": "Publicatiejaar",
+              "search-method": "year",
+              "search-term": "1908",
+              "search-type": "searcher"
+            }
+          },
+          "publishers": {
+            "publisher": {
+              "_": "\"Scheveningsche Boekhandel\"",
+              "$": {
+                "translation": "Uitgever",
+                "search-method": "publisher",
+                "search-term": "\"Scheveningsche Boekhandel\"",
+                "search-type": "searcher",
+                "year": "1908",
+                "place": "Scheveningen"
+              }
+            }
+          },
+          "editions": {
+            "edition": {
+              "_": "1e duiz",
+              "$": {
+                "translation": "Editie"
+              }
+            }
+          }
+        },
+        "languages": {
+          "language": {
+            "_": "dut",
+            "$": {
+              "translation": "Taal",
+              "search-method": "language",
+              "search-term": "dut",
+              "search-type": "searcher"
+            }
+          }
+        },
+        "subjects": {
+          "topical-subject": {
+            "_": "Metamorfoze Collectie Oude Kinderboeken",
+            "$": {
+              "translation": "Onderwerp",
+              "search-method": "subject",
+              "search-term": "Metamorfoze Collectie Oude Kinderboeken",
+              "search-type": "fuzzy"
+            }
+          }
+        },
+        "description": {
+          "physical-description": {
+            "_": "13 p ; 17 cm",
+            "$": {
+              "translation": "Kenmerken"
+            }
+          }
+        },
+        "notes": {
+          "note": {
+            "_": "Beschikbaar in microvorm",
+            "$": {
+              "translation": "Aantekening"
+            }
+          }
+        },
+        "undup-info": {
+          "$": {
+            "key": "|oba-catalogus|152860",
+            "cnt": "0",
+            "sort": "year",
+            "frabl": "4CB9567D9DF360A0",
+            "frabl-global-count": "1",
+            "frabl-key1": "gods lof uit een kindermond eene ware geschiedenis",
+            "frabl-key2": "a",
+            "translation": "Informatie over dubbele items"
+          }
+        }
+      }, {
+        "id": {
+          "_": "|oba-catalogus|883394",
+          "$": {
+            "nativeid": "883394",
+            "ds": "library/v/OBA",
+            "translation": "ID",
+            "search-method": "id",
+            "search-term": "|oba-catalogus|883394",
+            "search-type": "precise"
+          }
+        },
+        "frabl": {
+          "_": "68F11EF91EF360A0",
+          "$": {
+            "translation": "FRBR Nummer (FRABL)",
+            "search-method": "frabl",
+            "search-term": "68F11EF91EF360A0",
+            "search-type": "searcher"
+          }
+        },
+        "detail-page": "http://zoeken.oba.nl/detail/Wybrand-Scheffer/De-heerlijke-wereld-van-Winnie-de-Poeh/Boek/?itemid=%7coba-catalogus%7c883394",
+        "coverimages": {
+          "coverimage": [{
+            "_": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=314680101&isbn=9789047506096&lid=&aut=&ti=&size=70",
+            "$": {
+              "translation": "Cover"
+            }
+          }, {
+            "_": "https://v19.nbc.bibliotheek.nl/thumbnail?uri=http://data.bibliotheek.nl/ggc/ppn/314680101&token=c1322402",
+            "$": {
+              "translation": "Cover"
+            }
+          }]
+        },
+        "titles": {
+          "title": {
+            "_": "De heerlijke wereld van Winnie de Poeh / [vert. uit het Engels Wybrand Scheffer]",
+            "$": {
+              "translation": "Titel",
+              "search-method": "title",
+              "search-term": "De heerlijke wereld van Winnie de Poeh / [vert. uit het Engels Wybrand Scheffer]",
+              "search-type": "fuzzy"
+            }
+          },
+          "short-title": {
+            "_": "De heerlijke wereld van Winnie de Poeh",
+            "$": {
+              "translation": "Korte titel"
+            }
+          },
+          "other-title": {
+            "_": "Winnie de Poeh",
+            "$": {
+              "translation": "Andere titel"
+            }
+          }
+        },
+        "authors": {
+          "main-author": {
+            "_": "Wybrand Scheffer",
+            "$": {
+              "search-method": "author",
+              "search-term": "Wybrand Scheffer",
+              "search-type": "searcher",
+              "translation": "Auteur (hoofd)",
+              "creatortype": "organization",
+              "main": "true"
+            }
+          },
+          "author": {
+            "_": "A.A. Milne",
+            "$": {
+              "search-method": "author",
+              "search-term": "A.A. Milne",
+              "search-type": "searcher",
+              "translation": "Auteur",
+              "creatortype": "organization"
+            }
+          }
+        },
+        "formats": {
+          "format": {
+            "_": "book",
+            "$": {
+              "translation": "Formaat",
+              "search-method": "format",
+              "search-term": "book",
+              "search-type": "searcher"
+            }
+          }
+        },
+        "identifiers": {
+          "isbn-id": {
+            "_": "9789047506096",
+            "$": {
+              "search-method": "isbn",
+              "search-term": "9789047506096",
+              "search-type": "searcher",
+              "translation": "ISBN"
+            }
+          },
+          "ppn-id": {
+            "_": "314680101",
+            "$": {
+              "search-method": "ppn",
+              "search-term": "314680101",
+              "search-type": "precise",
+              "translation": "PICA productienummer"
+            }
+          }
+        },
+        "publication": {
+          "year": {
+            "_": "2008",
+            "$": {
+              "translation": "Publicatiejaar",
+              "search-method": "year",
+              "search-term": "2008",
+              "search-type": "searcher"
+            }
+          },
+          "publishers": {
+            "publisher": {
+              "_": "Van Goor",
+              "$": {
+                "translation": "Uitgever",
+                "search-method": "publisher",
+                "search-term": "Van Goor",
+                "search-type": "searcher",
+                "year": "2008",
+                "place": "Houten [etc.]"
+              }
+            }
+          }
+        },
+        "classification": {
+          "$": {
+            "translation": "Plaatsingssuggestie"
+          },
+          "siso-code": {
+            "_": "Engels 855.6",
+            "$": {
+              "translation": "SISO",
+              "search-method": "siso",
+              "search-term": "Engels 855.6",
+              "search-type": "precise"
+            }
+          }
+        },
+        "languages": {
+          "language": {
+            "_": "dut",
+            "$": {
+              "translation": "Taal",
+              "search-method": "language",
+              "search-term": "dut",
+              "search-type": "searcher"
+            }
+          },
+          "original-language": {
+            "_": "eng",
+            "$": {
+              "translation": "Oorspr. taal uitgave"
+            }
+          }
+        },
+        "subjects": {
+          "topical-subject": [{
+            "_": "Milne, A.A",
+            "$": {
+              "translation": "Onderwerp",
+              "search-method": "subject",
+              "search-term": "Milne, A.A",
+              "search-type": "fuzzy"
+            }
+          }, {
+            "_": "Winnie the Pooh (boek)",
+            "$": {
+              "translation": "Onderwerp",
+              "search-method": "subject",
+              "search-term": "Winnie the Pooh (boek)",
+              "search-type": "fuzzy"
+            }
+          }, {
+            "_": "Shepard, E.H",
+            "$": {
+              "translation": "Onderwerp",
+              "search-method": "subject",
+              "search-term": "Shepard, E.H",
+              "search-type": "fuzzy"
+            }
+          }]
+        },
+        "description": {
+          "physical-description": {
+            "_": "[30] p: ill ; 30 cm",
+            "$": {
+              "translation": "Kenmerken"
+            }
+          }
+        },
+        "summaries": {
+          "summary": {
+            "_": "Inleiding in de wereld van Winnie de Poeh. Met pop-ups en voelelementen.. - Inleiding in de wereld van Winnie de Poeh. Met pop-ups en voelelementen. Voorlezen vanaf ca. 7 jaar, zelf lezen vanaf ca. 10 jaar.",
+            "$": {
+              "translation": "Samenvatting"
+            }
+          }
+        },
+        "notes": {
+          "note": [{
+            "_": "Gebaseerd op de Winnie-the-Pooh-boeken van A.A. Milne & E.H. Shepard",
+            "$": {
+              "translation": "Aantekening"
+            }
+          }, {
+            "_": "Vert. van: The wonderful world of Winnie-the-Pooh. - London : Egmont, cop. 2008",
+            "$": {
+              "translation": "Aantekening"
+            }
+          }]
+        },
+        "target-audiences": {
+          "target-audience": {
+            "_": "ageYouth",
+            "$": {
+              "translation": "Doelgroep",
+              "search-method": "targetaudience",
+              "search-term": "ageYouth",
+              "search-type": "searcher"
+            }
+          }
+        },
+        "undup-info": {
+          "$": {
+            "key": "|oba-catalogus|883394",
+            "cnt": "0",
+            "sort": "year",
+            "frabl": "68F11EF91EF360A0",
+            "frabl-global-count": "1",
+            "frabl-key1": "de heerlijke wereld van winnie de poeh",
+            "frabl-key2": "wybrand scheffer aamilne",
+            "translation": "Informatie over dubbele items"
+          }
+        }
+      }, {
+        "id": {
+          "_": "|oba-catalogus|284058",
+          "$": {
+            "nativeid": "284058",
+            "ds": "library/v/OBA",
+            "translation": "ID",
+            "search-method": "id",
+            "search-term": "|oba-catalogus|284058",
+            "search-type": "precise"
+          }
+        },
+        "frabl": {
+          "_": "181D75CFFDF360A0",
+          "$": {
+            "translation": "FRBR Nummer (FRABL)",
+            "search-method": "frabl",
+            "search-term": "181D75CFFDF360A0",
+            "search-type": "searcher"
+          }
+        },
+        "detail-page": "http://zoeken.oba.nl/detail/J-J-A-M-Sprangers/Kunst-voor-de-ziel-sporen-van-individuen-en/Boek/?itemid=%7coba-catalogus%7c284058",
+        "coverimages": {
+          "coverimage": [{
+            "_": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=089482859&isbn=9789025724443&lid=&aut=&ti=&size=70",
+            "$": {
+              "translation": "Cover"
+            }
+          }, {
+            "_": "https://v19.nbc.bibliotheek.nl/thumbnail?uri=http://data.bibliotheek.nl/ggc/ppn/089482859&token=c1322402",
+            "$": {
+              "translation": "Cover"
+            }
+          }]
+        },
+        "titles": {
+          "title": {
+            "_": "Kunst voor de ziel : sporen van individuen en hun geloofswereld op devotieprenten, 1650-1850 / J.J.A.M. Sprangers, L.A.M. Goossens ; [foto's: Emile Waagenaar]",
+            "$": {
+              "translation": "Titel",
+              "search-method": "title",
+              "search-term": "Kunst voor de ziel : sporen van individuen en hun geloofswereld op devotieprenten, 1650-1850 / J.J.A.M. Sprangers, L.A.M. Goossens ; [foto's: Emile Waagenaar]",
+              "search-type": "fuzzy"
+            }
+          },
+          "short-title": {
+            "_": "Kunst voor de ziel : sporen van individuen en hun geloofswereld op devotieprenten, 1650-1850",
+            "$": {
+              "translation": "Korte titel"
+            }
+          },
+          "subtitle": {
+            "_": "sporen van individuen en hun geloofswereld op devotieprenten, 1650-1850",
+            "$": {
+              "translation": "Sub titel"
+            }
+          }
+        },
+        "authors": {
+          "main-author": {
+            "_": "Sprangers, J.J.A.M.",
+            "$": {
+              "search-method": "author",
+              "search-term": "J.J.A.M. Sprangers",
+              "search-type": "searcher",
+              "translation": "Auteur (hoofd)",
+              "firstname": "J.J.A.M.",
+              "lastname": "Sprangers",
+              "creatortype": "person",
+              "main": "true"
+            }
+          },
+          "author": [{
+            "_": "L.A.M. Goossens",
+            "$": {
+              "search-method": "author",
+              "search-term": "L.A.M. Goossens",
+              "search-type": "searcher",
+              "translation": "Auteur",
+              "creatortype": "organization"
+            }
+          }, {
+            "_": "H.C.A. Ernst",
+            "$": {
+              "search-method": "author",
+              "search-term": "H.C.A. Ernst",
+              "search-type": "searcher",
+              "translation": "Auteur",
+              "creatortype": "organization"
+            }
+          }]
+        },
+        "formats": {
+          "format": {
+            "_": "book",
+            "$": {
+              "translation": "Formaat",
+              "search-method": "format",
+              "search-term": "book",
+              "search-type": "searcher"
+            }
+          }
+        },
+        "identifiers": {
+          "isbn-id": {
+            "_": "9025724442",
+            "$": {
+              "search-method": "isbn",
+              "search-term": "9025724442",
+              "search-type": "searcher",
+              "translation": "ISBN"
+            }
+          },
+          "ppn-id": {
+            "_": "089482859",
+            "$": {
+              "search-method": "ppn",
+              "search-term": "089482859",
+              "search-type": "precise",
+              "translation": "PICA productienummer"
+            }
+          }
+        },
+        "publication": {
+          "year": {
+            "_": "1992",
+            "$": {
+              "translation": "Publicatiejaar",
+              "search-method": "year",
+              "search-term": "1992",
+              "search-type": "searcher"
+            }
+          },
+          "publishers": {
+            "publisher": {
+              "_": "Gottmer",
+              "$": {
+                "translation": "Uitgever",
+                "search-method": "publisher",
+                "search-term": "Gottmer",
+                "search-type": "searcher",
+                "year": "1992",
+                "place": "Haarlem"
+              }
+            }
+          }
+        },
+        "classification": {
+          "$": {
+            "translation": "Plaatsingssuggestie"
+          },
+          "siso-code": {
+            "_": "245.2",
+            "$": {
+              "translation": "SISO",
+              "search-method": "siso",
+              "search-term": "245.2",
+              "search-type": "precise"
+            }
+          }
+        },
+        "languages": {
+          "language": {
+            "_": "dut",
+            "$": {
+              "translation": "Taal",
+              "search-method": "language",
+              "search-term": "dut",
+              "search-type": "searcher"
+            }
+          }
+        },
+        "subjects": {
+          "topical-subject": [{
+            "_": "Ernst, H.C.A",
+            "$": {
+              "translation": "Onderwerp",
+              "search-method": "subject",
+              "search-term": "Ernst, H.C.A",
+              "search-type": "fuzzy"
+            }
+          }, {
+            "_": "17e eeuw",
+            "$": {
+              "translation": "Onderwerp",
+              "search-method": "subject",
+              "search-term": "17e eeuw",
+              "search-type": "fuzzy"
+            }
+          }, {
+            "_": "18e eeuw",
+            "$": {
+              "translation": "Onderwerp",
+              "search-method": "subject",
+              "search-term": "18e eeuw",
+              "search-type": "fuzzy"
+            }
+          }, {
+            "_": "19e eeuw",
+            "$": {
+              "translation": "Onderwerp",
+              "search-method": "subject",
+              "search-term": "19e eeuw",
+              "search-type": "fuzzy"
+            }
+          }, {
+            "_": "Devotieprentjes",
+            "$": {
+              "translation": "Onderwerp",
+              "search-method": "subject",
+              "search-term": "Devotieprentjes",
+              "search-type": "fuzzy"
+            }
+          }, {
+            "_": "Geschiedenis",
+            "$": {
+              "translation": "Onderwerp",
+              "search-method": "subject",
+              "search-term": "Geschiedenis",
+              "search-type": "fuzzy"
+            }
+          }]
+        },
+        "description": {
+          "physical-description": {
+            "_": "112 p: ill ; 24 cm",
+            "$": {
+              "translation": "Kenmerken"
+            }
+          }
+        },
+        "summaries": {
+          "summary": {
+            "_": "Ontstaan, ontwikkeling en gebruik van devotieprentjes, met tevens aandacht voor de kunstzinnige aspecten, vervaardiging en functie.",
+            "$": {
+              "translation": "Samenvatting"
+            }
+          }
+        },
+        "notes": {
+          "note": [{
+            "_": "Uitg. in samenw. met Breda's Museum ter gelegenheid van de 75ste verjaardag van A.J. [i.e. H.C.A.] Ernst, bisschop van Breda",
+            "$": {
+              "translation": "Aantekening"
+            }
+          }, {
+            "_": "Met lit. opg",
+            "$": {
+              "translation": "Aantekening"
+            }
+          }]
+        },
+        "undup-info": {
+          "$": {
+            "key": "|oba-catalogus|284058",
+            "cnt": "0",
+            "sort": "year",
+            "frabl": "181D75CFFDF360A0",
+            "frabl-global-count": "1",
+            "frabl-key1": "kunst voor de ziel sporen van individuen en hun geloofswereld op devotieprenten 1650 1850",
+            "frabl-key2": "jjamsprangers",
+            "translation": "Informatie over dubbele items"
+          }
+        }
+      }, {
+        "id": {
+          "_": "|oba-catalogus|438281",
+          "$": {
+            "nativeid": "438281",
+            "ds": "library/v/OBA",
+            "translation": "ID",
+            "search-method": "id",
+            "search-term": "|oba-catalogus|438281",
+            "search-type": "precise"
+          }
+        },
+        "frabl": {
+          "_": "6C800F4FE3F360A0",
+          "$": {
+            "translation": "FRBR Nummer (FRABL)",
+            "search-method": "frabl",
+            "search-term": "6C800F4FE3F360A0",
+            "search-type": "searcher"
+          }
+        },
+        "detail-page": "http://zoeken.oba.nl/detail/A-A-de-Vries/Mazzel-hoe-een-joodse-jongen-de-oorlog-door/Boek/?itemid=%7coba-catalogus%7c438281",
+        "coverimages": {
+          "coverimage": [{
+            "_": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=078335671&isbn=9789062222063&lid=&aut=&ti=&size=70",
+            "$": {
+              "translation": "Cover"
+            }
+          }, {
+            "_": "https://v19.nbc.bibliotheek.nl/thumbnail?uri=http://data.bibliotheek.nl/ggc/ppn/078335671&token=c1322402",
+            "$": {
+              "translation": "Cover"
+            }
+          }]
+        },
+        "titles": {
+          "title": {
+            "_": "Mazzel : hoe een joodse jongen de oorlog door kwam / A.A. de Vries",
+            "$": {
+              "translation": "Titel",
+              "search-method": "title",
+              "search-term": "Mazzel : hoe een joodse jongen de oorlog door kwam / A.A. de Vries",
+              "search-type": "fuzzy"
+            }
+          },
+          "short-title": {
+            "_": "Mazzel : hoe een joodse jongen de oorlog door kwam",
+            "$": {
+              "translation": "Korte titel"
+            }
+          },
+          "subtitle": {
+            "_": "hoe een joodse jongen de oorlog door kwam",
+            "$": {
+              "translation": "Sub titel"
+            }
+          }
+        },
+        "authors": {
+          "main-author": {
+            "_": "de Vries, A.A.",
+            "$": {
+              "search-method": "author",
+              "search-term": "A.A. de Vries",
+              "search-type": "searcher",
+              "translation": "Auteur (hoofd)",
+              "firstname": "A.A.",
+              "lastname": "Vries",
+              "preposition": "de",
+              "creatortype": "person",
+              "main": "true"
+            }
+          }
+        },
+        "formats": {
+          "format": {
+            "_": "book",
+            "$": {
+              "translation": "Formaat",
+              "search-method": "format",
+              "search-term": "book",
+              "search-type": "searcher"
+            }
+          }
+        },
+        "identifiers": {
+          "isbn-id": {
+            "_": "9062222064",
+            "$": {
+              "search-method": "isbn",
+              "search-term": "9062222064",
+              "search-type": "searcher",
+              "translation": "ISBN"
+            }
+          },
+          "ppn-id": {
+            "_": "078335671",
+            "$": {
+              "search-method": "ppn",
+              "search-term": "078335671",
+              "search-type": "precise",
+              "translation": "PICA productienummer"
+            }
+          }
+        },
+        "publication": {
+          "year": {
+            "_": "1991",
+            "$": {
+              "translation": "Publicatiejaar",
+              "search-method": "year",
+              "search-term": "1991",
+              "search-type": "searcher"
+            }
+          },
+          "publishers": {
+            "publisher": {
+              "_": "SUA",
+              "$": {
+                "translation": "Uitgever",
+                "search-method": "publisher",
+                "search-term": "SUA",
+                "search-type": "searcher",
+                "year": "1991",
+                "place": "Amsterdam"
+              }
+            }
+          }
+        },
+        "classification": {
+          "$": {
+            "translation": "Plaatsingssuggestie"
+          },
+          "siso-code": {
+            "_": "935.4",
+            "$": {
+              "translation": "SISO",
+              "search-method": "siso",
+              "search-term": "935.4",
+              "search-type": "precise"
+            }
+          }
+        },
+        "languages": {
+          "language": {
+            "_": "dut",
+            "$": {
+              "translation": "Taal",
+              "search-method": "language",
+              "search-term": "dut",
+              "search-type": "searcher"
+            }
+          }
+        },
+        "subjects": {
+          "topical-subject": [{
+            "_": "Vries, A.A. de",
+            "$": {
+              "translation": "Onderwerp",
+              "search-method": "subject",
+              "search-term": "Vries, A.A. de",
+              "search-type": "fuzzy"
+            }
+          }, {
+            "_": "Jodenvervolging",
+            "$": {
+              "translation": "Onderwerp",
+              "search-method": "subject",
+              "search-term": "Jodenvervolging",
+              "search-type": "fuzzy"
+            }
+          }, {
+            "_": "Nederland",
+            "$": {
+              "translation": "Onderwerp",
+              "search-method": "subject",
+              "search-term": "Nederland",
+              "search-type": "fuzzy"
+            }
+          }, {
+            "_": "Verhalen",
+            "$": {
+              "translation": "Onderwerp",
+              "search-method": "subject",
+              "search-term": "Verhalen",
+              "search-type": "fuzzy"
+            }
+          }]
+        },
+        "description": {
+          "physical-description": {
+            "_": "139 p ; 20 cm",
+            "$": {
+              "translation": "Kenmerken"
+            }
+          }
+        },
+        "summaries": {
+          "summary": {
+            "_": "Autobiografisch relaas van het avontuurlijke bestaan van een joodse jongen in Nederland tijdens de Tweede Wereldoorlog.",
+            "$": {
+              "translation": "Samenvatting"
+            }
+          }
+        },
+        "undup-info": {
+          "$": {
+            "key": "|oba-catalogus|438281",
+            "cnt": "0",
+            "sort": "year",
+            "frabl": "6C800F4FE3F360A0",
+            "frabl-global-count": "1",
+            "frabl-key1": "mazzel hoe een joodse jongen de oorlog door kwam",
+            "frabl-key2": "aade vries",
+            "translation": "Informatie over dubbele items"
+          }
+        }
+      }, {
+        "id": {
+          "_": "|oba-catalogus|261941",
+          "$": {
+            "nativeid": "261941",
+            "ds": "library/v/OBA",
+            "translation": "ID",
+            "search-method": "id",
+            "search-term": "|oba-catalogus|261941",
+            "search-type": "precise"
+          }
+        },
+        "frabl": {
+          "_": "5668F5BCBF360A0",
+          "$": {
+            "translation": "FRBR Nummer (FRABL)",
+            "search-method": "frabl",
+            "search-term": "5668F5BCBF360A0",
+            "search-type": "searcher"
+          }
+        },
+        "detail-page": "http://zoeken.oba.nl/detail/G-A-Bredero/G-A-Bredero%27s-Boertigh-amoreus-en/Boek/?itemid=%7coba-catalogus%7c261941",
+        "coverimages": {
+          "coverimage": [{
+            "_": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=782104770&isbn=9789011910751&lid=&aut=&ti=&size=70",
+            "$": {
+              "translation": "Cover"
+            }
+          }, {
+            "_": "https://v19.nbc.bibliotheek.nl/thumbnail?uri=http://data.bibliotheek.nl/ggc/ppn/782104770&token=c1322402",
+            "$": {
+              "translation": "Cover"
+            }
+          }]
+        },
+        "titles": {
+          "title": {
+            "_": "G. A. Bredero's Boertigh, amoreus, en aendachtigh groot lied-boeck",
+            "$": {
+              "translation": "Titel",
+              "search-method": "title",
+              "search-term": "G. A. Bredero's Boertigh, amoreus, en aendachtigh groot lied-boeck",
+              "search-type": "fuzzy"
+            }
+          },
+          "short-title": {
+            "_": "G. A. Bredero's Boertigh, amoreus, en aendachtigh groot lied-boeck",
+            "$": {
+              "translation": "Korte titel"
+            }
+          },
+          "other-title": [{
+            "_": "Groot lied-boeck",
+            "$": {
+              "translation": "Andere titel"
+            }
+          }, {
+            "_": "Boertigh, amoreus, en aendachtigh Groot lied-boeck",
+            "$": {
+              "translation": "Andere titel"
+            }
+          }]
+        },
+        "authors": {
+          "main-author": {
+            "_": "Bredero, G.A.",
+            "$": {
+              "search-method": "author",
+              "search-term": "G.A. Bredero",
+              "search-type": "searcher",
+              "translation": "Auteur (hoofd)",
+              "firstname": "G.A.",
+              "lastname": "Bredero",
+              "creatortype": "person",
+              "main": "true"
+            }
+          },
+          "author": [{
+            "_": "G. Stuiveling",
+            "$": {
+              "search-method": "author",
+              "search-term": "G. Stuiveling",
+              "search-type": "searcher",
+              "translation": "Auteur",
+              "creatortype": "organization"
+            }
+          }, {
+            "_": "A. Keersmaekers",
+            "$": {
+              "search-method": "author",
+              "search-term": "A. Keersmaekers",
+              "search-type": "searcher",
+              "translation": "Auteur",
+              "creatortype": "organization"
+            }
+          }]
+        },
+        "formats": {
+          "format": {
+            "_": "book",
+            "$": {
+              "translation": "Formaat",
+              "search-method": "format",
+              "search-term": "book",
+              "search-type": "searcher"
+            }
+          }
+        },
+        "identifiers": {
+          "isbn-id": {
+            "_": "9011910753 (1)",
+            "$": {
+              "search-method": "isbn",
+              "search-term": "9011910753 (1)",
+              "search-type": "searcher",
+              "translation": "ISBN"
+            }
+          },
+          "ppn-id": {
+            "_": "782104770",
+            "$": {
+              "search-method": "ppn",
+              "search-term": "782104770",
+              "search-type": "precise",
+              "translation": "PICA productienummer"
+            }
+          }
+        },
+        "publication": {
+          "year": {
+            "_": "1975",
+            "$": {
+              "translation": "Publicatiejaar",
+              "search-method": "year",
+              "search-term": "1975",
+              "search-type": "searcher"
+            }
+          },
+          "publishers": {
+            "publisher": {
+              "_": "Tjeenk Willink/Noorduijn",
+              "$": {
+                "translation": "Uitgever",
+                "search-method": "publisher",
+                "search-term": "Tjeenk Willink/Noorduijn",
+                "search-type": "searcher",
+                "year": "1975",
+                "place": "Culemborg"
+              }
+            }
+          }
+        },
+        "classification": {
+          "$": {
+            "translation": "Plaatsingssuggestie"
+          },
+          "siso-code": [{
+            "_": "873",
+            "$": {
+              "translation": "SISO",
+              "search-method": "siso",
+              "search-term": "873",
+              "search-type": "precise"
+            }
+          }, {
+            "_": "* 873",
+            "$": {
+              "translation": "SISO",
+              "search-method": "siso",
+              "search-term": "* 873",
+              "search-type": "precise"
+            }
+          }]
+        },
+        "languages": {
+          "language": {
+            "_": "dut",
+            "$": {
+              "translation": "Taal",
+              "search-method": "language",
+              "search-term": "dut",
+              "search-type": "searcher"
+            }
+          }
+        },
+        "subjects": {
+          "topical-subject": {
+            "_": "Bredero, G.A. \"Boertigh, amoreus, en aendachtigh groot lied-boeck\"",
+            "$": {
+              "translation": "Onderwerp",
+              "search-method": "subject",
+              "search-term": "Bredero, G.A. \"Boertigh, amoreus, en aendachtigh groot lied-boeck\"",
+              "search-type": "fuzzy"
+            }
+          }
+        },
+        "description": {
+          "physical-description": {
+            "_": "637 p: ill ; 24 cm",
+            "$": {
+              "translation": "Kenmerken"
+            }
+          }
+        },
+        "series": {
+          "series-title": {
+            "_": "De werken van Gerbrand Adriaensz. Bredero",
+            "$": {
+              "translation": "In de reeks",
+              "search-method": "series",
+              "search-term": "De werken van Gerbrand Adriaensz. Bredero",
+              "search-type": "searcher"
+            }
+          }
+        },
+        "undup-info": {
+          "$": {
+            "key": "|oba-catalogus|261941",
+            "cnt": "2",
+            "sort": "year",
+            "frabl": "5668F5BCBF360A0",
+            "frabl-global-count": "2",
+            "frabl-key1": "g a bredero s boertigh amoreus en aendachtigh groot lied boeck",
+            "frabl-key2": "gabredero",
+            "translation": "Informatie over dubbele items"
+          },
+          "format": {
+            "$": {
+              "text": "book",
+              "icon": "/assets/resources/img/mat/book.png?skin=oba&bld=20190318.232849",
+              "translation": "Formaat"
+            },
+            "item": [{
+              "$": {
+                "extid": "|oba-catalogus|261942",
+                "frabl": "5668F5BCBF360A0",
+                "language": "dut",
+                "year": "1983",
+                "publisher": "Nijhoff",
+                "globalholdingscount": ""
+              }
+            }, {
+              "$": {
+                "extid": "|oba-catalogus|261941",
+                "frabl": "5668F5BCBF360A0",
+                "language": "dut",
+                "year": "1975",
+                "publisher": "Tjeenk Willink/Noorduijn",
+                "globalholdingscount": ""
+              }
+            }]
+          }
+        }
+      }, {
+        "id": {
+          "_": "|oba-catalogus|138795",
+          "$": {
+            "nativeid": "138795",
+            "ds": "library/v/OBA",
+            "translation": "ID",
+            "search-method": "id",
+            "search-term": "|oba-catalogus|138795",
+            "search-type": "precise"
+          }
+        },
+        "frabl": {
+          "_": "2EC5E448D4F360A0",
+          "$": {
+            "translation": "FRBR Nummer (FRABL)",
+            "search-method": "frabl",
+            "search-term": "2EC5E448D4F360A0",
+            "search-type": "searcher"
+          }
+        },
+        "detail-page": "http://zoeken.oba.nl/detail/A-A-Gromyko/Vrede-voor-deze-en-komende-generaties/Boek/?itemid=%7coba-catalogus%7c138795",
+        "coverimages": {
+          "coverimage": [{
+            "_": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=843401303&isbn=9789062651795&lid=&aut=&ti=&size=70",
+            "$": {
+              "translation": "Cover"
+            }
+          }, {
+            "_": "https://v19.nbc.bibliotheek.nl/thumbnail?uri=http://data.bibliotheek.nl/ggc/ppn/843401303&token=c1322402",
+            "$": {
+              "translation": "Cover"
+            }
+          }]
+        },
+        "titles": {
+          "title": {
+            "_": "Vrede : voor deze en komende generaties : essays, toespraken, analyses / Andrej A. Gromyko ; [vert. uit het Russisch door B.A.G. Heera & J. Pijper]",
+            "$": {
+              "translation": "Titel",
+              "search-method": "title",
+              "search-term": "Vrede : voor deze en komende generaties : essays, toespraken, analyses / Andrej A. Gromyko ; [vert. uit het Russisch door B.A.G. Heera & J. Pijper]",
+              "search-type": "fuzzy"
+            }
+          },
+          "short-title": {
+            "_": "Vrede : voor deze en komende generaties : essays, toespraken, analyses",
+            "$": {
+              "translation": "Korte titel"
+            }
+          },
+          "subtitle": {
+            "_": "voor deze en komende generaties : essays, toespraken, analyses",
+            "$": {
+              "translation": "Sub titel"
+            }
+          },
+          "other-title": {
+            "_": "Vrede voor deze en komende generaties",
+            "$": {
+              "translation": "Andere titel"
+            }
+          }
+        },
+        "authors": {
+          "main-author": {
+            "_": "Gromyko, A.A.",
+            "$": {
+              "search-method": "author",
+              "search-term": "A.A. Gromyko",
+              "search-type": "searcher",
+              "translation": "Auteur (hoofd)",
+              "firstname": "A.A.",
+              "lastname": "Gromyko",
+              "creatortype": "person",
+              "main": "true"
+            }
+          },
+          "author": {
+            "_": "B.A.G. Heera",
+            "$": {
+              "search-method": "author",
+              "search-term": "B.A.G. Heera",
+              "search-type": "searcher",
+              "translation": "Auteur",
+              "creatortype": "organization"
+            }
+          }
+        },
+        "formats": {
+          "format": {
+            "_": "book",
+            "$": {
+              "translation": "Formaat",
+              "search-method": "format",
+              "search-term": "book",
+              "search-type": "searcher"
+            }
+          }
+        },
+        "identifiers": {
+          "isbn-id": {
+            "_": "9062651798",
+            "$": {
+              "search-method": "isbn",
+              "search-term": "9062651798",
+              "search-type": "searcher",
+              "translation": "ISBN"
+            }
+          },
+          "ppn-id": {
+            "_": "843401303",
+            "$": {
+              "search-method": "ppn",
+              "search-term": "843401303",
+              "search-type": "precise",
+              "translation": "PICA productienummer"
+            }
+          }
+        },
+        "publication": {
+          "year": {
+            "_": "1984",
+            "$": {
+              "translation": "Publicatiejaar",
+              "search-method": "year",
+              "search-term": "1984",
+              "search-type": "searcher"
+            }
+          },
+          "publishers": {
+            "publisher": {
+              "_": "In de Knipscheer",
+              "$": {
+                "translation": "Uitgever",
+                "search-method": "publisher",
+                "search-term": "In de Knipscheer",
+                "search-type": "searcher",
+                "year": "1984",
+                "place": "Haarlem"
+              }
+            }
+          }
+        },
+        "classification": {
+          "$": {
+            "translation": "Plaatsingssuggestie"
+          },
+          "siso-code": [{
+            "_": "339",
+            "$": {
+              "translation": "SISO",
+              "search-method": "siso",
+              "search-term": "339",
+              "search-type": "precise"
+            }
+          }, {
+            "_": "eu-rusl 337.6",
+            "$": {
+              "translation": "SISO",
+              "search-method": "siso",
+              "search-term": "eu-rusl 337.6",
+              "search-type": "precise"
+            }
+          }]
+        },
+        "languages": {
+          "language": {
+            "_": "dut",
+            "$": {
+              "translation": "Taal",
+              "search-method": "language",
+              "search-term": "dut",
+              "search-type": "searcher"
+            }
+          },
+          "original-language": {
+            "_": "rus",
+            "$": {
+              "translation": "Oorspr. taal uitgave"
+            }
+          }
+        },
+        "subjects": {
+          "topical-subject": [{
+            "_": "Gromyko, A.A",
+            "$": {
+              "translation": "Onderwerp",
+              "search-method": "subject",
+              "search-term": "Gromyko, A.A",
+              "search-type": "fuzzy"
+            }
+          }, {
+            "_": "Sovjet-Unie",
+            "$": {
+              "translation": "Onderwerp",
+              "search-method": "subject",
+              "search-term": "Sovjet-Unie",
+              "search-type": "fuzzy"
+            }
+          }, {
+            "_": "Buitenlandse politiek",
+            "$": {
+              "translation": "Onderwerp",
+              "search-method": "subject",
+              "search-term": "Buitenlandse politiek",
+              "search-type": "fuzzy"
+            }
+          }, {
+            "_": "Opstellen",
+            "$": {
+              "translation": "Onderwerp",
+              "search-method": "subject",
+              "search-term": "Opstellen",
+              "search-type": "fuzzy"
+            }
+          }]
+        },
+        "description": {
+          "physical-description": {
+            "_": "291 p, [16] p.pl: ill ; 20 cm",
+            "$": {
+              "translation": "Kenmerken"
+            }
+          }
+        },
+        "summaries": {
+          "summary": {
+            "_": "Artikelen en toespraken uit de periode 1981-1984 van de man die vanaf de jaren dertig een belangrijke rol speelde in de buitenlandse politiek van de Sovjet-Unie als ambassadeur en minister van buitenlandse zaken.",
+            "$": {
+              "translation": "Samenvatting"
+            }
+          }
+        },
+        "series": {
+          "series-title": {
+            "_": "Onze tijd",
+            "$": {
+              "translation": "In de reeks",
+              "search-method": "series",
+              "search-term": "Onze tijd",
+              "search-type": "searcher"
+            }
+          }
+        },
+        "undup-info": {
+          "$": {
+            "key": "|oba-catalogus|138795",
+            "cnt": "0",
+            "sort": "year",
+            "frabl": "2EC5E448D4F360A0",
+            "frabl-global-count": "1",
+            "frabl-key1": "vrede voor deze en komende generaties essays toespraken analyses",
+            "frabl-key2": "aagromyko",
+            "translation": "Informatie over dubbele items"
+          }
+        }
+      }, {
+        "id": {
+          "_": "|oba-catalogus|212467",
+          "$": {
+            "nativeid": "212467",
+            "ds": "library/v/OBA",
+            "translation": "ID",
+            "search-method": "id",
+            "search-term": "|oba-catalogus|212467",
+            "search-type": "precise"
+          }
+        },
+        "frabl": {
+          "_": "300D3E0F03F360A0",
+          "$": {
+            "translation": "FRBR Nummer (FRABL)",
+            "search-method": "frabl",
+            "search-term": "300D3E0F03F360A0",
+            "search-type": "searcher"
+          }
+        },
+        "detail-page": "http://zoeken.oba.nl/detail/J-B-Bedaux/Annus-quadriga-mundi-opstellen-over/Boek/?itemid=%7coba-catalogus%7c212467",
+        "coverimages": {
+          "coverimage": [{
+            "_": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=057945748&isbn=9789060116609&lid=&aut=&ti=&size=70",
+            "$": {
+              "translation": "Cover"
+            }
+          }, {
+            "_": "https://v19.nbc.bibliotheek.nl/thumbnail?uri=http://data.bibliotheek.nl/ggc/ppn/057945748&token=c1322402",
+            "$": {
+              "translation": "Cover"
+            }
+          }]
+        },
+        "titles": {
+          "title": {
+            "_": "Annus quadriga mundi : opstellen over middeleeuwse kunst opgedragen aan Prof. Dr. Anna C. Esmeijer / J.B. Bedaux (ed.) ; m.m.v. A.M. Koldeweij",
+            "$": {
+              "translation": "Titel",
+              "search-method": "title",
+              "search-term": "Annus quadriga mundi : opstellen over middeleeuwse kunst opgedragen aan Prof. Dr. Anna C. Esmeijer / J.B. Bedaux (ed.) ; m.m.v. A.M. Koldeweij",
+              "search-type": "fuzzy"
+            }
+          },
+          "short-title": {
+            "_": "Annus quadriga mundi : opstellen over middeleeuwse kunst opgedragen aan Prof. Dr. Anna C. Esmeijer",
+            "$": {
+              "translation": "Korte titel"
+            }
+          },
+          "subtitle": {
+            "_": "opstellen over middeleeuwse kunst opgedragen aan Prof. Dr. Anna C. Esmeijer",
+            "$": {
+              "translation": "Sub titel"
+            }
+          }
+        },
+        "authors": {
+          "main-author": {
+            "_": "J.B. Bedaux",
+            "$": {
+              "search-method": "author",
+              "search-term": "J.B. Bedaux",
+              "search-type": "searcher",
+              "translation": "Auteur (hoofd)",
+              "creatortype": "organization",
+              "main": "true"
+            }
+          },
+          "author": [{
+            "_": "A.M. Koldeweij",
+            "$": {
+              "search-method": "author",
+              "search-term": "A.M. Koldeweij",
+              "search-type": "searcher",
+              "translation": "Auteur",
+              "creatortype": "organization"
+            }
+          }, {
+            "_": "A.C. Esmeijer",
+            "$": {
+              "search-method": "author",
+              "search-term": "A.C. Esmeijer",
+              "search-type": "searcher",
+              "translation": "Auteur",
+              "creatortype": "organization"
+            }
+          }]
+        },
+        "formats": {
+          "format": {
+            "_": "book",
+            "$": {
+              "translation": "Formaat",
+              "search-method": "format",
+              "search-term": "book",
+              "search-type": "searcher"
+            }
+          }
+        },
+        "identifiers": {
+          "isbn-id": {
+            "_": "9060116607",
+            "$": {
+              "search-method": "isbn",
+              "search-term": "9060116607",
+              "search-type": "searcher",
+              "translation": "ISBN"
+            }
+          },
+          "ppn-id": {
+            "_": "057945748",
+            "$": {
+              "search-method": "ppn",
+              "search-term": "057945748",
+              "search-type": "precise",
+              "translation": "PICA productienummer"
+            }
+          }
+        },
+        "publication": {
+          "year": {
+            "_": "1989",
+            "$": {
+              "translation": "Publicatiejaar",
+              "search-method": "year",
+              "search-term": "1989",
+              "search-type": "searcher"
+            }
+          },
+          "publishers": {
+            "publisher": {
+              "_": "De Walburg Pers",
+              "$": {
+                "translation": "Uitgever",
+                "search-method": "publisher",
+                "search-term": "De Walburg Pers",
+                "search-type": "searcher",
+                "year": "1989",
+                "place": "Zutphen"
+              }
+            }
+          }
+        },
+        "classification": {
+          "$": {
+            "translation": "Plaatsingssuggestie"
+          },
+          "siso-code": {
+            "_": "705.1",
+            "$": {
+              "translation": "SISO",
+              "search-method": "siso",
+              "search-term": "705.1",
+              "search-type": "precise"
+            }
+          }
+        },
+        "languages": {
+          "language": {
+            "_": "dut",
+            "$": {
+              "translation": "Taal",
+              "search-method": "language",
+              "search-term": "dut",
+              "search-type": "searcher"
+            }
+          }
+        },
+        "subjects": {
+          "topical-subject": [{
+            "_": "Esmeijer, A.C",
+            "$": {
+              "translation": "Onderwerp",
+              "search-method": "subject",
+              "search-term": "Esmeijer, A.C",
+              "search-type": "fuzzy"
+            }
+          }, {
+            "_": "Kunstgeschiedenis",
+            "$": {
+              "translation": "Onderwerp",
+              "search-method": "subject",
+              "search-term": "Kunstgeschiedenis",
+              "search-type": "fuzzy"
+            }
+          }, {
+            "_": "Middeleeuwen",
+            "$": {
+              "translation": "Onderwerp",
+              "search-method": "subject",
+              "search-term": "Middeleeuwen",
+              "search-type": "fuzzy"
+            }
+          }, {
+            "_": "Opstellen",
+            "$": {
+              "translation": "Onderwerp",
+              "search-method": "subject",
+              "search-term": "Opstellen",
+              "search-type": "fuzzy"
+            }
+          }]
+        },
+        "description": {
+          "physical-description": {
+            "_": "202 p: ill ; 24 cm",
+            "$": {
+              "translation": "Kenmerken"
+            }
+          }
+        },
+        "notes": {
+          "note": {
+            "_": "Met bibliogr., lit. opg. - Met samenvattingen in het Engels",
+            "$": {
+              "translation": "Aantekening"
+            }
+          }
+        },
+        "series": {
+          "series-title": {
+            "_": "Clavis kunsthistorische monografieën",
+            "$": {
+              "translation": "In de reeks",
+              "search-method": "series",
+              "search-term": "Clavis kunsthistorische monografieën",
+              "search-type": "searcher"
+            }
+          }
+        },
+        "undup-info": {
+          "$": {
+            "key": "|oba-catalogus|212467",
+            "cnt": "0",
+            "sort": "year",
+            "frabl": "300D3E0F03F360A0",
+            "frabl-global-count": "1",
+            "frabl-key1": "annus quadriga mundi opstellen over middeleeuwse kunst opgedragen aan prof dr anna c esmeijer",
+            "frabl-key2": "jbbedaux amkoldeweij acesmeijer",
+            "translation": "Informatie over dubbele items"
+          }
+        }
+      }, {
+        "id": {
+          "_": "|oba-catalogus|368626",
+          "$": {
+            "nativeid": "368626",
+            "ds": "library/v/OBA",
+            "translation": "ID",
+            "search-method": "id",
+            "search-term": "|oba-catalogus|368626",
+            "search-type": "precise"
+          }
+        },
+        "frabl": {
+          "_": "2B88D53C12F360A0",
+          "$": {
+            "translation": "FRBR Nummer (FRABL)",
+            "search-method": "frabl",
+            "search-term": "2B88D53C12F360A0",
+            "search-type": "searcher"
+          }
+        },
+        "detail-page": "http://zoeken.oba.nl/detail/S-A-Lapre/Het-Andjing-Nica-Bataljon-(KNIL)-in-Nederlands/Boek/?itemid=%7coba-catalogus%7c368626",
+        "coverimages": {
+          "coverimage": [{
+            "_": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=044096305&isbn=9789094009229&lid=&aut=&ti=&size=70",
+            "$": {
+              "translation": "Cover"
+            }
+          }, {
+            "_": "https://v19.nbc.bibliotheek.nl/thumbnail?uri=http://data.bibliotheek.nl/ggc/ppn/044096305&token=c1322402",
+            "$": {
+              "translation": "Cover"
+            }
+          }]
+        },
+        "titles": {
+          "title": {
+            "_": "Het Andjing Nica Bataljon (KNIL) in Nederlands-Indië (1945-1950) / S.A. Lapré ; [met medew. van Andjing Nica leden en de Indonesische generaals Nasution en Loekito]",
+            "$": {
+              "translation": "Titel",
+              "search-method": "title",
+              "search-term": "Het Andjing Nica Bataljon (KNIL) in Nederlands-Indië (1945-1950) / S.A. Lapré ; [met medew. van Andjing Nica leden en de Indonesische generaals Nasution en Loekito]",
+              "search-type": "fuzzy"
+            }
+          },
+          "short-title": {
+            "_": "Het Andjing Nica Bataljon (KNIL) in Nederlands-Indië (1945-1950)",
+            "$": {
+              "translation": "Korte titel"
+            }
+          }
+        },
+        "authors": {
+          "main-author": {
+            "_": "Lapré, S.A.",
+            "$": {
+              "search-method": "author",
+              "search-term": "S.A. Lapré",
+              "search-type": "searcher",
+              "translation": "Auteur (hoofd)",
+              "firstname": "S.A.",
+              "lastname": "Lapré",
+              "creatortype": "person",
+              "main": "true"
+            }
+          },
+          "author": {
+            "_": "A.H. Nasution",
+            "$": {
+              "search-method": "author",
+              "search-term": "A.H. Nasution",
+              "search-type": "searcher",
+              "translation": "Auteur",
+              "creatortype": "organization"
+            }
+          }
+        },
+        "formats": {
+          "format": {
+            "_": "book",
+            "$": {
+              "translation": "Formaat",
+              "search-method": "format",
+              "search-term": "book",
+              "search-type": "searcher"
+            }
+          }
+        },
+        "identifiers": {
+          "isbn-id": {
+            "_": "9094009226",
+            "$": {
+              "search-method": "isbn",
+              "search-term": "9094009226",
+              "search-type": "searcher",
+              "translation": "ISBN"
+            }
+          },
+          "ppn-id": {
+            "_": "044096305",
+            "$": {
+              "search-method": "ppn",
+              "search-term": "044096305",
+              "search-type": "precise",
+              "translation": "PICA productienummer"
+            }
+          }
+        },
+        "publication": {
+          "year": {
+            "_": "1988",
+            "$": {
+              "translation": "Publicatiejaar",
+              "search-method": "year",
+              "search-term": "1988",
+              "search-type": "searcher"
+            }
+          },
+          "publishers": {
+            "publisher": {
+              "_": "Lapré",
+              "$": {
+                "translation": "Uitgever",
+                "search-method": "publisher",
+                "search-term": "Lapré",
+                "search-type": "searcher",
+                "year": "[1988]",
+                "place": "Ermelo"
+              }
+            }
+          },
+          "editions": {
+            "edition": {
+              "_": "2e dr",
+              "$": {
+                "translation": "Editie"
+              }
+            }
+          }
+        },
+        "classification": {
+          "$": {
+            "translation": "Plaatsingssuggestie"
+          },
+          "siso-code": [{
+            "_": "az.z-indo 944.6",
+            "$": {
+              "translation": "SISO",
+              "search-method": "siso",
+              "search-term": "az.z-indo 944.6",
+              "search-type": "precise"
+            }
+          }, {
+            "_": "az-indo 944.6",
+            "$": {
+              "translation": "SISO",
+              "search-method": "siso",
+              "search-term": "az-indo 944.6",
+              "search-type": "precise"
+            }
+          }]
+        },
+        "languages": {
+          "language": {
+            "_": "dut",
+            "$": {
+              "translation": "Taal",
+              "search-method": "language",
+              "search-term": "dut",
+              "search-type": "searcher"
+            }
+          }
+        },
+        "subjects": {
+          "topical-subject": [{
+            "_": "Lapré, S.A",
+            "$": {
+              "translation": "Onderwerp",
+              "search-method": "subject",
+              "search-term": "Lapré, S.A",
+              "search-type": "fuzzy"
+            }
+          }, {
+            "_": "KNIL",
+            "$": {
+              "translation": "Onderwerp",
+              "search-method": "subject",
+              "search-term": "KNIL",
+              "search-type": "fuzzy"
+            }
+          }, {
+            "_": "Geschiedenis",
+            "$": {
+              "translation": "Onderwerp",
+              "search-method": "subject",
+              "search-term": "Geschiedenis",
+              "search-type": "fuzzy"
+            }
+          }, {
+            "_": "1945-1950",
+            "$": {
+              "translation": "Onderwerp",
+              "search-method": "subject",
+              "search-term": "1945-1950",
+              "search-type": "fuzzy"
+            }
+          }]
+        },
+        "description": {
+          "physical-description": {
+            "_": "334 p: ill., krt ; 25 cm + bijl. (11 p.)",
+            "$": {
+              "translation": "Kenmerken"
+            }
+          }
+        },
+        "summaries": {
+          "summary": {
+            "_": "Beschrijving van de geschiedenis van het infanterie-bataljon met hulp van veel ooggetuigenverslagen.",
+            "$": {
+              "translation": "Samenvatting"
+            }
+          }
+        },
+        "notes": {
+          "note": {
+            "_": "1e dr.: 1987",
+            "$": {
+              "translation": "Aantekening"
+            }
+          }
+        },
+        "undup-info": {
+          "$": {
+            "key": "|oba-catalogus|368626",
+            "cnt": "0",
+            "sort": "year",
+            "frabl": "2B88D53C12F360A0",
+            "frabl-global-count": "1",
+            "frabl-key1": "het andjing nica bataljon knil in nederlands indie 1945 1950",
+            "frabl-key2": "salapre",
+            "translation": "Informatie over dubbele items"
+          }
+        }
+      }, {
+        "id": {
+          "_": "|oba-catalogus|414820",
+          "$": {
+            "nativeid": "414820",
+            "ds": "library/v/OBA",
+            "translation": "ID",
+            "search-method": "id",
+            "search-term": "|oba-catalogus|414820",
+            "search-type": "precise"
+          }
+        },
+        "frabl": {
+          "_": "21539EA0E2F4F4A0",
+          "$": {
+            "translation": "FRBR Nummer (FRABL)",
+            "search-method": "frabl",
+            "search-term": "21539EA0E2F4F4A0",
+            "search-type": "searcher"
+          }
+        },
+        "detail-page": "http://zoeken.oba.nl/detail/H-A-Lorentz/Zwarte-mensen-witte-bergen-verhaal-van-een/Bladmuziek/?itemid=%7coba-catalogus%7c414820",
+        "coverimages": {
+          "coverimage": [{
+            "_": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=272753440&isbn=9789045005089&lid=&aut=&ti=&size=70",
+            "$": {
+              "translation": "Cover"
+            }
+          }, {
+            "_": "https://v19.nbc.bibliotheek.nl/thumbnail?uri=http://data.bibliotheek.nl/ggc/ppn/272753440&token=c1322402",
+            "$": {
+              "translation": "Cover"
+            }
+          }]
+        },
+        "titles": {
+          "title": {
+            "_": "Zwarte mensen, witte bergen : verhaal van een tocht naar het Sneeuwgebergte van Nieuw-Guinea / H.A. Lorentz ; met een voorw. van Tijs Goldschmidt en een inl. van A.S. Troelstra",
+            "$": {
+              "translation": "Titel",
+              "search-method": "title",
+              "search-term": "Zwarte mensen, witte bergen : verhaal van een tocht naar het Sneeuwgebergte van Nieuw-Guinea / H.A. Lorentz ; met een voorw. van Tijs Goldschmidt en een inl. van A.S. Troelstra",
+              "search-type": "fuzzy"
+            }
+          },
+          "short-title": {
+            "_": "Zwarte mensen, witte bergen : verhaal van een tocht naar het Sneeuwgebergte van Nieuw-Guinea",
+            "$": {
+              "translation": "Korte titel"
+            }
+          },
+          "subtitle": {
+            "_": "verhaal van een tocht naar het Sneeuwgebergte van Nieuw-Guinea",
+            "$": {
+              "translation": "Sub titel"
+            }
+          }
+        },
+        "authors": {
+          "main-author": {
+            "_": "Lorentz, H.A.",
+            "$": {
+              "search-method": "author",
+              "search-term": "H.A. Lorentz",
+              "search-type": "searcher",
+              "translation": "Auteur (hoofd)",
+              "firstname": "H.A.",
+              "lastname": "Lorentz",
+              "creatortype": "person",
+              "main": "true"
+            }
+          },
+          "author": {
+            "_": "A.S. Troelstra",
+            "$": {
+              "search-method": "author",
+              "search-term": "A.S. Troelstra",
+              "search-type": "searcher",
+              "translation": "Auteur",
+              "creatortype": "organization"
+            }
+          }
+        },
+        "formats": {
+          "format": {
+            "_": "sheetmusic",
+            "$": {
+              "translation": "Formaat",
+              "search-method": "format",
+              "search-term": "sheetmusic",
+              "search-type": "searcher"
+            }
+          }
+        },
+        "identifiers": {
+          "isbn-id": {
+            "_": "9045005085",
+            "$": {
+              "search-method": "isbn",
+              "search-term": "9045005085",
+              "search-type": "searcher",
+              "translation": "ISBN"
+            }
+          },
+          "ppn-id": {
+            "_": "272753440",
+            "$": {
+              "search-method": "ppn",
+              "search-term": "272753440",
+              "search-type": "precise",
+              "translation": "PICA productienummer"
+            }
+          }
+        },
+        "publication": {
+          "year": {
+            "_": "2005",
+            "$": {
+              "translation": "Publicatiejaar",
+              "search-method": "year",
+              "search-term": "2005",
+              "search-type": "searcher"
+            }
+          },
+          "publishers": {
+            "publisher": {
+              "_": "Atlas",
+              "$": {
+                "translation": "Uitgever",
+                "search-method": "publisher",
+                "search-term": "Atlas",
+                "search-type": "searcher",
+                "year": "2005",
+                "place": "Amsterdam [etc.]"
+              }
+            }
+          }
+        },
+        "classification": {
+          "$": {
+            "translation": "Plaatsingssuggestie"
+          },
+          "siso-code": {
+            "_": "962",
+            "$": {
+              "translation": "SISO",
+              "search-method": "siso",
+              "search-term": "962",
+              "search-type": "precise"
+            }
+          }
+        },
+        "languages": {
+          "language": {
+            "_": "dut",
+            "$": {
+              "translation": "Taal",
+              "search-method": "language",
+              "search-term": "dut",
+              "search-type": "searcher"
+            }
+          }
+        },
+        "subjects": {
+          "topical-subject": [{
+            "_": "Lorentz, H.A",
+            "$": {
+              "translation": "Onderwerp",
+              "search-method": "subject",
+              "search-term": "Lorentz, H.A",
+              "search-type": "fuzzy"
+            }
+          }, {
+            "_": "Bergexpedities",
+            "$": {
+              "translation": "Onderwerp",
+              "search-method": "subject",
+              "search-term": "Bergexpedities",
+              "search-type": "fuzzy"
+            }
+          }, {
+            "_": "Nederlands Nieuw-Guinea",
+            "$": {
+              "translation": "Onderwerp",
+              "search-method": "subject",
+              "search-term": "Nederlands Nieuw-Guinea",
+              "search-type": "fuzzy"
+            }
+          }, {
+            "_": "1900-1914",
+            "$": {
+              "translation": "Onderwerp",
+              "search-method": "subject",
+              "search-term": "1900-1914",
+              "search-type": "fuzzy"
+            }
+          }, {
+            "_": "Verhalen",
+            "$": {
+              "translation": "Onderwerp",
+              "search-method": "subject",
+              "search-term": "Verhalen",
+              "search-type": "fuzzy"
+            }
+          }]
+        },
+        "description": {
+          "physical-description": {
+            "_": "270 p., [16] p. pl: ill., krt., portr ; 23 cm",
+            "$": {
+              "translation": "Kenmerken"
+            }
+          }
+        },
+        "summaries": {
+          "summary": {
+            "_": "Verslag van de tweede expeditie in 1909 door de Nederlandse wetenschapper Lorentz naar Nieuw Guinea.",
+            "$": {
+              "translation": "Samenvatting"
+            }
+          }
+        },
+        "notes": {
+          "note": [{
+            "_": "Oorspr. uitg.: Leiden : Brill, 1913",
+            "$": {
+              "translation": "Aantekening"
+            }
+          }, {
+            "_": "s",
+            "$": {
+              "translation": "Aantekening"
+            }
+          }]
+        },
+        "series": {
+          "series-title": {
+            "_": "Klassieke reizen",
+            "$": {
+              "translation": "In de reeks",
+              "search-method": "series",
+              "search-term": "Klassieke reizen",
+              "search-type": "searcher"
+            }
+          }
+        },
+        "undup-info": {
+          "$": {
+            "key": "|oba-catalogus|414820",
+            "cnt": "0",
+            "sort": "year",
+            "frabl": "21539EA0E2F4F4A0",
+            "frabl-global-count": "1",
+            "frabl-key1": "zwarte mensen witte bergen verhaal van een tocht naar het sneeuwgebergte van nieuw guinea",
+            "frabl-key2": "halorentz",
+            "translation": "Informatie over dubbele items"
+          }
+        }
+      }, {
+        "id": {
+          "_": "|oba-catalogus|440056",
+          "$": {
+            "nativeid": "440056",
+            "ds": "library/v/OBA",
+            "translation": "ID",
+            "search-method": "id",
+            "search-term": "|oba-catalogus|440056",
+            "search-type": "precise"
+          }
+        },
+        "frabl": {
+          "_": "2A8741A93F360A0",
+          "$": {
+            "translation": "FRBR Nummer (FRABL)",
+            "search-method": "frabl",
+            "search-term": "2A8741A93F360A0",
+            "search-type": "searcher"
+          }
+        },
+        "detail-page": "http://zoeken.oba.nl/detail/A-F-Manning/Mensen-en-situaties-scenes-uit-het-katholiek/Boek/?itemid=%7coba-catalogus%7c440056",
+        "coverimages": {
+          "coverimage": [{
+            "_": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=061177741&isbn=9789051580358&lid=&aut=&ti=&size=70",
+            "$": {
+              "translation": "Cover"
+            }
+          }, {
+            "_": "https://v19.nbc.bibliotheek.nl/thumbnail?uri=http://data.bibliotheek.nl/ggc/ppn/061177741&token=c1322402",
+            "$": {
+              "translation": "Cover"
+            }
+          }]
+        },
+        "titles": {
+          "title": {
+            "_": "Mensen en situaties : scènes uit het katholiek leven in de negentiende en twintigste eeuw / A.F. Manning ; [medew.: N. Bootsma ... et al.]",
+            "$": {
+              "translation": "Titel",
+              "search-method": "title",
+              "search-term": "Mensen en situaties : scènes uit het katholiek leven in de negentiende en twintigste eeuw / A.F. Manning ; [medew.: N. Bootsma ... et al.]",
+              "search-type": "fuzzy"
+            }
+          },
+          "short-title": {
+            "_": "Mensen en situaties : scènes uit het katholiek leven in de negentiende en twintigste eeuw",
+            "$": {
+              "translation": "Korte titel"
+            }
+          },
+          "subtitle": {
+            "_": "scènes uit het katholiek leven in de negentiende en twintigste eeuw",
+            "$": {
+              "translation": "Sub titel"
+            }
+          }
+        },
+        "authors": {
+          "main-author": {
+            "_": "Manning, A.F.",
+            "$": {
+              "search-method": "author",
+              "search-term": "A.F. Manning",
+              "search-type": "searcher",
+              "translation": "Auteur (hoofd)",
+              "firstname": "A.F.",
+              "lastname": "Manning",
+              "creatortype": "person",
+              "main": "true"
+            }
+          },
+          "author": {
+            "_": "N.A. Bootsma",
+            "$": {
+              "search-method": "author",
+              "search-term": "N.A. Bootsma",
+              "search-type": "searcher",
+              "translation": "Auteur",
+              "creatortype": "organization"
+            }
+          }
+        },
+        "formats": {
+          "format": {
+            "_": "book",
+            "$": {
+              "translation": "Formaat",
+              "search-method": "format",
+              "search-term": "book",
+              "search-type": "searcher"
+            }
+          }
+        },
+        "identifiers": {
+          "isbn-id": {
+            "_": "9051580355 (geb.)",
+            "$": {
+              "search-method": "isbn",
+              "search-term": "9051580355 (geb.)",
+              "search-type": "searcher",
+              "translation": "ISBN"
+            }
+          },
+          "ppn-id": {
+            "_": "061177741",
+            "$": {
+              "search-method": "ppn",
+              "search-term": "061177741",
+              "search-type": "precise",
+              "translation": "PICA productienummer"
+            }
+          }
+        },
+        "publication": {
+          "year": {
+            "_": "1990",
+            "$": {
+              "translation": "Publicatiejaar",
+              "search-method": "year",
+              "search-term": "1990",
+              "search-type": "searcher"
+            }
+          },
+          "publishers": {
+            "publisher": {
+              "_": "Arbor",
+              "$": {
+                "translation": "Uitgever",
+                "search-method": "publisher",
+                "search-term": "Arbor",
+                "search-type": "searcher",
+                "year": "1990",
+                "place": "Baarn"
+              }
+            }
+          }
+        },
+        "classification": {
+          "$": {
+            "translation": "Plaatsingssuggestie"
+          },
+          "siso-code": {
+            "_": "248.2",
+            "$": {
+              "translation": "SISO",
+              "search-method": "siso",
+              "search-term": "248.2",
+              "search-type": "precise"
+            }
+          }
+        },
+        "languages": {
+          "language": {
+            "_": "dut",
+            "$": {
+              "translation": "Taal",
+              "search-method": "language",
+              "search-term": "dut",
+              "search-type": "searcher"
+            }
+          }
+        },
+        "subjects": {
+          "topical-subject": [{
+            "_": "Manning, A.F",
+            "$": {
+              "translation": "Onderwerp",
+              "search-method": "subject",
+              "search-term": "Manning, A.F",
+              "search-type": "fuzzy"
+            }
+          }, {
+            "_": "19e eeuw",
+            "$": {
+              "translation": "Onderwerp",
+              "search-method": "subject",
+              "search-term": "19e eeuw",
+              "search-type": "fuzzy"
+            }
+          }, {
+            "_": "20e eeuw",
+            "$": {
+              "translation": "Onderwerp",
+              "search-method": "subject",
+              "search-term": "20e eeuw",
+              "search-type": "fuzzy"
+            }
+          }, {
+            "_": "Rooms-Katholicisme",
+            "$": {
+              "translation": "Onderwerp",
+              "search-method": "subject",
+              "search-term": "Rooms-Katholicisme",
+              "search-type": "fuzzy"
+            }
+          }, {
+            "_": "Nederland",
+            "$": {
+              "translation": "Onderwerp",
+              "search-method": "subject",
+              "search-term": "Nederland",
+              "search-type": "fuzzy"
+            }
+          }]
+        },
+        "description": {
+          "physical-description": {
+            "_": "397 p: portr ; 24 cm",
+            "$": {
+              "translation": "Kenmerken"
+            }
+          }
+        },
+        "summaries": {
+          "summary": {
+            "_": "Bundeling van 18 wetenschappelijke artikelen over ontwikkelingen in de meer recente geschiedenis van met name de Nederlandse katholieke kerk.",
+            "$": {
+              "translation": "Samenvatting"
+            }
+          }
+        },
+        "notes": {
+          "note": {
+            "_": "Met bibliogr., reg",
+            "$": {
+              "translation": "Aantekening"
+            }
+          }
+        },
+        "series": {
+          "series-title": {
+            "_": "KDC Bronnen & studies",
+            "$": {
+              "translation": "In de reeks",
+              "search-method": "series",
+              "search-term": "KDC Bronnen & studies",
+              "search-type": "searcher"
+            }
+          }
+        },
+        "undup-info": {
+          "$": {
+            "key": "|oba-catalogus|440056",
+            "cnt": "0",
+            "sort": "year",
+            "frabl": "2A8741A93F360A0",
+            "frabl-global-count": "1",
+            "frabl-key1": "mensen en situaties scenes uit het katholiek leven in de negentiende en twintigste eeuw",
+            "frabl-key2": "afmanning",
+            "translation": "Informatie over dubbele items"
+          }
+        }
+      }, {
+        "id": {
+          "_": "|oba-catalogus|239147",
+          "$": {
+            "nativeid": "239147",
+            "ds": "library/v/OBA",
+            "translation": "ID",
+            "search-method": "id",
+            "search-term": "|oba-catalogus|239147",
+            "search-type": "precise"
+          }
+        },
+        "frabl": {
+          "_": "ACDC41A0F360A7",
+          "$": {
+            "translation": "FRBR Nummer (FRABL)",
+            "search-method": "frabl",
+            "search-term": "ACDC41A0F360A7",
+            "search-type": "searcher"
+          }
+        },
+        "detail-page": "http://zoeken.oba.nl/detail/A-A-Ivanov/Art-of-Kubachi/Boek/?itemid=%7coba-catalogus%7c239147",
+        "coverimages": {
+          "coverimage": [{
+            "_": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=113180071&isbn=&lid=&aut=&ti=&size=70",
+            "$": {
+              "translation": "Cover"
+            }
+          }, {
+            "_": "https://v19.nbc.bibliotheek.nl/thumbnail?uri=http://data.bibliotheek.nl/ggc/ppn/113180071&token=c1322402",
+            "$": {
+              "translation": "Cover"
+            }
+          }]
+        },
+        "titles": {
+          "title": {
+            "_": "Art of Kubachi / [comp. by A.A. Ivanov]",
+            "$": {
+              "translation": "Titel",
+              "search-method": "title",
+              "search-term": "Art of Kubachi / [comp. by A.A. Ivanov]",
+              "search-type": "fuzzy"
+            }
+          },
+          "short-title": {
+            "_": "Art of Kubachi",
+            "$": {
+              "translation": "Korte titel"
+            }
+          }
+        },
+        "authors": {
+          "main-author": {
+            "_": "A.A. Ivanov",
+            "$": {
+              "search-method": "author",
+              "search-term": "A.A. Ivanov",
+              "search-type": "searcher",
+              "translation": "Auteur (hoofd)",
+              "creatortype": "organization",
+              "main": "true"
+            }
+          }
+        },
+        "formats": {
+          "format": {
+            "_": "book",
+            "$": {
+              "translation": "Formaat",
+              "search-method": "format",
+              "search-term": "book",
+              "search-type": "searcher"
+            }
+          }
+        },
+        "identifiers": {
+          "ppn-id": {
+            "_": "113180071",
+            "$": {
+              "search-method": "ppn",
+              "search-term": "113180071",
+              "search-type": "precise",
+              "translation": "PICA productienummer"
+            }
+          }
+        },
+        "publication": {
+          "year": {
+            "_": "1976",
+            "$": {
+              "translation": "Publicatiejaar",
+              "search-method": "year",
+              "search-term": "1976",
+              "search-type": "searcher"
+            }
+          },
+          "publishers": {
+            "publisher": {
+              "_": "Khudozhnik RSFSR",
+              "$": {
+                "translation": "Uitgever",
+                "search-method": "publisher",
+                "search-term": "Khudozhnik RSFSR",
+                "search-type": "searcher",
+                "year": "1976",
+                "place": "Leningrad"
+              }
+            }
+          }
+        },
+        "classification": {
+          "$": {
+            "translation": "Plaatsingssuggestie"
+          },
+          "siso-code": {
+            "_": "eu-rusl.A 772.3",
+            "$": {
+              "translation": "SISO",
+              "search-method": "siso",
+              "search-term": "eu-rusl.A 772.3",
+              "search-type": "precise"
+            }
+          }
+        },
+        "languages": {
+          "language": {
+            "_": "eng",
+            "$": {
+              "translation": "Taal",
+              "search-method": "language",
+              "search-term": "eng",
+              "search-type": "searcher"
+            }
+          }
+        },
+        "description": {
+          "physical-description": {
+            "_": "207 p: ill ; 31 cm",
+            "$": {
+              "translation": "Kenmerken"
+            }
+          }
+        },
+        "notes": {
+          "note": {
+            "_": "engelse en russische titel ; samenvatting in het engels",
+            "$": {
+              "translation": "Aantekening"
+            }
+          }
+        },
+        "undup-info": {
+          "$": {
+            "key": "|oba-catalogus|239147",
+            "cnt": "0",
+            "sort": "year",
+            "frabl": "ACDC41A0F360A7",
+            "frabl-global-count": "1",
+            "frabl-key1": "art of kubachi",
+            "frabl-key2": "aaivanov",
+            "translation": "Informatie over dubbele items"
+          }
+        }
+      }, {
+        "id": {
+          "_": "|oba-catalogus|423690",
+          "$": {
+            "nativeid": "423690",
+            "ds": "library/v/OBA",
+            "translation": "ID",
+            "search-method": "id",
+            "search-term": "|oba-catalogus|423690",
+            "search-type": "precise"
+          }
+        },
+        "frabl": {
+          "_": "CB284ED7FF360A0",
+          "$": {
+            "translation": "FRBR Nummer (FRABL)",
+            "search-method": "frabl",
+            "search-term": "CB284ED7FF360A0",
+            "search-type": "searcher"
+          }
+        },
+        "detail-page": "http://zoeken.oba.nl/detail/Charles-Dickens/David-Copperfield/Boek/?itemid=%7coba-catalogus%7c423690",
+        "coverimages": {
+          "coverimage": [{
+            "_": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=851763308&isbn=&lid=&aut=&ti=&size=70",
+            "$": {
+              "translation": "Cover"
+            }
+          }, {
+            "_": "https://v19.nbc.bibliotheek.nl/thumbnail?uri=http://data.bibliotheek.nl/ggc/ppn/851763308&token=c1322402",
+            "$": {
+              "translation": "Cover"
+            }
+          }]
+        },
+        "titles": {
+          "title": {
+            "_": "David Copperfield / Charles Dickens ; naar de Engelsche uitgave van L.L. Weedon voor de Nederlandsche jeugd bewerkt door Christine Doorman ; met tal van groote platen en illustratiën tusschen den tekst",
+            "$": {
+              "translation": "Titel",
+              "search-method": "title",
+              "search-term": "David Copperfield / Charles Dickens ; naar de Engelsche uitgave van L.L. Weedon voor de Nederlandsche jeugd bewerkt door Christine Doorman ; met tal van groote platen en illustratiën tusschen den tekst",
+              "search-type": "fuzzy"
+            }
+          },
+          "short-title": {
+            "_": "David Copperfield",
+            "$": {
+              "translation": "Korte titel"
+            }
+          }
+        },
+        "authors": {
+          "main-author": {
+            "_": "Dickens, Charles",
+            "$": {
+              "search-method": "author",
+              "search-term": "Charles Dickens",
+              "search-type": "searcher",
+              "translation": "Auteur (hoofd)",
+              "firstname": "Charles",
+              "lastname": "Dickens",
+              "creatortype": "person",
+              "main": "true"
+            }
+          },
+          "author": [{
+            "_": "L.L. Weedon",
+            "$": {
+              "search-method": "author",
+              "search-term": "L.L. Weedon",
+              "search-type": "searcher",
+              "translation": "Auteur",
+              "creatortype": "organization"
+            }
+          }, {
+            "_": "Christine Doorman",
+            "$": {
+              "search-method": "author",
+              "search-term": "Christine Doorman",
+              "search-type": "searcher",
+              "translation": "Auteur",
+              "creatortype": "organization"
+            }
+          }, {
+            "_": "A.A. Dixon",
+            "$": {
+              "search-method": "author",
+              "search-term": "A.A. Dixon",
+              "search-type": "searcher",
+              "translation": "Auteur",
+              "creatortype": "organization"
+            }
+          }]
+        },
+        "formats": {
+          "format": {
+            "_": "book",
+            "$": {
+              "translation": "Formaat",
+              "search-method": "format",
+              "search-term": "book",
+              "search-type": "searcher"
+            }
+          }
+        },
+        "identifiers": {
+          "ppn-id": {
+            "_": "851763308",
+            "$": {
+              "search-method": "ppn",
+              "search-term": "851763308",
+              "search-type": "precise",
+              "translation": "PICA productienummer"
+            }
+          }
+        },
+        "publication": {
+          "year": {
+            "_": "1920",
+            "$": {
+              "translation": "Publicatiejaar",
+              "search-method": "year",
+              "search-term": "1920",
+              "search-type": "searcher"
+            }
+          },
+          "publishers": {
+            "publisher": {
+              "_": "W. De Haan",
+              "$": {
+                "translation": "Uitgever",
+                "search-method": "publisher",
+                "search-term": "W. De Haan",
+                "search-type": "searcher",
+                "year": "[ca. 1920]",
+                "place": "Utrecht"
+              }
+            }
+          }
+        },
+        "languages": {
+          "language": {
+            "_": "dut",
+            "$": {
+              "translation": "Taal",
+              "search-method": "language",
+              "search-term": "dut",
+              "search-type": "searcher"
+            }
+          },
+          "original-language": {
+            "_": "eng",
+            "$": {
+              "translation": "Oorspr. taal uitgave"
+            }
+          }
+        },
+        "description": {
+          "physical-description": {
+            "_": "158 p: ill. (zw.) ; 23 cm",
+            "$": {
+              "translation": "Kenmerken"
+            }
+          }
+        },
+        "notes": {
+          "note": {
+            "_": "Goedkoope prachtuitgave. - Ill. van A.A. Dixon",
+            "$": {
+              "translation": "Aantekening"
+            }
+          }
+        },
+        "undup-info": {
+          "$": {
+            "key": "|oba-catalogus|423690",
+            "cnt": "1",
+            "sort": "year",
+            "frabl": "CB284ED7FF360A0",
+            "frabl-global-count": "10",
+            "frabl-key1": "david copperfield",
+            "frabl-key2": "charles dickens",
+            "translation": "Informatie over dubbele items"
+          }
+        }
+      }, {
+        "id": {
+          "_": "|oba-catalogus|559484",
+          "$": {
+            "nativeid": "559484",
+            "ds": "library/v/OBA",
+            "translation": "ID",
+            "search-method": "id",
+            "search-term": "|oba-catalogus|559484",
+            "search-type": "precise"
+          }
+        },
+        "frabl": {
+          "_": "2E8D5F0DD1F360A0",
+          "$": {
+            "translation": "FRBR Nummer (FRABL)",
+            "search-method": "frabl",
+            "search-term": "2E8D5F0DD1F360A0",
+            "search-type": "searcher"
+          }
+        },
+        "detail-page": "http://zoeken.oba.nl/detail/Arjan-van-de-Pijpekamp/A-Eibink-(1893-1975)-J-A-Snellebrand-(1891/Boek/?itemid=%7coba-catalogus%7c559484",
+        "coverimages": {
+          "coverimage": [{
+            "_": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=243093128&isbn=9789076643168&lid=&aut=&ti=&size=70",
+            "$": {
+              "translation": "Cover"
+            }
+          }, {
+            "_": "https://v19.nbc.bibliotheek.nl/thumbnail?uri=http://data.bibliotheek.nl/ggc/ppn/243093128&token=c1322402",
+            "$": {
+              "translation": "Cover"
+            }
+          }]
+        },
+        "titles": {
+          "title": {
+            "_": "A. Eibink (1893-1975), J. A. Snellebrand (1891-1963) : de lange weg van de Amsterdamse School tot Forum / Arjan van de Pijpekamp ; m.m.v. Bregit Jansen ; onder red. van Juliette Roding, Tjeerd Boersma en Dorothee Segaar",
+            "$": {
+              "translation": "Titel",
+              "search-method": "title",
+              "search-term": "A. Eibink (1893-1975), J. A. Snellebrand (1891-1963) : de lange weg van de Amsterdamse School tot Forum / Arjan van de Pijpekamp ; m.m.v. Bregit Jansen ; onder red. van Juliette Roding, Tjeerd Boersma en Dorothee Segaar",
+              "search-type": "fuzzy"
+            }
+          },
+          "short-title": {
+            "_": "A. Eibink (1893-1975), J. A. Snellebrand (1891-1963) : de lange weg van de Amsterdamse School tot Forum",
+            "$": {
+              "translation": "Korte titel"
+            }
+          },
+          "subtitle": {
+            "_": "de lange weg van de Amsterdamse School tot Forum",
+            "$": {
+              "translation": "Sub titel"
+            }
+          },
+          "other-title": [{
+            "_": "A. Eibink (1893-1975) en J. A. Snellebrand (1891-1963)",
+            "$": {
+              "translation": "Andere titel"
+            }
+          }, {
+            "_": "A. Eibink, J. A. Snellebrand",
+            "$": {
+              "translation": "Andere titel"
+            }
+          }]
+        },
+        "authors": {
+          "main-author": {
+            "_": "van de Pijpekamp, Arjan",
+            "$": {
+              "search-method": "author",
+              "search-term": "Arjan van de Pijpekamp",
+              "search-type": "searcher",
+              "translation": "Auteur (hoofd)",
+              "firstname": "Arjan",
+              "lastname": "Pijpekamp",
+              "preposition": "van de",
+              "creatortype": "person",
+              "main": "true"
+            }
+          },
+          "author": [{
+            "_": "Bregit Jansen",
+            "$": {
+              "search-method": "author",
+              "search-term": "Bregit Jansen",
+              "search-type": "searcher",
+              "translation": "Auteur",
+              "creatortype": "organization"
+            }
+          }, {
+            "_": "Juliette Roding",
+            "$": {
+              "search-method": "author",
+              "search-term": "Juliette Roding",
+              "search-type": "searcher",
+              "translation": "Auteur",
+              "creatortype": "organization"
+            }
+          }]
+        },
+        "formats": {
+          "format": {
+            "_": "book",
+            "$": {
+              "translation": "Formaat",
+              "search-method": "format",
+              "search-term": "book",
+              "search-type": "searcher"
+            }
+          }
+        },
+        "identifiers": {
+          "isbn-id": {
+            "_": "9076643164",
+            "$": {
+              "search-method": "isbn",
+              "search-term": "9076643164",
+              "search-type": "searcher",
+              "translation": "ISBN"
+            }
+          },
+          "ppn-id": {
+            "_": "243093128",
+            "$": {
+              "search-method": "ppn",
+              "search-term": "243093128",
+              "search-type": "precise",
+              "translation": "PICA productienummer"
+            }
+          }
+        },
+        "publication": {
+          "year": {
+            "_": "2003",
+            "$": {
+              "translation": "Publicatiejaar",
+              "search-method": "year",
+              "search-term": "2003",
+              "search-type": "searcher"
+            }
+          },
+          "publishers": {
+            "publisher": {
+              "_": "Stichting BONAS",
+              "$": {
+                "translation": "Uitgever",
+                "search-method": "publisher",
+                "search-term": "Stichting BONAS",
+                "search-type": "searcher",
+                "year": "2003",
+                "place": "Rotterdam"
+              }
+            }
+          }
+        },
+        "classification": {
+          "$": {
+            "translation": "Plaatsingssuggestie"
+          },
+          "siso-code": {
+            "_": "716.8",
+            "$": {
+              "translation": "SISO",
+              "search-method": "siso",
+              "search-term": "716.8",
+              "search-type": "precise"
+            }
+          }
+        },
+        "languages": {
+          "language": {
+            "_": "dut",
+            "$": {
+              "translation": "Taal",
+              "search-method": "language",
+              "search-term": "dut",
+              "search-type": "searcher"
+            }
+          }
+        },
+        "subjects": {
+          "topical-subject": [{
+            "_": "Adolph Eibink 1893-1975",
+            "$": {
+              "translation": "Onderwerp",
+              "search-method": "subject",
+              "search-term": "Adolph Eibink 1893-1975",
+              "search-type": "fuzzy"
+            }
+          }, {
+            "_": "Jan Antonie Snellebrand 1891-1963",
+            "$": {
+              "translation": "Onderwerp",
+              "search-method": "subject",
+              "search-term": "Jan Antonie Snellebrand 1891-1963",
+              "search-type": "fuzzy"
+            }
+          }, {
+            "_": "Eibink, A",
+            "$": {
+              "translation": "Onderwerp",
+              "search-method": "subject",
+              "search-term": "Eibink, A",
+              "search-type": "fuzzy"
+            }
+          }, {
+            "_": "Snellebrand, J.A",
+            "$": {
+              "translation": "Onderwerp",
+              "search-method": "subject",
+              "search-term": "Snellebrand, J.A",
+              "search-type": "fuzzy"
+            }
+          }, {
+            "_": "Eibink",
+            "$": {
+              "translation": "Onderwerp",
+              "search-method": "subject",
+              "search-term": "Eibink",
+              "search-type": "fuzzy"
+            }
+          }]
+        },
+        "description": {
+          "physical-description": {
+            "_": "172 p: ill ; 15x21 cm",
+            "$": {
+              "translation": "Kenmerken"
+            }
+          }
+        },
+        "summaries": {
+          "summary": {
+            "_": "Oeuvre-overzicht van twee Nederlandse architecten.",
+            "$": {
+              "translation": "Samenvatting"
+            }
+          }
+        },
+        "notes": {
+          "note": [{
+            "_": "Rugtitel: A. Eibink (1893-1975) en J. A. Snellebrand (1891-1963)",
+            "$": {
+              "translation": "Aantekening"
+            }
+          }, {
+            "_": "Met lit. opg., index",
+            "$": {
+              "translation": "Aantekening"
+            }
+          }]
+        },
+        "series": {
+          "series-title": {
+            "_": "Bibliografieën en oeuvrelijsten van Nederlandse architecten en stedebouwkundigen",
+            "$": {
+              "translation": "In de reeks",
+              "search-method": "series",
+              "search-term": "Bibliografieën en oeuvrelijsten van Nederlandse architecten en stedebouwkundigen",
+              "search-type": "searcher"
+            }
+          }
+        },
+        "undup-info": {
+          "$": {
+            "key": "|oba-catalogus|559484",
+            "cnt": "0",
+            "sort": "year",
+            "frabl": "2E8D5F0DD1F360A0",
+            "frabl-global-count": "1",
+            "frabl-key1": "a eibink 1893 1975 j a snellebrand 1891 1963 de lange weg van de amsterdamse school tot forum",
+            "frabl-key2": "arjan van de pijpekamp",
+            "translation": "Informatie over dubbele items"
+          }
+        }
+      }, {
+        "id": {
+          "_": "|oba-catalogus|262093",
+          "$": {
+            "nativeid": "262093",
+            "ds": "library/v/OBA",
+            "translation": "ID",
+            "search-method": "id",
+            "search-term": "|oba-catalogus|262093",
+            "search-type": "precise"
+          }
+        },
+        "frabl": {
+          "_": "4E3497E64F360A0",
+          "$": {
+            "translation": "FRBR Nummer (FRABL)",
+            "search-method": "frabl",
+            "search-term": "4E3497E64F360A0",
+            "search-type": "searcher"
+          }
+        },
+        "detail-page": "http://zoeken.oba.nl/detail/G-A-Bredero/Groot-lied-boek-van-G-A-Brederode-naar-de/Boek/?itemid=%7coba-catalogus%7c262093",
+        "coverimages": {
+          "coverimage": [{
+            "_": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=831839384&isbn=&lid=&aut=&ti=&size=70",
+            "$": {
+              "translation": "Cover"
+            }
+          }, {
+            "_": "https://v19.nbc.bibliotheek.nl/thumbnail?uri=http://data.bibliotheek.nl/ggc/ppn/831839384&token=c1322402",
+            "$": {
+              "translation": "Cover"
+            }
+          }]
+        },
+        "titles": {
+          "title": {
+            "_": "Groot lied-boek van G.A. Brederode : naar de oorspr. uitg. van 1622 / tekstverzorging en inl. van A.A. van Rijnbach",
+            "$": {
+              "translation": "Titel",
+              "search-method": "title",
+              "search-term": "Groot lied-boek van G.A. Brederode : naar de oorspr. uitg. van 1622 / tekstverzorging en inl. van A.A. van Rijnbach",
+              "search-type": "fuzzy"
+            }
+          },
+          "short-title": {
+            "_": "Groot lied-boek van G.A. Brederode : naar de oorspr. uitg. van 1622",
+            "$": {
+              "translation": "Korte titel"
+            }
+          },
+          "subtitle": {
+            "_": "naar de oorspr. uitg. van 1622",
+            "$": {
+              "translation": "Sub titel"
+            }
+          },
+          "other-title": {
+            "_": "Groot lied-boek",
+            "$": {
+              "translation": "Andere titel"
+            }
+          }
+        },
+        "authors": {
+          "main-author": {
+            "_": "Bredero, G.A.",
+            "$": {
+              "search-method": "author",
+              "search-term": "G.A. Bredero",
+              "search-type": "searcher",
+              "translation": "Auteur (hoofd)",
+              "firstname": "G.A.",
+              "lastname": "Bredero",
+              "creatortype": "person",
+              "main": "true"
+            }
+          },
+          "author": {
+            "_": "A.A. van Rijnbach",
+            "$": {
+              "search-method": "author",
+              "search-term": "A.A. van Rijnbach",
+              "search-type": "searcher",
+              "translation": "Auteur",
+              "creatortype": "organization"
+            }
+          }
+        },
+        "formats": {
+          "format": {
+            "_": "book",
+            "$": {
+              "translation": "Formaat",
+              "search-method": "format",
+              "search-term": "book",
+              "search-type": "searcher"
+            }
+          }
+        },
+        "identifiers": {
+          "ppn-id": {
+            "_": "831839384",
+            "$": {
+              "search-method": "ppn",
+              "search-term": "831839384",
+              "search-type": "precise",
+              "translation": "PICA productienummer"
+            }
+          }
+        },
+        "publication": {
+          "year": {
+            "_": "1966",
+            "$": {
+              "translation": "Publicatiejaar",
+              "search-method": "year",
+              "search-term": "1966",
+              "search-type": "searcher"
+            }
+          },
+          "publishers": {
+            "publisher": {
+              "_": "Donker",
+              "$": {
+                "translation": "Uitgever",
+                "search-method": "publisher",
+                "search-term": "Donker",
+                "search-type": "searcher",
+                "year": "1966",
+                "place": "Rotterdam"
+              }
+            }
+          },
+          "editions": {
+            "edition": {
+              "_": "2e dr",
+              "$": {
+                "translation": "Editie"
+              }
+            }
+          }
+        },
+        "classification": {
+          "$": {
+            "translation": "Plaatsingssuggestie"
+          },
+          "siso-code": {
+            "_": "Nederlands 873",
+            "$": {
+              "translation": "SISO",
+              "search-method": "siso",
+              "search-term": "Nederlands 873",
+              "search-type": "precise"
+            }
+          }
+        },
+        "languages": {
+          "language": {
+            "_": "dut",
+            "$": {
+              "translation": "Taal",
+              "search-method": "language",
+              "search-term": "dut",
+              "search-type": "searcher"
+            }
+          }
+        },
+        "description": {
+          "physical-description": {
+            "_": "xxx, 373 p: ill ; 15x20 cm",
+            "$": {
+              "translation": "Kenmerken"
+            }
+          }
+        },
+        "notes": {
+          "note": [{
+            "_": "\"In deze uitgave zijn alle gravures der oorspronkelijke uitgave gereproduceerd\"",
+            "$": {
+              "translation": "Aantekening"
+            }
+          }, {
+            "_": "Herspelde tekstuitg. van: Boertigh, amoreus, en aendachtigh groot lied-boeck van G.A. Brederode, Amsteldammer. [3 dln, met bijl.] t'Amstelredam, voor Cornelis Lodowijckz. vander Plasse 1622. 4\\0 obl",
+            "$": {
+              "translation": "Aantekening"
+            }
+          }, {
+            "_": "1e dr.: 1944",
+            "$": {
+              "translation": "Aantekening"
+            }
+          }]
+        },
+        "undup-info": {
+          "$": {
+            "key": "|oba-catalogus|262093",
+            "cnt": "0",
+            "sort": "year",
+            "frabl": "4E3497E64F360A0",
+            "frabl-global-count": "1",
+            "frabl-key1": "groot lied boek van g a brederode naar de oorspr uitg van 1622",
+            "frabl-key2": "gabredero",
+            "translation": "Informatie over dubbele items"
+          }
+        }
+      }, {
+        "id": {
+          "_": "|oba-catalogus|436002",
+          "$": {
+            "nativeid": "436002",
+            "ds": "library/v/OBA",
+            "translation": "ID",
+            "search-method": "id",
+            "search-term": "|oba-catalogus|436002",
+            "search-type": "precise"
+          }
+        },
+        "frabl": {
+          "_": "1D9C0B1352F360A0",
+          "$": {
+            "translation": "FRBR Nummer (FRABL)",
+            "search-method": "frabl",
+            "search-term": "1D9C0B1352F360A0",
+            "search-type": "searcher"
+          }
+        },
+        "detail-page": "http://zoeken.oba.nl/detail/A-Vreeken/Mearten-van-den-visscher/Boek/?itemid=%7coba-catalogus%7c436002",
+        "coverimages": {
+          "coverimage": [{
+            "_": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=066433444&isbn=&lid=&aut=&ti=&size=70",
+            "$": {
+              "translation": "Cover"
+            }
+          }, {
+            "_": "https://v19.nbc.bibliotheek.nl/thumbnail?uri=http://data.bibliotheek.nl/ggc/ppn/066433444&token=c1322402",
+            "$": {
+              "translation": "Cover"
+            }
+          }]
+        },
+        "titles": {
+          "title": {
+            "_": "Mearten van den visscher / door A. Vreeken ; met illustraties van A. Rünckel",
+            "$": {
+              "translation": "Titel",
+              "search-method": "title",
+              "search-term": "Mearten van den visscher / door A. Vreeken ; met illustraties van A. Rünckel",
+              "search-type": "fuzzy"
+            }
+          },
+          "short-title": {
+            "_": "Mearten van den visscher",
+            "$": {
+              "translation": "Korte titel"
+            }
+          }
+        },
+        "authors": {
+          "main-author": {
+            "_": "Vreeken, A.",
+            "$": {
+              "search-method": "author",
+              "search-term": "A. Vreeken",
+              "search-type": "searcher",
+              "translation": "Auteur (hoofd)",
+              "firstname": "A.",
+              "lastname": "Vreeken",
+              "creatortype": "person",
+              "main": "true"
+            }
+          },
+          "author": {
+            "_": "A. Rünckel",
+            "$": {
+              "search-method": "author",
+              "search-term": "A. Rünckel",
+              "search-type": "searcher",
+              "translation": "Auteur",
+              "creatortype": "organization"
+            }
+          }
+        },
+        "formats": {
+          "format": {
+            "_": "book",
+            "$": {
+              "translation": "Formaat",
+              "search-method": "format",
+              "search-term": "book",
+              "search-type": "searcher"
+            }
+          }
+        },
+        "identifiers": {
+          "ppn-id": {
+            "_": "066433444",
+            "$": {
+              "search-method": "ppn",
+              "search-term": "066433444",
+              "search-type": "precise",
+              "translation": "PICA productienummer"
+            }
+          }
+        },
+        "publication": {
+          "year": {
+            "_": "1906",
+            "$": {
+              "translation": "Publicatiejaar",
+              "search-method": "year",
+              "search-term": "1906",
+              "search-type": "searcher"
+            }
+          },
+          "publishers": {
+            "publisher": {
+              "_": "W. Hilarius Wzn",
+              "$": {
+                "translation": "Uitgever",
+                "search-method": "publisher",
+                "search-term": "W. Hilarius Wzn",
+                "search-type": "searcher",
+                "year": "[1906]",
+                "place": "Almelo"
+              }
+            }
+          }
+        },
+        "languages": {
+          "language": {
+            "_": "dut",
+            "$": {
+              "translation": "Taal",
+              "search-method": "language",
+              "search-term": "dut",
+              "search-type": "searcher"
+            }
+          }
+        },
+        "subjects": {
+          "topical-subject": {
+            "_": "Geac-lijst geselecteerd voor verfilming",
+            "$": {
+              "translation": "Onderwerp",
+              "search-method": "subject",
+              "search-term": "Geac-lijst geselecteerd voor verfilming",
+              "search-type": "fuzzy"
+            }
+          }
+        },
+        "description": {
+          "physical-description": {
+            "_": "213 p: ill (zw/w) ; 24 cm",
+            "$": {
+              "translation": "Kenmerken"
+            }
+          }
+        },
+        "undup-info": {
+          "$": {
+            "key": "|oba-catalogus|436002",
+            "cnt": "0",
+            "sort": "year",
+            "frabl": "1D9C0B1352F360A0",
+            "frabl-global-count": "1",
+            "frabl-key1": "mearten van den visscher",
+            "frabl-key2": "avreeken",
+            "translation": "Informatie over dubbele items"
+          }
+        }
+      }, {
+        "id": {
+          "_": "|oba-catalogus|504866",
+          "$": {
+            "nativeid": "504866",
+            "ds": "library/v/OBA",
+            "translation": "ID",
+            "search-method": "id",
+            "search-term": "|oba-catalogus|504866",
+            "search-type": "precise"
+          }
+        },
+        "frabl": {
+          "_": "2C5AD3D85FF360A0",
+          "$": {
+            "translation": "FRBR Nummer (FRABL)",
+            "search-method": "frabl",
+            "search-term": "2C5AD3D85FF360A0",
+            "search-type": "searcher"
+          }
+        },
+        "detail-page": "http://zoeken.oba.nl/detail/G-A-Wumkes/Het-Friese-Reveil-in-portretten/Boek/?itemid=%7coba-catalogus%7c504866",
+        "coverimages": {
+          "coverimage": [{
+            "_": "https://cover.biblion.nl/coverlist.dll?doctype=morebutton&bibliotheek=oba&style=0&ppn=115227997&isbn=9789061403562&lid=&aut=&ti=&size=70",
+            "$": {
+              "translation": "Cover"
+            }
+          }, {
+            "_": "https://media.cdr.nl/COVER/small/FRONT/94392331.jpg",
+            "$": {
+              "translation": "Cover"
+            }
+          }, {
+            "_": "https://v19.nbc.bibliotheek.nl/thumbnail?uri=http://data.bibliotheek.nl/ggc/ppn/115227997&token=c1322402",
+            "$": {
+              "translation": "Cover"
+            }
+          }]
+        },
+        "titles": {
+          "title": {
+            "_": "Het Friese Reveil in portretten / G.A. Wumkes ; uit het Fries vert. door A.P. Bijl, met medew. van A.D. Wumkes",
+            "$": {
+              "translation": "Titel",
+              "search-method": "title",
+              "search-term": "Het Friese Reveil in portretten / G.A. Wumkes ; uit het Fries vert. door A.P. Bijl, met medew. van A.D. Wumkes",
+              "search-type": "fuzzy"
+            }
+          },
+          "short-title": {
+            "_": "Het Friese Reveil in portretten",
+            "$": {
+              "translation": "Korte titel"
+            }
+          }
+        },
+        "authors": {
+          "main-author": {
+            "_": "Wumkes, G.A.",
+            "$": {
+              "search-method": "author",
+              "search-term": "G.A. Wumkes",
+              "search-type": "searcher",
+              "translation": "Auteur (hoofd)",
+              "firstname": "G.A.",
+              "lastname": "Wumkes",
+              "creatortype": "person",
+              "main": "true"
+            }
+          },
+          "author": [{
+            "_": "A.P. Bijl",
+            "$": {
+              "search-method": "author",
+              "search-term": "A.P. Bijl",
+              "search-type": "searcher",
+              "translation": "Auteur",
+              "creatortype": "organization"
+            }
+          }, {
+            "_": "A.D. Wumkes",
+            "$": {
+              "search-method": "author",
+              "search-term": "A.D. Wumkes",
+              "search-type": "searcher",
+              "translation": "Auteur",
+              "creatortype": "organization"
+            }
+          }]
+        },
+        "formats": {
+          "format": {
+            "_": "book",
+            "$": {
+              "translation": "Formaat",
+              "search-method": "format",
+              "search-term": "book",
+              "search-type": "searcher"
+            }
+          }
+        },
+        "identifiers": {
+          "isbn-id": {
+            "_": "9061403561 (geb.)",
+            "$": {
+              "search-method": "isbn",
+              "search-term": "9061403561 (geb.)",
+              "search-type": "searcher",
+              "translation": "ISBN"
+            }
+          },
+          "ppn-id": {
+            "_": "115227997",
+            "$": {
+              "search-method": "ppn",
+              "search-term": "115227997",
+              "search-type": "precise",
+              "translation": "PICA productienummer"
+            }
+          },
+          "cdr-id": {
+            "_": "94392331",
+            "$": {
+              "search-method": "cdr",
+              "search-term": "94392331",
+              "search-type": "precise",
+              "translation": "Muziekweb"
+            }
+          }
+        },
+        "publication": {
+          "year": {
+            "_": "1994",
+            "$": {
+              "translation": "Publicatiejaar",
+              "search-method": "year",
+              "search-term": "1994",
+              "search-type": "searcher"
+            }
+          },
+          "publishers": {
+            "publisher": {
+              "_": "De Groot Goudriaan",
+              "$": {
+                "translation": "Uitgever",
+                "search-method": "publisher",
+                "search-term": "De Groot Goudriaan",
+                "search-type": "searcher",
+                "year": "1994",
+                "place": "Kampen"
+              }
+            }
+          }
+        },
+        "classification": {
+          "$": {
+            "translation": "Plaatsingssuggestie"
+          },
+          "siso-code": {
+            "_": "259.9",
+            "$": {
+              "translation": "SISO",
+              "search-method": "siso",
+              "search-term": "259.9",
+              "search-type": "precise"
+            }
+          }
+        },
+        "languages": {
+          "language": {
+            "_": "dut",
+            "$": {
+              "translation": "Taal",
+              "search-method": "language",
+              "search-term": "dut",
+              "search-type": "searcher"
+            }
+          },
+          "original-language": {
+            "_": "fri",
+            "$": {
+              "translation": "Oorspr. taal uitgave"
+            }
+          }
+        },
+        "subjects": {
+          "topical-subject": [{
+            "_": "Réveil",
+            "$": {
+              "translation": "Onderwerp",
+              "search-method": "subject",
+              "search-term": "Réveil",
+              "search-type": "fuzzy"
+            }
+          }, {
+            "_": "Friesland",
+            "$": {
+              "translation": "Onderwerp",
+              "search-method": "subject",
+              "search-term": "Friesland",
+              "search-type": "fuzzy"
+            }
+          }, {
+            "_": "Geschiedenis",
+            "$": {
+              "translation": "Onderwerp",
+              "search-method": "subject",
+              "search-term": "Geschiedenis",
+              "search-type": "fuzzy"
+            }
+          }, {
+            "_": "Biografieën",
+            "$": {
+              "translation": "Onderwerp",
+              "search-method": "subject",
+              "search-term": "Biografieën",
+              "search-type": "fuzzy"
+            }
+          }]
+        },
+        "description": {
+          "physical-description": {
+            "_": "224 p: foto's ; 25 cm",
+            "$": {
+              "translation": "Kenmerken"
+            }
+          }
+        },
+        "summaries": {
+          "summary": {
+            "_": "Biografische schetsen van vooraanstaande vertegenwoordigers van de Reveilbeweging in Friesland.",
+            "$": {
+              "translation": "Samenvatting"
+            }
+          }
+        },
+        "notes": {
+          "note": {
+            "_": "Met reg",
+            "$": {
+              "translation": "Aantekening"
+            }
+          }
+        },
+        "undup-info": {
+          "$": {
+            "key": "|oba-catalogus|504866",
+            "cnt": "0",
+            "sort": "year",
+            "frabl": "2C5AD3D85FF360A0",
+            "frabl-global-count": "1",
+            "frabl-key1": "het friese reveil in portretten",
+            "frabl-key2": "gawumkes",
+            "translation": "Informatie over dubbele items"
+          }
+        }
+      }]
+    },
+    "facets": {
+      "facet": [{
+        "$": {
+          "id": "Activiteiten"
+        },
+        "value": [{
+          "$": {
+            "count": "8",
+            "id": "b_thisweek"
+          }
+        }, {
+          "$": {
+            "count": "9",
+            "id": "c_nextweek"
+          }
+        }, {
+          "$": {
+            "count": "18",
+            "id": "d_thismonth"
+          }
+        }, {
+          "$": {
+            "count": "40",
+            "id": "e_nextmonth"
+          }
+        }, {
+          "$": {
+            "count": "33",
+            "id": "f_next3month"
+          }
+        }, {
+          "$": {
+            "count": "98",
+            "id": "g_thisyear"
+          }
+        }]
+      }, {
+        "$": {
+          "id": "cursussen"
+        },
+        "value": [{
+          "$": {
+            "count": "26",
+            "id": "talen"
+          }
+        }, {
+          "$": {
+            "count": "3",
+            "id": "cultuur"
+          }
+        }, {
+          "$": {
+            "count": "2",
+            "id": "creatief"
+          }
+        }, {
+          "$": {
+            "count": "2",
+            "id": "maatschapppij"
+          }
+        }, {
+          "$": {
+            "count": "1",
+            "id": "dutch"
+          }
+        }]
+      }, {
+        "$": {
+          "id": "Type"
+        },
+        "value": [{
+          "$": {
+            "count": "12629",
+            "id": "sheetmusic"
+          }
+        }, {
+          "$": {
+            "count": "66817",
+            "id": "book"
+          }
+        }, {
+          "$": {
+            "count": "5935",
+            "id": "dvdvideo"
+          }
+        }, {
+          "$": {
+            "count": "7792",
+            "id": "movie"
+          }
+        }]
+      }, {
+        "$": {
+          "id": "Doelgroep"
+        },
+        "value": [{
+          "$": {
+            "count": "12462",
+            "id": "ageYouth"
+          }
+        }, {
+          "$": {
+            "count": "1326",
+            "id": "ageAdults"
+          }
+        }, {
+          "$": {
+            "count": "82",
+            "id": "ageYoungAdults"
+          }
+        }]
+      }, {
+        "$": {
+          "id": "Auteur"
+        },
+        "value": [{
+          "$": {
+            "count": "1176",
+            "id": "A. Jager"
+          }
+        }, {
+          "$": {
+            "count": "584",
+            "id": "A.T. Rooswinkel"
+          }
+        }, {
+          "$": {
+            "count": "541",
+            "id": "G.A. van Arkel"
+          }
+        }, {
+          "$": {
+            "count": "400",
+            "id": "A.L. van Gendt"
+          }
+        }, {
+          "$": {
+            "count": "358",
+            "id": "J.A. Overbeek"
+          }
+        }]
+      }, {
+        "$": {
+          "id": "Genre"
+        },
+        "value": [{
+          "$": {
+            "count": "1458",
+            "id": "detective"
+          }
+        }, {
+          "$": {
+            "count": "1191",
+            "id": "psychologisch-verhaal"
+          }
+        }, {
+          "$": {
+            "count": "1214",
+            "id": "sprookjes"
+          }
+        }, {
+          "$": {
+            "count": "1255",
+            "id": "thriller"
+          }
+        }]
+      }, {
+        "$": {
+          "id": "Topic"
+        },
+        "value": [{
+          "$": {
+            "count": "2798",
+            "id": "Geschiedenis"
+          }
+        }, {
+          "$": {
+            "count": "1615",
+            "id": "Nederland"
+          }
+        }, {
+          "$": {
+            "count": "1386",
+            "id": "Meespeelmuziek"
+          }
+        }, {
+          "$": {
+            "count": "1032",
+            "id": "Biografieën"
+          }
+        }, {
+          "$": {
+            "count": "950",
+            "id": "Vriendschap"
+          }
+        }]
+      }, {
+        "$": {
+          "id": "Language"
+        },
+        "value": [{
+          "$": {
+            "count": "52452",
+            "id": "dut"
+          }
+        }, {
+          "$": {
+            "count": "36521",
+            "id": "eng"
+          }
+        }, {
+          "$": {
+            "count": "3426",
+            "id": "fre"
+          }
+        }, {
+          "$": {
+            "count": "2496",
+            "id": "ger"
+          }
+        }, {
+          "$": {
+            "count": "1163",
+            "id": "ara"
+          }
+        }]
+      }, {
+        "$": {
+          "id": "pubYear"
+        },
+        "value": [{
+          "$": {
+            "count": "2949",
+            "id": "2012"
+          }
+        }, {
+          "$": {
+            "count": "2936",
+            "id": "2011"
+          }
+        }, {
+          "$": {
+            "count": "3118",
+            "id": "2010"
+          }
+        }, {
+          "$": {
+            "count": "3211",
+            "id": "2009"
+          }
+        }, {
+          "$": {
+            "count": "3087",
+            "id": "2008"
+          }
+        }]
+      }, {
+        "$": {
+          "id": "pubYearRange"
+        },
+        "value": [{
+          "$": {
+            "count": "22526",
+            "id": "1_2010"
+          }
+        }, {
+          "$": {
+            "count": "20560",
+            "id": "2_2000"
+          }
+        }, {
+          "$": {
+            "count": "12070",
+            "id": "3_1990"
+          }
+        }, {
+          "$": {
+            "count": "9133",
+            "id": "4_1980"
+          }
+        }, {
+          "$": {
+            "count": "6065",
+            "id": "5_1970"
+          }
+        }, {
+          "$": {
+            "count": "24976",
+            "id": "5_OlderThan50"
+          }
+        }]
+      }]
+    },
+    "sort": {
+      "option": [{
+        "$": {
+          "id": "relevance",
+          "active": "true"
+        }
+      }, {
+        "$": {
+          "id": "year"
+        }
+      }, {
+        "$": {
+          "id": "title"
+        }
+      }, {
+        "$": {
+          "id": "author"
+        }
+      }]
+    }
+  }
+}

@@ -4,16 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/styles.css">
   <title>List</title>
 </head>
 <body>
-  <% data.results.forEach(d => { %>
+  <% for (let k in filters) { %>
+    <p><%= k %>:<%= filters[k] %></p>
+  <% } %>
+  <% results.forEach(d => { %>
     <ul>
-      <li><%= d.id[0].$.nativeid %></li>
       <li><%= d.titles[0]["short-title"][0]._ %></li>
       <li><%= d.authors[0]["main-author"][0]._ %></li>
+      <li><a class="detail-link" href="/detail/<%= d.id[0].$.nativeid %>">Lees meer <span class="hiddenAlt">over <%= d.titles[0]["short-title"][0]._ %></span></a></li>
     </ul>
   <% }) %>
-
 </body>
 </html>

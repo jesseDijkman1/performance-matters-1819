@@ -22,6 +22,9 @@ app.use(bodyParser.urlencoded({
   extended: true
 }));
 
+// Temporary way to store the data as an Object
+// let storage;
+
 function checkQueryParams(qParams, validOptions) {
   return new Promise((resolve, reject) => {
     if (!qParams) {
@@ -101,7 +104,11 @@ function makeQueryParams(params) {
   }
 }
 
-app.get("/", async (req, res) => {
+app.get("/", (req, res) => {
+  res.send("GOT TO <a href='/search'>search</a>")
+})
+
+app.get("/search", async (req, res) => {
   const validGenres = ["humor", "sport", "stripverhaal"];
   let allWords, allGenres;
 
@@ -115,7 +122,8 @@ app.get("/", async (req, res) => {
 
   res.render("index.ejs", {
     words: allWords,
-    genres: [allGenres, validGenres] // Pass in the valid genres so I don't have to write that array twice, once in here and once in the template
+    genres: [allGenres, validGenres],
+    searchUrl: req._parsedUrl.search
   });
 })
 
@@ -151,21 +159,74 @@ app.post("/removeGenre", async (req, res) => {
   res.redirect(`/${queryParams}`)
 })
 
-app.post("/results", (req, res) => renderList(res))
-app.get("/results", (req, res) => renderList(res))
 
-function renderList(res) {
+
+app.get("/results", (req, res) => {
   fs.readFile("public/data/temp.json", (err, data) => {
     let parsedData = JSON.parse(data);
+
+    // storage = parsedData.aquabrowser.results[0].result;
 
     parsedData.aquabrowser.meta[0].totalPages = Math.ceil(parsedData.aquabrowser.meta[0].count / 20);
 
     res.render("list.ejs", {
-      data: {
-        meta: parsedData.aquabrowser.meta[0],
-        results: parsedData.aquabrowser.results[0].result
-      }
+      meta: parsedData.aquabrowser.meta[0],
+      results: parsedData.aquabrowser.results[0].result,
+      filters: req.query
     });
   })
+})
+
+function findObject(data, _id) {
+  return new Promise((resolve, reject) => {
+    const idRx = /(?<=\|)\d+/;
+
+    data.find(obj => {
+      const id = idRx.exec(obj.id[0]._)[0];
+
+      if (id == _id) {
+        resolve(obj)
+      }
+    })
+  })
 }
+
+function fillInTheBlanks(data) {
+  const template = {
+    id: undefined,
+    coverimages: undefined,
+    titles: undefined,
+    authors: undefined,
+    formats: undefined,
+    summaries: undefined,
+    description: undefined
+  }
+
+  return new Promise((resolve, reject) => {
+    console.log(data)
+    for (let k in data) {
+
+      console.log(k, data[k].length)
+    }
+  })
+}
+
+app.get("/detail/:id", (req, res) => {
+
+  fs.readFile("public/data/temp.json", (err, data) => {
+    const id = req.params.id;
+    const parsedData = JSON.parse(data).aquabrowser.results[0].result;
+    const detailData = findObject(parsedData, id).then(fillInTheBlanks);
+    // console.log()
+    // res.render("detail.ejs", detailData)
+  })
+
+
+
+
+
+
+  //d.id[0].$.nativeid
+})
+
 app.listen(port, () => console.log(`Listening to port: ${port}!`))

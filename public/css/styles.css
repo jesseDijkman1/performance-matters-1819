@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.hiddenAlt {
+  position: absolute;
+  overflow: hidden;
+  height: 0; width: 0;
+}
+
+.detail-link::after {
+  content: "...";
+}
