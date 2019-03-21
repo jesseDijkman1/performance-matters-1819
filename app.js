@@ -159,23 +159,37 @@ app.post("/removeGenre", async (req, res) => {
   res.redirect(`/search${queryParams}`)
 })
 
+function loader(req, res) {
+  return new Promise((resolve, reject) => {
+    const loading = req.query.loading || undefined;
 
-
-app.get("/results", (req, res) => {
-  fs.readFile("public/data/better.json", (err, data) => {
-
-    let parsedData = JSON.parse(data);
-    console.log(parsedData)
-    // storage = parsedData.aquabrowser.results[0].result;
-
-    parsedData.aquabrowser.meta.totalPages = Math.ceil(parsedData.aquabrowser.meta.count / 20);
-
-    res.render("list.ejs", {
-      meta: parsedData.aquabrowser.meta,
-      results: parsedData.aquabrowser.results.result,
-      filters: req.query
-    });
+    if (!loading) {
+      res.render("loading.ejs", {caller: req.url})
+    } else {
+      resolve()
+    }
   })
+}
+
+
+
+app.get("/results", async (req, res) => {
+    await loader(req, res);
+
+    fs.readFile("public/data/better.json", (err, data) => {
+
+      let parsedData = JSON.parse(data);
+      console.log(parsedData)
+      // storage = parsedData.aquabrowser.results[0].result;
+
+      parsedData.aquabrowser.meta.totalPages = Math.ceil(parsedData.aquabrowser.meta.count / 20);
+
+      res.render("list.ejs", {
+        meta: parsedData.aquabrowser.meta,
+        results: parsedData.aquabrowser.results.result
+      });
+    })
+  // }
 })
 
 function findObject(data, _id) {
@@ -192,25 +206,6 @@ function findObject(data, _id) {
   })
 }
 
-// function fillInTheBlanks(data) {
-//   const template = {
-//     id: undefined,
-//     coverimages: undefined,
-//     titles: undefined,
-//     authors: undefined,
-//     formats: undefined,
-//     summaries: undefined,
-//     description: undefined
-//   }
-//
-//   return new Promise((resolve, reject) => {
-//     console.log(data)
-//     for (let k in data) {
-//
-//       console.log(k, data[k].length)
-//     }
-//   })
-// }
 
 function fillInTheBlanks(data) {
   let keyStorage = [];
@@ -238,7 +233,6 @@ return data
 }
 
 app.get("/detail/:id", (req, res) => {
-
   fs.readFile("public/data/better.json", async (err, data) => {
     const id = req.params.id;
     const parsedData = JSON.parse(data).aquabrowser.results.result;
@@ -247,16 +241,8 @@ app.get("/detail/:id", (req, res) => {
     const detailData = await findObject(completeData, id)
     console.log(detailData)
     res.render("detail.ejs", detailData)
-
-
   })
-
-
-
-
-
-
-  //d.id[0].$.nativeid
 })
+
 
 app.listen(port, () => console.log(`Listening to port: ${port}!`))

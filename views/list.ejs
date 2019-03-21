@@ -8,9 +8,6 @@
   <title>List</title>
 </head>
 <body>
-  <% for (let k in filters) { %>
-    <p><%= k %>:<%= filters[k] %></p>
-  <% } %>
   <% results.forEach(d => { %>
     <ul>
       <li><%= d.titles["short-title"]._ %></li>
