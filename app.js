@@ -105,7 +105,8 @@ function makeQueryParams(params) {
 }
 
 app.get("/", (req, res) => {
-  res.send("GOT TO <a href='/search'>search</a>")
+  // Could give users the possibility to choose what section of the page they wnat to visit now just redirect to search
+  res.redirect("/search")
 })
 
 app.get("/search", async (req, res) => {
@@ -159,12 +160,18 @@ app.post("/removeGenre", async (req, res) => {
   res.redirect(`/search${queryParams}`)
 })
 
+let zz = false;
 function loader(req, res) {
   return new Promise((resolve, reject) => {
-    const loading = req.query.loading || undefined;
+    const hasParams = Object.keys(req.query).length;
 
-    if (!loading) {
-      res.render("loading.ejs", {caller: req.url})
+    if (!req.query.loading) {
+      if (!hasParams) {
+        req.url += "?loading=true";
+      } else {
+        req.url += "&loading=true";
+      }
+      res.render("loading.ejs", {calledUrl: req.url})
     } else {
       resolve()
     }
@@ -176,11 +183,9 @@ function loader(req, res) {
 app.get("/results", async (req, res) => {
     await loader(req, res);
 
-    fs.readFile("public/data/better.json", (err, data) => {
 
-      let parsedData = JSON.parse(data);
-      console.log(parsedData)
-      // storage = parsedData.aquabrowser.results[0].result;
+    fs.readFile("public/data/better.json", (err, data) => {
+      const parsedData = JSON.parse(data);
 
       parsedData.aquabrowser.meta.totalPages = Math.ceil(parsedData.aquabrowser.meta.count / 20);
 
@@ -189,7 +194,6 @@ app.get("/results", async (req, res) => {
         results: parsedData.aquabrowser.results.result
       });
     })
-  // }
 })
 
 function findObject(data, _id) {
@@ -232,7 +236,9 @@ data.forEach(d => {
 return data
 }
 
-app.get("/detail/:id", (req, res) => {
+app.get("/detail/:id", async (req, res) => {
+  await loader(req, res);
+
   fs.readFile("public/data/better.json", async (err, data) => {
     const id = req.params.id;
     const parsedData = JSON.parse(data).aquabrowser.results.result;
