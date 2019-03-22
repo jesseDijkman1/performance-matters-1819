@@ -4,18 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/styles.css">
   <title>Search</title>
 </head>
 <body>
 
-  <form method="POST" action="/submitWord">
+  <form class="form-word add" method="POST" action="/submitWord">
     <input name="wordsBundle" type="hidden" value="<%= words %>">
     <input name="genresBundle" type="hidden" value="<%= genres[0] %>">
     <input name="dataWord" type="text">
-    <input type="submit" value="add word">
+    <input type="submit" value="Voeg toe">
   </form>
 
-  <form method="POST" action="/removeWord">
+  <form class="form-word remove" method="POST" action="/removeWord">
     <input name="wordsBundle" type="hidden" value="<%= words %>">
     <input name="genresBundle" type="hidden" value="<%= genres[0] %>">
 
@@ -26,7 +27,7 @@
     </ul>
   </form>
 
-  <form method="POST" action="/submitGenre">
+  <form class="form-genre add" method="POST" action="/submitGenre">
     <input name="wordsBundle" type="hidden" value="<%= words %>">
     <input name="genresBundle" type="hidden" value="<%= genres[0] %>">
     <h1>Genres</h1>
@@ -37,7 +38,7 @@
     <% }) %>
   </form>
 
-  <form method="POST" action="/removeGenre">
+  <form class="form-genre remove" method="POST" action="/removeGenre">
     <input name="wordsBundle" type="hidden" value="<%= words %>">
     <input name="genresBundle" type="hidden" value="<%= genres[0] %>">
 
@@ -49,6 +50,5 @@
   </form>
 
   <a href="/results<%= searchUrl %>">Get results</a>
-  <script src="/js/test.js"></script>
 </body>
 </html>

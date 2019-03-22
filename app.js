@@ -30,7 +30,7 @@ function checkQueryParams(qParams, validOptions) {
     if (!qParams) {
       resolve([]);
     } else {
-      const pattern = /^([a-z]+\,?)+[a-z]+$/i;
+      const pattern = /^([a-z]+\,?)+[a-z]*$/im;
       const match = pattern.test(qParams);
 
       if (match) {
@@ -55,6 +55,7 @@ function checkQueryParams(qParams, validOptions) {
 }
 
 function strArrayParser(strArray, str) {
+
   return new Promise((resolve, reject) => {
     if (!strArray && !str) {
       resolve([]);
@@ -78,9 +79,11 @@ function strArrayRemover(strArray, str) {
     } else if (!str) {
       resolve(strArray.split(","));
     } else {
-      const x = strArray.replace(new RegExp(`\,{1}${str}|${str}\,{1}|${str}`), "");
+      const arr = strArray.split(",")
+      const i = arr.indexOf(str);
+      const x = arr.splice(i, 1).join(",")
 
-      (!x) ? resolve([]) : resolve(x.split(","));
+      resolve(arr)
     }
   });
 }
@@ -106,10 +109,36 @@ function makeQueryParams(params) {
 
 app.get("/", (req, res) => {
   // Could give users the possibility to choose what section of the page they wnat to visit now just redirect to search
-  res.redirect("/search")
+  res.redirect("/search/words")
 })
 
-app.get("/search", async (req, res) => {
+app.get("/search", (req, res) => {
+  // Could give users the possibility to choose what section of the page they wnat to visit now just redirect to search
+  res.redirect("/search/words")
+})
+
+// app.get("/search", async (req, res) => {
+  // const validGenres = ["humor", "sport", "stripverhaal", "sprookjes", "school"];
+  // let allWords, allGenres;
+  //
+  // try {
+  //   allWords = await checkQueryParams(req.query.words);
+  //   allGenres = await checkQueryParams(req.query.genres, validGenres);
+  // } catch (err) {
+  //   // The given query isn't correct, do something
+  //   return console.log(err)
+  // }
+  //
+  // res.render("index.ejs", {
+  //   words: allWords,
+  //   genres: [allGenres, validGenres],
+  //   searchUrl: req._parsedUrl.search
+  // });
+// })
+
+app.get("/search/:section", async (req, res) => {
+  const section = req.params.section;
+
   const validGenres = ["humor", "sport", "stripverhaal", "sprookjes", "school"];
   let allWords, allGenres;
 
@@ -121,19 +150,47 @@ app.get("/search", async (req, res) => {
     return console.log(err)
   }
 
-  res.render("index.ejs", {
-    words: allWords,
-    genres: [allGenres, validGenres],
-    searchUrl: req._parsedUrl.search
-  });
+
+    if (section == "words") {
+      res.render("search-words.ejs", {
+        words: allWords,
+        genres: [allGenres, validGenres],
+        searchUrl: req._parsedUrl.search
+      });
+    } else if (section == "genres") {
+      res.render("search-genres.ejs", {
+        words: allWords,
+        genres: [allGenres, validGenres],
+        searchUrl: req._parsedUrl.search
+      });
+    } else {
+      res.render("error.ejs")
+    }
+      // res.render("search-words.ejs", {
+      //   words: allWords,
+      //   genres: [allGenres, validGenres],
+      //   searchUrl: req._parsedUrl.search
+      // });
+
+
+  // }
+
+  // res.render("index.ejs", {
+  //   words: allWords,
+  //   genres: [allGenres, validGenres],
+  //   searchUrl: req._parsedUrl.search
+  // });
 })
 
 app.post("/submitWord", async (req, res) => {
+  console.log(req.body.wordsBundle, req.body.dataWord)
   const allWords = await strArrayParser(req.body.wordsBundle, req.body.dataWord);
+  console.log(allWords)
   const allGenres = await strArrayParser(req.body.genresBundle, undefined);
+  console.log(allGenres)
   const queryParams = makeQueryParams([{words:allWords}, {genres:allGenres}]);
 
-  res.redirect(`/search${queryParams}`)
+  res.redirect(`/search/words${queryParams}`)
 })
 
 app.post("/submitGenre", async (req, res) => {
@@ -141,7 +198,7 @@ app.post("/submitGenre", async (req, res) => {
   const allWords = await strArrayParser(req.body.wordsBundle, undefined);
   const queryParams = makeQueryParams([{words:allWords}, {genres:allGenres}]);
 
-  res.redirect(`/search${queryParams}`)
+  res.redirect(`/search/genres${queryParams}`)
 })
 
 app.post("/removeWord", async (req, res) => {
@@ -149,18 +206,19 @@ app.post("/removeWord", async (req, res) => {
   const allGenres = await strArrayRemover(req.body.genresBundle, undefined)
   const queryParams = makeQueryParams([{words:allWords}, {genres:allGenres}]);
 
-  res.redirect(`/search${queryParams}`)
+  res.redirect(`/search/words${queryParams}`)
 })
 
 app.post("/removeGenre", async (req, res) => {
+  console.log("uh", req.body)
+
   const allGenres = await strArrayRemover(req.body.genresBundle, req.body.dataGenre);
   const allWords = await strArrayRemover(req.body.wordsBundle, undefined);
   const queryParams = makeQueryParams([{words:allWords}, {genres:allGenres}]);
 
-  res.redirect(`/search${queryParams}`)
+  res.redirect(`/search/genres${queryParams}`)
 })
 
-let zz = false;
 function loader(req, res) {
   return new Promise((resolve, reject) => {
     const hasParams = Object.keys(req.query).length;
@@ -182,7 +240,6 @@ function loader(req, res) {
 
 app.get("/results", async (req, res) => {
     await loader(req, res);
-
 
     fs.readFile("public/data/better.json", (err, data) => {
       const parsedData = JSON.parse(data);
@@ -245,7 +302,6 @@ app.get("/detail/:id", async (req, res) => {
     const completeData = fillInTheBlanks(parsedData);
 
     const detailData = await findObject(completeData, id)
-    console.log(detailData)
     res.render("detail.ejs", detailData)
   })
 })

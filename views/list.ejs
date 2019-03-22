@@ -8,12 +8,18 @@
   <title>List</title>
 </head>
 <body>
+  <main id="l-results">
   <% results.forEach(d => { %>
-    <ul>
-      <li><%= d.titles["short-title"]._ %></li>
-      <li><%= d.authors["main-author"]._ %></li>
-      <li><a class="detail-link" href="/detail/<%= d.id.$.nativeid %>">Lees meer <span class="hiddenAlt">over <%= d.titles["short-title"]._ %></span></a></li>
-    </ul>
+    <article class="">
+      <img src="<%= d.coverimages.coverimage[1]._ %>" alt="">
+      <section>
+        <h1 alt="hello world"><%= d.titles["short-title"]._ %></h1>
+        <h2><%= d.authors["main-author"]._ %></h2>
+
+        <a class="detail-link" href="/detail/<%= d.id.$.nativeid %>">Lees meer <span class="hiddenAlt">over <%= d.titles["short-title"]._ %></span></a>
+      </section>
+    </article>
   <% }) %>
+  </main>
 </body>
 </html>

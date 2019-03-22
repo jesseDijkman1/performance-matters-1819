@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../css/styles.css">
+  <title>Search words</title>
+</head>
+<body>
+<a class="section-switch right" href="/search/genres<%= searchUrl %>">Genres</a>
+
+  <form class="form-word add" method="POST" action="/submitWord">
+    <input name="wordsBundle" type="hidden" value="<%= words %>">
+    <input name="genresBundle" type="hidden" value="<%= genres[0] %>">
+    <input name="dataWord" type="text">
+    <button type="submit">Voeg toe</button>
+  </form>
+
+  <form class="form-word remove" method="POST" action="/removeWord">
+    <input name="wordsBundle" type="hidden" value="<%= words %>">
+    <input name="genresBundle" type="hidden" value="<%= genres[0] %>">
+
+    <ul>
+    <% for (let i = 0; i < words.length; i++) { %>
+      <li><input name="dataWord" value="<%= words[i] %>" type="submit"><%= words[i] %></li>
+    <% } %>
+    </ul>
+  </form>
+
+  <a class="search-btn" href="/results<%= searchUrl %>">Zoeken</a>
+</body>
+</html>
