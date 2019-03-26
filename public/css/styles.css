@@ -1,10 +1,12 @@
+@import "bg/bg-lab.css";
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 html {
-  font-family: 'VT323', monospace;
+  font-family: system-ui, sans-serif;
 }
 
 li {
@@ -12,7 +14,7 @@ li {
 }
 
 
-.hiddenAlt {
+.visuallyhidden {
   position: absolute;
   overflow: hidden;
   height: 0; width: 0;

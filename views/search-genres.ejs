@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<a class="section-switch left" href="/search/words<%= searchUrl %>">Words</a>
+<a class="section-switch left" href="/search/words<%= searchUrl %>"><span class="visuallyhidden">Ga naar </span>Woorden</a>
 <form class="form-genre add" method="POST" action="/submitGenre">
   <input name="wordsBundle" type="hidden" value="<%= words %>">
   <input name="genresBundle" type="hidden" value="<%= genres[0] %>">
@@ -30,6 +30,8 @@
   <% } %>
   </ul>
 </form>
+
+<%- include partials/bg-lab.ejs %>
 
 <a class="search-btn" href="/results<%= searchUrl %>">Zoeken</a>
 </body>

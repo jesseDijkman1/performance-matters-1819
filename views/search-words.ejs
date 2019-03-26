@@ -8,7 +8,7 @@
   <title>Search words</title>
 </head>
 <body>
-<a class="section-switch right" href="/search/genres<%= searchUrl %>">Genres</a>
+<a class="section-switch right" href="/search/genres<%= searchUrl %>"><span class="visuallyhidden">Ga naar </span>Genres</a>
 
   <form class="form-word add" method="POST" action="/submitWord">
     <input name="wordsBundle" type="hidden" value="<%= words %>">
@@ -27,6 +27,8 @@
     <% } %>
     </ul>
   </form>
+
+  <%- include partials/bg-lab.ejs %>
 
   <a class="search-btn" href="/results<%= searchUrl %>">Zoeken</a>
 </body>
