@@ -241,7 +241,7 @@ function loader(req, res) {
 app.get("/results", async (req, res) => {
     await loader(req, res);
 
-    fs.readFile("public/data/better.json", (err, data) => {
+    fs.readFile("data/better.json", (err, data) => {
       const parsedData = JSON.parse(data);
 
       parsedData.aquabrowser.meta.totalPages = Math.ceil(parsedData.aquabrowser.meta.count / 20);
@@ -296,7 +296,7 @@ return data
 app.get("/detail/:id", async (req, res) => {
   await loader(req, res);
 
-  fs.readFile("public/data/better.json", async (err, data) => {
+  fs.readFile("data/better.json", async (err, data) => {
     const id = req.params.id;
     const parsedData = JSON.parse(data).aquabrowser.results.result;
     const completeData = fillInTheBlanks(parsedData);

@@ -8,6 +8,8 @@
   <title>Search words</title>
 </head>
 <body>
+  <%- include partials/header-nav.ejs %>
+
 <a class="section-switch right" href="/search/genres<%= searchUrl %>"><span class="visuallyhidden">Ga naar </span>Genres</a>
 
   <form class="form-word add" method="POST" action="/submitWord">
@@ -20,7 +22,6 @@
   <form class="form-word remove" method="POST" action="/removeWord">
     <input name="wordsBundle" type="hidden" value="<%= words %>">
     <input name="genresBundle" type="hidden" value="<%= genres[0] %>">
-
     <ul>
     <% for (let i = 0; i < words.length; i++) { %>
       <li><input name="dataWord" value="<%= words[i] %>" type="submit"><%= words[i] %></li>
@@ -30,6 +31,8 @@
 
   <%- include partials/bg-lab.ejs %>
 
-  <a class="search-btn" href="/results<%= searchUrl %>">Zoeken</a>
+  <a id="search-btn" href="/results<%= searchUrl %>">Zoeken</a>
+
+  <script src="../js/bubbles.js"></script>
 </body>
 </html>
