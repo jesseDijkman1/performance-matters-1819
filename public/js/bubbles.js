@@ -1,1 +1,0 @@
-"use strict";const bubbles=document.querySelectorAll(".potion-bubbles .bubble");function bubbling(){for(let b=0;b<bubbles.length;b++)console.log(randomTime(1,2,!0)),console.log(bubbles[b]),bubbles[b].style.animationDelay=randomTime(1,1.5,!0)}function randomTime(b,e,o){let l=Math.random()*(e-b+1)+b;return`${(l=o?-1*l:l).toFixed(2)}s`}bubbling(),console.log("WORKING");

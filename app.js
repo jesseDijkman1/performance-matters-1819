@@ -8,9 +8,7 @@ const ejs = require("ejs");
 const parseString = require('xml2js').parseString;
 const fs = require("fs");
 
-require('dotenv').config();
-
-const port = 2000;
+const port = 2000 || process.env.PORT;
 
 const app = express();
 
@@ -109,6 +107,7 @@ function makeQueryParams(params) {
 
 app.get("/", (req, res) => {
   // Could give users the possibility to choose what section of the page they wnat to visit now just redirect to search
+
   res.redirect("/search/words")
 })
 
@@ -183,11 +182,11 @@ app.get("/search/:section", async (req, res) => {
 })
 
 app.post("/submitWord", async (req, res) => {
-  console.log(req.body.wordsBundle, req.body.dataWord)
+
   const allWords = await strArrayParser(req.body.wordsBundle, req.body.dataWord);
-  console.log(allWords)
+
   const allGenres = await strArrayParser(req.body.genresBundle, undefined);
-  console.log(allGenres)
+
   const queryParams = makeQueryParams([{words:allWords}, {genres:allGenres}]);
 
   res.redirect(`/search/words${queryParams}`)
@@ -210,7 +209,6 @@ app.post("/removeWord", async (req, res) => {
 })
 
 app.post("/removeGenre", async (req, res) => {
-  console.log("uh", req.body)
 
   const allGenres = await strArrayRemover(req.body.genresBundle, req.body.dataGenre);
   const allWords = await strArrayRemover(req.body.wordsBundle, undefined);

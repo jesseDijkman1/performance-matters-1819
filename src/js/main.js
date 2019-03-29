@@ -1,12 +1,18 @@
 "use strict";
 
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker
+      .register("../sw.js")
+      .then(reg => console.log("registered"))
+      .catch(err => console.log(`Service worker failed: ${err}`))
+  })
+}
+
 const bubbles = document.querySelectorAll(".potion-bubbles .bubble");
 
 function bubbling() {
   for (let i = 0; i < bubbles.length; i++) {
-    // bubbles[i].style.animationDelay = `${randomTime(1, 1.5, true)}s`;
-    console.log(randomTime(1, 2, true))
-    console.log(bubbles[i])
     bubbles[i].style.animationDelay = randomTime(1, 1.5, true);
   }
 }
@@ -20,5 +26,3 @@ function randomTime(min, max, negative) {
 
   return `${n.toFixed(2)}s`;
 }
-
-console.log("WORKING")
