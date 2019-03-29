@@ -8,7 +8,7 @@ const ejs = require("ejs");
 const parseString = require('xml2js').parseString;
 const fs = require("fs");
 
-const port = 2000 || process.env.PORT;
+const port = process.env.PORT || 2000;
 
 const app = express();
 
