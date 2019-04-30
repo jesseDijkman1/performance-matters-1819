@@ -3,7 +3,7 @@
 if (navigator.serviceWorker) {
   window.addEventListener("load", () => {
     navigator.serviceWorker
-      .register("../../sw.js")
+      .register("../sw.js")
       .then(r => console.log("Service Worker Registered"))
       .catch(err => console.log(`Service Worker Error: ${err}`))
   })
