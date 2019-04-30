@@ -1,7 +1,12 @@
 "use strict";
 
 if (navigator.serviceWorker) {
-  console.log("service worker is supported")
+  window.addEventListener("load", () => {
+    navigator.serviceWorker
+      .register("../../sw.js")
+      .then(r => console.log("Service Worker Registered"))
+      .catch(err => console.log(`Service Worker Error: ${err}`))
+  })
 }
 
 const bubbles = document.querySelectorAll(".potion-bubbles .bubble");
