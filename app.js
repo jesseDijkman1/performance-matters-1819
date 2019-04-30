@@ -20,8 +20,6 @@ app.use(bodyParser.urlencoded({
   extended: true
 }));
 
-// Temporary way to store the data as an Object
-// let storage;
 
 function checkQueryParams(qParams, validOptions) {
   return new Promise((resolve, reject) => {
