@@ -105,7 +105,6 @@ function makeQueryParams(params) {
 
 app.get("/", (req, res) => {
   // Could give users the possibility to choose what section of the page they wnat to visit now just redirect to search
-
   res.redirect("/search/words")
 })
 
@@ -146,6 +145,7 @@ app.get("/search/:section", async (req, res) => {
     // The given query isn't correct, do something
     return console.log(err)
   }
+
 
 
     if (section == "words") {
@@ -225,6 +225,7 @@ function loader(req, res) {
       } else {
         req.url += "&loading=true";
       }
+
       res.render("loading.ejs", {calledUrl: req.url})
     } else {
       resolve()

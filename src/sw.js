@@ -2,7 +2,7 @@ const cacheName = "v1";
 
 const cacheAssets = [
   "/search/words",
-  "search/genres",
+  "/search/genres",
   "/js/main.js",
   "/css/bg-lab.css",
   "/css/styles.css"
@@ -42,9 +42,25 @@ self.addEventListener("activate", e => {
 
 self.addEventListener("fetch", e => {
   console.log("Fetching")
-
   e.respondWith(
     fetch(e.request)
-      .catch(() => caches.match(e.request))
+      .then(res => {
+
+        // If it's just a redirect don't cache it
+        if (res.type == "opaqueredirect") {
+          return res
+        }
+
+        const resClone = res.clone()
+
+        caches
+          .open(cacheName)
+          .then(cache => {
+            cache.put(e.request, resClone)
+          })
+
+          return res
+      })
+      .catch(err => caches.match(e.request).then(res => res))
   )
 })
