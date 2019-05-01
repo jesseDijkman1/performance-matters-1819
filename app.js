@@ -103,6 +103,10 @@ function makeQueryParams(params) {
   }
 }
 
+app.get("*," (req, res) => {
+  res.redirect("https://" + req.headers.host + req.url);
+})
+
 app.get("/", (req, res) => {
   // Could give users the possibility to choose what section of the page they wnat to visit now just redirect to search
   res.redirect("/search/words")
