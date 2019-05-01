@@ -103,7 +103,7 @@ function makeQueryParams(params) {
   }
 }
 
-app.get("/*", (req, res) => {
+app.get("*", (req, res) => {
   // console.log("wtf")
   res.redirect("https://" + req.get("host") + req.url);
 })
