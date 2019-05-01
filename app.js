@@ -226,7 +226,9 @@ function loader(req, res) {
         req.url += "&loading=true";
       }
 
-      res.render("loading.ejs", {calledUrl: req.url})
+      const fullUrl = `${req.protocol}://${req.get("host")}${req.url}`;
+
+      res.render("loading.ejs", {callBackUrl: fullUrl})
     } else {
       resolve()
     }

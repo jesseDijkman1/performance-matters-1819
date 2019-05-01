@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="../css/styles.css">
-  <title>Search words</title>
-</head>
+
+<% const headTitle = "Zoek Woorden" %>
+<%- include partials/head.ejs %>
+
 <body>
+
   <%- include partials/header-nav.ejs %>
 
-<a class="section-switch right" href="/search/genres<%= searchUrl %>"><span class="visuallyhidden">Ga naar </span>Genres</a>
+<a class="section-switch right" href="/search/genres<%= searchUrl %>">
+  <span class="visuallyhidden">Ga naar </span>Genres</a>
 
   <form class="form-word add" method="POST" action="/submitWord">
     <input name="wordsBundle" type="hidden" value="<%= words %>">
     <input name="genresBundle" type="hidden" value="<%= genres[0] %>">
-    <input name="dataWord" type="text">
+    <label for="wordAdd" class="visuallyhidden">Voeg een woord toe</label>
+    <input id="wordAdd" name="dataWord" type="text">
     <button type="submit">Voeg toe</button>
   </form>
 
@@ -24,7 +24,7 @@
     <input name="genresBundle" type="hidden" value="<%= genres[0] %>">
     <ul>
     <% for (let i = 0; i < words.length; i++) { %>
-      <li><input name="dataWord" value="<%= words[i] %>" type="submit"><%= words[i] %></li>
+      <li><label for="wordLabel_<%= i %>"><%= words[i] %></label><input id="wordLabel_<%= i %>" name="dataWord" value="<%= words[i] %>" type="submit"></li>
     <% } %>
     </ul>
   </form>
@@ -32,7 +32,5 @@
   <%- include partials/bg-lab.ejs %>
 
   <a id="search-btn" href="/results<%= searchUrl %>">Zoeken</a>
-
-  <script src="../js/main.js"></script>
 </body>
 </html>

@@ -45,12 +45,6 @@ self.addEventListener("fetch", e => {
   e.respondWith(
     fetch(e.request)
       .then(res => {
-
-        // If it's just a redirect don't cache it
-        if (res.type == "opaqueredirect") {
-          return res
-        }
-
         const resClone = res.clone()
 
         caches
