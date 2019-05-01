@@ -4,7 +4,6 @@ const express = require("express");
 const path = require("path");
 const bodyParser = require("body-parser");
 const request = require("request");
-const https = require("https");
 const ejs = require("ejs");
 const parseString = require('xml2js').parseString;
 const fs = require("fs");
@@ -103,11 +102,6 @@ function makeQueryParams(params) {
     return `?${q.join("&")}`
   }
 }
-
-app.get("*", (req, res) => {
-  // console.log("wtf")
-  res.redirect("https://" + req.get("host") + req.url);
-})
 
 app.get("/", (req, res) => {
   // Could give users the possibility to choose what section of the page they wnat to visit now just redirect to search
@@ -312,6 +306,4 @@ app.get("/detail/:id", async (req, res) => {
   })
 })
 
-const server = https.createServer(app)
-// app.listen(port, () => console.log(`Listening to port: ${port}!`))
-server.listen(port, () => console.log(`Listening to port: ${port}`))
+app.listen(port, () => console.log(`Listening to port: ${port}!`))
