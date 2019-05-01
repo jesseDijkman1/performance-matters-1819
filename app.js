@@ -4,6 +4,7 @@ const express = require("express");
 const path = require("path");
 const bodyParser = require("body-parser");
 const request = require("request");
+const https = require("https");
 const ejs = require("ejs");
 const parseString = require('xml2js').parseString;
 const fs = require("fs");
@@ -311,5 +312,6 @@ app.get("/detail/:id", async (req, res) => {
   })
 })
 
-
-app.listen(port, () => console.log(`Listening to port: ${port}!`))
+const server = https.createServer(app)
+// app.listen(port, () => console.log(`Listening to port: ${port}!`))
+server.listen(port, () => console.log(`Listening to port: ${port}`))
