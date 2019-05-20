@@ -15,7 +15,7 @@ For this course we're going to improve the performance of the apps we created fo
 - [Improvements](#improvements)
   - [Server-side rendering](#server-side-rendering)
   - [Perceived Performance](#perceived-performance)
-  - [Accessibility](#accssibility)
+  - [Accessibility](#accessibility)
   - [Minification](#minification)
   - [Caching](#caching)
   - [Progressive Web App](#progressive-web-app)
