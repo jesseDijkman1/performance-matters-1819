@@ -1,7 +1,7 @@
 # Performance Matters @cmda-minor-web · 2018-2019
 ### Jesse Dijkman
 
-## Intro
+## Assignment
 For this course we're going to improve the performance of the apps we created for the previous project. 
 
 ## Table of Contents
@@ -19,7 +19,11 @@ For this course we're going to improve the performance of the apps we created fo
   - Minification
   - Caching
   - Progressive Web App
+- Comparison
+- Sources
+- License
 
+---
 
 ## Getting Started
 ### Installation
@@ -157,3 +161,88 @@ const cacheAssets = [
 ```
 
 ### Progressive Web App
+To make a progressive web app I also used the service workers and I added a manifest.json
+
+```json
+{
+  "name": "Oba-Lab",
+  "short_name": "Oba-Lab",
+  "theme_color": "#e83f33",
+  "background_color": "#ffffff",
+  "display": "fullscreen",
+  "Scope": "/",
+  "start_url": "/search/words",
+  "icons": [
+    {
+      "src": "app-images/icons/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "app-images/icons/icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "app-images/icons/icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "app-images/icons/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "app-images/icons/icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "app-images/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "app-images/icons/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "app-images/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "splash_pages": null
+}
+```
+
+---
+
+## Comparison
+Here I'll show you a few screenshots of audits results.
+
+### Audit 1
+> This audit is from the original website.
+![Audit 1](readme-images/screenshot-project-1-audit.png)
+
+### Audit 2
+> This audit is from after I made the website server-sided.
+![Audit 2](readme-images/screenshot-made-accessible-audits.png)
+
+### Audit 3
+> This audit is from after I implemented caching and before I made it a PWA
+![Audit 3](readme-images/screenshot-final-audit.png)
+
+---
+
+## Sources
+- https://www.youtube.com/watch?v=ksXwaWHCW6k
+- https://www.youtube.com/watch?v=gcx-3qi7t7c
+- https://css-tricks.com/snippets/html/meta-refresh/
+
+---
+
+## License
+MIT © [Jesse Dijkman](https://github.com/jesseDijkman1)
