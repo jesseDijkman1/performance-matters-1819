@@ -24,7 +24,10 @@
     <input name="genresBundle" type="hidden" value="<%= genres[0] %>">
     <ul>
     <% for (let i = 0; i < words.length; i++) { %>
-      <li><label for="wordLabel_<%= i %>"><%= words[i] %></label><input id="wordLabel_<%= i %>" name="dataWord" value="<%= words[i] %>" type="submit"></li>
+      <li>
+        <label for="wordLabel_<%= i %>"><%= words[i] %></label>
+        <input id="wordLabel_<%= i %>" name="dataWord" value="<%= words[i] %>" type="submit">
+      </li>
     <% } %>
     </ul>
   </form>

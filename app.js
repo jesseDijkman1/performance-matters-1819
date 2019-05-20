@@ -169,7 +169,7 @@ app.post("/removeGenre", async (req, res) => {
   res.redirect(`/search/genres${queryParams}`);
 })
 
-function loader(req, res) {
+function loader(req, res, page) {
   return new Promise((resolve, reject) => {
     const hasParams = Object.keys(req.query).length;
 
@@ -182,7 +182,7 @@ function loader(req, res) {
 
       const fullUrl = `https://${req.get("host")}${req.url}`;
 
-      res.render("loading.ejs", {callBackUrl: fullUrl});
+      res.render("loading.ejs", {callBackUrl: fullUrl, page: page});
     } else {
       resolve();
     }
@@ -190,7 +190,7 @@ function loader(req, res) {
 }
 
 app.get("/results", async (req, res) => {
-    await loader(req, res);
+    await loader(req, res, "list");
 
     fs.readFile("data/better.json", (err, data) => {
       const parsedData = JSON.parse(data);
@@ -245,7 +245,7 @@ function fillInTheBlanks(data) {
 }
 
 app.get("/detail/:id", async (req, res) => {
-  await loader(req, res);
+  await loader(req, res, "detail");
 
   fs.readFile("data/better.json", async (err, data) => {
     const id = req.params.id,
