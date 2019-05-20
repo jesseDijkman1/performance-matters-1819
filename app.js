@@ -1,12 +1,12 @@
 "use strict";
 
-const express = require("express");
-const path = require("path");
-const bodyParser = require("body-parser");
-const request = require("request");
-const ejs = require("ejs");
-const parseString = require('xml2js').parseString;
-const fs = require("fs");
+const express = require("express"),
+      path = require("path"),
+      bodyParser = require("body-parser"),
+      request = require("request"),
+      ejs = require("ejs"),
+      parseString = require('xml2js').parseString,
+      fs = require("fs");
 
 const port = process.env.PORT || 2000;
 
@@ -14,7 +14,7 @@ const app = express();
 
 app.set("view engine", "ejs");
 app.set("views", "views");
-app.use(express.static("public"))
+app.use(express.static("public"));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
   extended: true
@@ -26,32 +26,31 @@ function checkQueryParams(qParams, validOptions) {
     if (!qParams) {
       resolve([]);
     } else {
-      const pattern = /^([a-z]+\,?)+[a-z]*$/im;
-      const match = pattern.test(qParams);
+      const pattern = /^([a-z]+\,?)+[a-z]*$/im,
+            match = pattern.test(qParams);
 
       if (match) {
         if (validOptions) {
           validOptions = new RegExp(`^${validOptions.join("$|^")}$`);
 
-          const incorrect = qParams.split(",").find(qp => !validOptions.test(qp))
+          const incorrect = qParams.split(",").find(qp => !validOptions.test(qp));
 
           if (!incorrect) {
-            resolve(qParams.split(","))
+            resolve(qParams.split(","));
           } else {
-            reject("one of the given params isn't correct or doesn't exist")
+            reject("one of the given params isn't correct or doesn't exist");
           }
         } else {
-          resolve(qParams.split(","))
+          resolve(qParams.split(","));
         }
       } else {
-        reject("something is wrong with the query")
+        reject("something is wrong with the query");
       }
     }
-  })
+  });
 }
 
 function strArrayParser(strArray, str) {
-
   return new Promise((resolve, reject) => {
     if (!strArray && !str) {
       resolve([]);
@@ -65,7 +64,7 @@ function strArrayParser(strArray, str) {
       strArray = strArray.split(",");
       resolve(strArray);
     }
-  })
+  });
 }
 
 function strArrayRemover(strArray, str) {
@@ -75,11 +74,11 @@ function strArrayRemover(strArray, str) {
     } else if (!str) {
       resolve(strArray.split(","));
     } else {
-      const arr = strArray.split(",")
-      const i = arr.indexOf(str);
-      const x = arr.splice(i, 1).join(",")
+      const arr = strArray.split(","),
+            i = arr.indexOf(str),
+            x = arr.splice(i, 1).join(",");
 
-      resolve(arr)
+      resolve(arr);
     }
   });
 }
@@ -88,8 +87,8 @@ function makeQueryParams(params) {
   let q = [];
 
   params.forEach(p => {
-    let key = Object.keys(p);
-    let pData = p[key];
+    let key = Object.keys(p),
+        pData = p[key];
 
     if (pData.length) {
       q.push(`${key[0]}=${pData.join(",")}`);
@@ -97,45 +96,20 @@ function makeQueryParams(params) {
   })
 
   if (!q.join("&")) {
-    return ""
+    return "";
   } else {
-    return `?${q.join("&")}`
+    return `?${q.join("&")}`;
   }
 }
 
-app.get("/", (req, res) => {
-  // Could give users the possibility to choose what section of the page they wnat to visit now just redirect to search
-  res.redirect("/search/words")
-})
+app.get("/", (req, res) => res.redirect("/search/words"));
 
-app.get("/search", (req, res) => {
-  // Could give users the possibility to choose what section of the page they wnat to visit now just redirect to search
-  res.redirect("/search/words")
-})
-
-// app.get("/search", async (req, res) => {
-  // const validGenres = ["humor", "sport", "stripverhaal", "sprookjes", "school"];
-  // let allWords, allGenres;
-  //
-  // try {
-  //   allWords = await checkQueryParams(req.query.words);
-  //   allGenres = await checkQueryParams(req.query.genres, validGenres);
-  // } catch (err) {
-  //   // The given query isn't correct, do something
-  //   return console.log(err)
-  // }
-  //
-  // res.render("index.ejs", {
-  //   words: allWords,
-  //   genres: [allGenres, validGenres],
-  //   searchUrl: req._parsedUrl.search
-  // });
-// })
+app.get("/search", (req, res) => res.redirect("/search/words"));
 
 app.get("/search/:section", async (req, res) => {
-  const section = req.params.section;
+  const section = req.params.section,
+        validGenres = ["humor", "sport", "stripverhaal", "sprookjes", "school"];
 
-  const validGenres = ["humor", "sport", "stripverhaal", "sprookjes", "school"];
   let allWords, allGenres;
 
   try {
@@ -143,101 +117,77 @@ app.get("/search/:section", async (req, res) => {
     allGenres = await checkQueryParams(req.query.genres, validGenres);
   } catch (err) {
     // The given query isn't correct, do something
-    return console.log(err)
+    return console.log(err);
   }
 
-
-
-    if (section == "words") {
-      res.render("search-words.ejs", {
-        words: allWords,
-        genres: [allGenres, validGenres],
-        searchUrl: req._parsedUrl.search
-      });
-    } else if (section == "genres") {
-      res.render("search-genres.ejs", {
-        words: allWords,
-        genres: [allGenres, validGenres],
-        searchUrl: req._parsedUrl.search
-      });
-    } else {
-      res.render("error.ejs")
-    }
-      // res.render("search-words.ejs", {
-      //   words: allWords,
-      //   genres: [allGenres, validGenres],
-      //   searchUrl: req._parsedUrl.search
-      // });
-
-
-  // }
-
-  // res.render("index.ejs", {
-  //   words: allWords,
-  //   genres: [allGenres, validGenres],
-  //   searchUrl: req._parsedUrl.search
-  // });
-})
+  if (section == "words") {
+    res.render("search-words.ejs", {
+      words: allWords,
+      genres: [allGenres, validGenres],
+      searchUrl: req._parsedUrl.search
+    });
+  } else if (section == "genres") {
+    res.render("search-genres.ejs", {
+      words: allWords,
+      genres: [allGenres, validGenres],
+      searchUrl: req._parsedUrl.search
+    });
+  } else {
+    res.render("error.ejs");
+  }
+});
 
 app.post("/submitWord", async (req, res) => {
+  const allWords = await strArrayParser(req.body.wordsBundle, req.body.dataWord),
+        allGenres = await strArrayParser(req.body.genresBundle, undefined),
+        queryParams = makeQueryParams([{words:allWords}, {genres:allGenres}]);
 
-  const allWords = await strArrayParser(req.body.wordsBundle, req.body.dataWord);
-
-  const allGenres = await strArrayParser(req.body.genresBundle, undefined);
-
-  const queryParams = makeQueryParams([{words:allWords}, {genres:allGenres}]);
-
-  res.redirect(`/search/words${queryParams}`)
-})
+  res.redirect(`/search/words${queryParams}`);
+});
 
 app.post("/submitGenre", async (req, res) => {
-  const allGenres = await strArrayParser(req.body.genresBundle, req.body.dataGenre);
-  const allWords = await strArrayParser(req.body.wordsBundle, undefined);
-  const queryParams = makeQueryParams([{words:allWords}, {genres:allGenres}]);
+  const allGenres = await strArrayParser(req.body.genresBundle, req.body.dataGenre),
+        allWords = await strArrayParser(req.body.wordsBundle, undefined),
+        queryParams = makeQueryParams([{words:allWords}, {genres:allGenres}]);
 
-  res.redirect(`/search/genres${queryParams}`)
+  res.redirect(`/search/genres${queryParams}`);
 })
 
 app.post("/removeWord", async (req, res) => {
-  const allWords = await strArrayRemover(req.body.wordsBundle, req.body.dataWord)
-  const allGenres = await strArrayRemover(req.body.genresBundle, undefined)
-  const queryParams = makeQueryParams([{words:allWords}, {genres:allGenres}]);
+  const allWords = await strArrayRemover(req.body.wordsBundle, req.body.dataWord),
+        allGenres = await strArrayRemover(req.body.genresBundle, undefined),
+        queryParams = makeQueryParams([{words:allWords}, {genres:allGenres}]);
 
-  res.redirect(`/search/words${queryParams}`)
+  res.redirect(`/search/words${queryParams}`);
 })
 
 app.post("/removeGenre", async (req, res) => {
+  const allGenres = await strArrayRemover(req.body.genresBundle, req.body.dataGenre),
+        allWords = await strArrayRemover(req.body.wordsBundle, undefined),
+        queryParams = makeQueryParams([{words:allWords}, {genres:allGenres}]);
 
-  const allGenres = await strArrayRemover(req.body.genresBundle, req.body.dataGenre);
-  const allWords = await strArrayRemover(req.body.wordsBundle, undefined);
-  const queryParams = makeQueryParams([{words:allWords}, {genres:allGenres}]);
-
-  res.redirect(`/search/genres${queryParams}`)
+  res.redirect(`/search/genres${queryParams}`);
 })
 
 function loader(req, res) {
   return new Promise((resolve, reject) => {
     const hasParams = Object.keys(req.query).length;
-    if (!req.query.loading) {
 
+    if (!req.query.loading) {
       if (!hasParams) {
         req.url += "?loading=true";
       } else {
         req.url += "&loading=true";
       }
 
-      // console.log(req.protocol)
-      // const fullUrl = `https://${req.get("host")}${req.url}`;
-      const fullUrl = `${req.get("host")}${req.url}`
+      const fullUrl = `https://${req.get("host")}${req.url}`;
 
-      res.render("loading.ejs", {callBackUrl: fullUrl})
+      res.render("loading.ejs", {callBackUrl: fullUrl});
     } else {
-      resolve()
+      resolve();
     }
-  })
+  });
 }
-
-
 
 app.get("/results", async (req, res) => {
     await loader(req, res);
@@ -251,8 +201,8 @@ app.get("/results", async (req, res) => {
         meta: parsedData.aquabrowser.meta,
         results: parsedData.aquabrowser.results.result
       });
-    })
-})
+    });
+});
 
 function findObject(data, _id) {
   return new Promise((resolve, reject) => {
@@ -262,10 +212,10 @@ function findObject(data, _id) {
       const id = idRx.exec(obj.id._)[0];
 
       if (id == _id) {
-        resolve(obj)
+        resolve(obj);
       }
-    })
-  })
+    });
+  });
 }
 
 
@@ -275,36 +225,36 @@ function fillInTheBlanks(data) {
     for (let key in d) {
       keyStorage.push(key)
     }
-  })
+  });
 
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set
-// Unique keys used for every object in result
-const distinctKeys = [...new Set(keyStorage)];
+  // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set
+  // Unique keys used for every object in result
+  const distinctKeys = [...new Set(keyStorage)];
 
-data.forEach(d => {
-  const objKeys = Object.keys(d);
+  data.forEach(d => {
+    const objKeys = Object.keys(d);
 
-  distinctKeys.forEach(dk => {
-    if (!objKeys.includes(dk)) {
-      d[dk] = undefined;
-    }
-  })
-})
+    distinctKeys.forEach(dk => {
+      if (!objKeys.includes(dk)) {
+        d[dk] = undefined;
+      }
+    });
+  });
 
-return data
+  return data;
 }
 
 app.get("/detail/:id", async (req, res) => {
   await loader(req, res);
 
   fs.readFile("data/better.json", async (err, data) => {
-    const id = req.params.id;
-    const parsedData = JSON.parse(data).aquabrowser.results.result;
-    const completeData = fillInTheBlanks(parsedData);
+    const id = req.params.id,
+          parsedData = JSON.parse(data).aquabrowser.results.result,
+          completeData = fillInTheBlanks(parsedData);
 
-    const detailData = await findObject(completeData, id)
-    res.render("detail.ejs", detailData)
+    const detailData = await findObject(completeData, id);
+    res.render("detail.ejs", detailData);
   })
 })
 
-app.listen(port, () => console.log(`Listening to port: ${port}!`))
+app.listen(port, () => console.log(`Listening to port: ${port}!`));
