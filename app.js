@@ -218,8 +218,8 @@ app.post("/removeGenre", async (req, res) => {
 function loader(req, res) {
   return new Promise((resolve, reject) => {
     const hasParams = Object.keys(req.query).length;
-
     if (!req.query.loading) {
+
       if (!hasParams) {
         req.url += "?loading=true";
       } else {
@@ -227,7 +227,8 @@ function loader(req, res) {
       }
 
       // console.log(req.protocol)
-      const fullUrl = `https://${req.get("host")}${req.url}`;
+      // const fullUrl = `https://${req.get("host")}${req.url}`;
+      const fullUrl = `${req.get("host")}${req.url}`
 
       res.render("loading.ejs", {callBackUrl: fullUrl})
     } else {
