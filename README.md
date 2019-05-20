@@ -112,6 +112,9 @@ function loader(req, res) {
 ### Accessibility
 To make everything server-sided I also made everything accessible, this means that everyone on every device can visit the page. There's no JavaScript or CSS needed. Also the HTML is correct, there are labels, forms and a-tags.
 
+### Perceived Performance
+To improve the perceived performance I used skeleton loading which shows you the layout of the coming page. The skeleton page is server-sided.
+
 ### Minification
 To minify the JavaScript and CSS I used the following packages:
 - [gulp](https://www.npmjs.com/package/gulp)
@@ -140,4 +143,17 @@ gulp.task("css:min", () => {
 ```
 
 ### Caching
+For the caching I created a service worker that cachges a few assets on the first page view, and from there on keeps caching assets.
+The assets that are first cached are the css, js and root
+
+```js
+const cacheAssets = [
+  "/search/words",
+  "/search/genres",
+  "/js/main.js",
+  "/css/bg-lab.css",
+  "/css/styles.css"
+]
+```
+
 ### Progressive Web App
