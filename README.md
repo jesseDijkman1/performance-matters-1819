@@ -1,27 +1,27 @@
 # Performance Matters @cmda-minor-web · 2018-2019
-### Jesse Dijkman
+### Student: Jesse Dijkman
 
 ## Assignment
 For this course we're going to improve the performance of the apps we created for the previous project. 
 
 ## Table of Contents
-- Getting started
-  - Installation
-  - Running
-- To-Do
-- Process
-  - Week 1
-  - Week 2
-  - Week 3
-- Improvements
-  - Server-side rendering
-  - Accessibility
-  - Minification
-  - Caching
-  - Progressive Web App
-- Comparison
-- Sources
-- License
+- [Getting started](#getting-started)
+  - [Installation](#installation)
+  - [Running](#running)
+- [To-Do](#to-do)
+- [Process](#process)
+  - [Week 1](#week-1)
+  - [Week 2 & 3](#week-2-&-3)
+- [Improvements](#improvements)
+  - [Server-side rendering](#server-side-rendering)
+  - [Perceived Performance](#perceived-performance)
+  - [Accessibility](#accssibility)
+  - [Minification](#minification)
+  - [Caching](#caching)
+  - [Progressive Web App](#progressive-web-app)
+- [Comparison](#comparison)
+- [Sources](#sources)
+- [License](#license)
 
 ---
 
